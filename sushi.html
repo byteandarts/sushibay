@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushi Bay — Freshly Rolled. Artfully Crafted.</title>
+  <meta name="description"
+    content="Sushi Bay – Fresh sushi, creative rolls, nigiri, sashimi, and Japanese cuisine. Freshly rolled and artfully crafted daily.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="texture-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="site-nav nav-sushi">
+    <div class="nav-inner">
+      <a href="sushi.html" class="nav-logo">
+        <img src="images/sushi-logo-sm.png" alt="Sushi Bay" style="border-radius:6px;padding:3px;">
+        <span class="nav-logo-text">Sushi Bay</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#craft">The Craft</a></li>
+        <li><a href="cafe.html">Café Supreme</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-delivery" style="display:none;">
+          <span class="nav-delivery-label">Delivery</span>
+          <span class="nav-delivery-number">19000</span>
+        </div>
+        <button class="nav-btn nav-btn-sushi" onclick="toggleCart()" style="position:relative;">
+          <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
+          Order
+          <span class="cart-badge cart-count" style="display:none;">0</span>
+        </button>
+        <button class="mobile-menu-btn" onclick="toggleMobileNav()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" onclick="toggleMobileNav()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="#home" onclick="toggleMobileNav()">Home</a>
+    <a href="#menu" onclick="toggleMobileNav()">Menu</a>
+    <a href="#craft" onclick="toggleMobileNav()">The Craft</a>
+    <a href="cafe.html">Café Supreme</a>
+    <a href="story.html">Our Story</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/sushi-hero.webp"
+        alt="Close-up of premium sushi rolls on a dark slate plate with dramatic lighting">
+      <div class="hero-overlay-bottom"></div>
+      <div class="hero-overlay-left"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <span class="hero-tag">Premium Japanese Cuisine</span>
+        <h1 class="hero-title font-display">
+          Freshly Rolled. <br><em>Artfully Crafted.</em>
+        </h1>
+        <p class="hero-desc">
+          Experience the delicate balance of traditional techniques and modern flavors. Premium ingredients, masterfully
+          crafted for an unforgettable journey.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary">
+            <span>View Menu</span>
+            <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+          </a>
+          <a href="order.html" class="btn-outline">
+            <span>Order Online</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="material-symbols-outlined" style="color:rgba(255,255,255,0.5);">keyboard_arrow_down</span>
+    </div>
+  </header>
+
+  <!-- Chef's Specials / Highlights -->
+  <section class="section section-sushi">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-tag">Culinary Masterpieces</span>
+          <h2 class="section-title font-display">Chef's Specials</h2>
+        </div>
+        <p class="section-desc" style="margin-left:auto;">Selected daily by our head chef, featuring the freshest catch
+          and most creative rolls.</p>
+      </div>
+      <div class="card-grid fade-in">
+        <!-- Rolls -->
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="images/highlight-rolls.webp" alt="Assorted premium sushi rolls beautifully plated">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">Signature Rolls</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">From the Crispy Ura Maki to the Dynamite Roll — each piece is a canvas of
+              flavor and texture.</p>
+          </div>
+        </div>
+        <!-- Fried Rolls -->
+        <div class="feature-card" style="margin-top:3rem;">
+          <div class="feature-card-img">
+            <img src="images/highlight-fried-rolls.webp" alt="Golden fried sushi rolls with crispy panko coating">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">New Fried Rolls</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">Panko-crusted perfection — our Hot Lemon, Fried California, and Lava Cheese
+              rolls are game-changers.</p>
+          </div>
+        </div>
+        <!-- Party Platters -->
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="images/highlight-platters.webp" alt="Large sushi platter with 48 pieces arranged beautifully">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">Party Platters</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">12pc to 60pc combos — perfect for gatherings, catering, and unforgettable
+              celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Menu Section -->
+  <section id="menu" class="section section-sushi-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Full Menu</span>
+        <h2 class="section-title font-display">The Sushi Bay Menu</h2>
+        <p class="section-desc">From classic nigiri to creative signature rolls — every piece tells a story of freshness
+          and craft.</p>
+      </div>
+      <div class="menu-tabs"></div>
+      <div class="menu-grid" id="sushi-menu-grid">
+        <div class="cart-empty" style="grid-column:1/-1;">Loading menu...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Craft Section -->
+  <section id="craft" class="section section-sushi">
+    <div class="container">
+      <div class="story-section fade-in">
+        <div class="story-text">
+          <div>
+            <span class="section-tag">The Craft</span>
+            <h2 class="section-title font-display" style="margin-top:0.5rem;">
+              Tradition Meets <br>Modernity
+            </h2>
+          </div>
+          <div class="story-text-body">
+            <div class="story-line"></div>
+            <div class="story-paragraphs">
+              <p>
+                At Sushi Bay, we believe that sushi is more than just food; it is an art form that demands patience,
+                precision, and respect for nature.
+              </p>
+              <p>
+                Our chefs treat every roll as a canvas. Whether it's the crunch of our Fried Rolls or the delicate
+                balance of our Sashimi Platters, we prioritize ingredients that are sourced fresh and prepared with
+                skill.
+              </p>
+              <p>
+                Every morning begins with selecting the freshest fish, and every plate is crafted to deliver bold,
+                unforgettable flavors.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="story.html" class="btn-outline" style="display:inline-flex;">
+              <span>Read Our Full Story</span>
+              <span class="material-symbols-outlined" style="font-size:1rem;">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <div class="story-image">
+          <div class="story-image-wrapper">
+            <div class="story-image-border"></div>
+            <img src="images/sushi-chef.webp" alt="Chef preparing sushi with focused precision">
+            <div class="story-badge">
+              <span class="story-badge-number">鮮</span>
+              <span class="story-badge-label">Fresh Daily</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section-sushi-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title font-display">The Art of Sushi</h2>
+      </div>
+      <div class="gallery-grid fade-in">
+        <div class="gallery-item"><img src="images/sushi-gallery-1.webp" alt="Chef slicing fresh salmon" loading="lazy">
+        </div>
+        <div class="gallery-item"><img src="images/sushi-gallery-2.webp" alt="Colorful sushi rolls arrangement"
+            loading="lazy"></div>
+        <div class="gallery-item"><img src="images/sushi-gallery-3.webp" alt="Nigiri pieces on wooden board"
+            loading="lazy"></div>
+        <div class="gallery-item"><img src="images/sushi-gallery-4.webp" alt="Sashimi platter on ice" loading="lazy">
+        </div>
+        <div class="gallery-item"><img src="images/sushi-gallery-5.webp" alt="Maki rolls being cut" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Switch Banner -->
+  <section class="section section-sushi" style="padding:3rem 0;">
+    <div class="container">
+      <div class="switch-banner">
+        <div class="switch-banner-text">
+          <h3 class="switch-banner-title font-display">In the Mood for Something Warm?</h3>
+          <p class="switch-banner-desc">Explore Café Supreme for premium coffee, breakfast, and international mains.</p>
+        </div>
+        <a href="cafe.html" class="btn-primary btn-primary-cafe" style="flex-shrink:0;">
+          <span>Explore Café Supreme</span>
+          <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip section-sushi-alt">
+    <span class="material-symbols-outlined cta-icon">sailing</span>
+    <h2 class="cta-title font-display">Ready to Taste the Ocean?</h2>
+    <p class="cta-desc">Order your favorites online or visit us. Freshness is always just a roll away.</p>
+    <div class="cta-buttons">
+      <a href="order.html" class="btn-primary" style="min-width:160px;">Order Online</a>
+      <a href="locations.html" class="btn-outline" style="min-width:160px;">Find Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name font-display">Sushi Bay</span>
+        <span class="footer-sep">|</span>
+        <span class="footer-est">Café Supreme</span>
+      </div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3 class="cart-title font-display">Your Order</h3>
+      <button class="cart-close" onclick="toggleCart()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-value" id="cart-total">0 L.E</span>
+      </div>
+      <button class="cart-checkout-btn" onclick="window.location.href='order.html'">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadMenu('sushi.json', 'sushi-menu-grid', 'Sushi Bay', false);
+    });
+  </script>
+</body>
+
+</html>

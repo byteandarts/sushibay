@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locations — Café Supreme & Sushi Bay</title>
+  <meta name="description"
+    content="Find your nearest Café Supreme and Sushi Bay location. Visit us for the perfect meal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="texture-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="site-nav nav-shared">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="material-symbols-outlined" style="color:var(--sushi-gold);font-size:1.75rem;">location_on</span>
+        <span class="nav-logo-text">Locations</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="cafe.html">Café Supreme</a></li>
+        <li><a href="sushi.html">Sushi Bay</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="locations.html" class="active">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="order.html" class="nav-btn nav-btn-sushi">Order Now</a>
+        <button class="mobile-menu-btn" onclick="toggleMobileNav()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" onclick="toggleMobileNav()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Café Supreme</a>
+    <a href="sushi.html">Sushi Bay</a>
+    <a href="story.html">Our Story</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Header -->
+  <section class="section section-shared" style="padding-bottom:2rem;">
+    <div class="container">
+      <div class="story-hero-section fade-in" style="padding-bottom:2rem;">
+        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Find Us</span>
+        <h1 class="story-hero-title font-display">Our Locations</h1>
+        <p class="story-hero-subtitle">
+          Visit us at any of our branches. Some locations feature both Café Supreme and Sushi Bay — the ultimate dining
+          destination.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div style="display:flex;justify-content:center;gap:0.75rem;margin-bottom:3rem;flex-wrap:wrap;">
+        <button class="menu-tab active" onclick="filterBranches('all', this)">All Locations</button>
+        <button class="menu-tab" onclick="filterBranches('both', this)">Café + Sushi Bay</button>
+        <button class="menu-tab" onclick="filterBranches('cafe', this)">Café Only</button>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.76941027501!2d31.1657!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c21ccfa611%3A0x9d7e0f57c0e948fe!2sCairo%2C%20Egypt!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Our locations map"></iframe>
+      </div>
+
+      <!-- Branch Cards -->
+      <div class="branch-cards fade-in" id="branch-cards">
+        <!-- Main Branch -->
+        <div class="branch-card" data-type="both">
+          <h3 class="branch-name font-display">Main Branch</h3>
+          <span class="branch-badge badge-both">Café Supreme + Sushi Bay</span>
+          <div class="branch-info">
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Cairo, Egypt</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <span>Open Daily: 8:00 AM – 2:00 AM</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">call</span>
+              <span>19000</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span style="color:var(--sushi-gold);">Both menus available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gezerat El Ward Club -->
+        <div class="branch-card" data-type="both">
+          <h3 class="branch-name font-display">Gezerat El Ward Club</h3>
+          <span class="branch-badge badge-both">Café Supreme + Sushi Bay</span>
+          <div class="branch-info">
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Gezerat El Ward Club, Cairo</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">schedule</span>
+              <span>Open Daily: 9:00 AM – 1:00 AM</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">call</span>
+              <span>19000</span>
+            </div>
+            <div class="branch-info-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span style="color:var(--sushi-gold);">Both menus available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip section-shared-alt">
+    <span class="material-symbols-outlined cta-icon">delivery_dining</span>
+    <h2 class="cta-title font-display">Can't Make It to Us?</h2>
+    <p class="cta-desc">Order online for delivery or pickup. Mix and match from both Café Supreme and Sushi Bay.</p>
+    <div class="cta-buttons">
+      <a href="order.html" class="btn-primary" style="min-width:180px;">Order Online</a>
+      <a href="contact.html" class="btn-outline" style="min-width:180px;">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-sep">&</span>
+        <span class="footer-brand-name font-display">Sushi Bay</span>
+      </div>
+      <div class="footer-links">
+        <a href="cafe.html">Café</a>
+        <a href="sushi.html">Sushi</a>
+        <a href="story.html">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function filterBranches(type, btn) {
+      document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.branch-card').forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

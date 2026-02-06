@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Supreme — The Good Living</title>
+  <meta name="description"
+    content="Café Supreme – Premium coffee, hearty breakfasts, international mains, and irresistible desserts. The Good Living starts here.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="texture-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="site-nav nav-cafe">
+    <div class="nav-inner">
+      <a href="cafe.html" class="nav-logo">
+        <img src="images/cafe-logo-sm.png" alt="Café Supreme" style="background:#fff;border-radius:6px;padding:3px;">
+        <span class="nav-logo-text">Café Supreme</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="sushi.html">Sushi Bay</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-delivery" style="display:none;">
+          <span class="nav-delivery-label">Delivery</span>
+          <span class="nav-delivery-number" style="color:var(--cafe-warm);">19000</span>
+        </div>
+        <button class="nav-btn nav-btn-cafe" onclick="toggleCart()" style="position:relative;">
+          <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
+          Order
+          <span class="cart-badge cart-count" style="display:none;">0</span>
+        </button>
+        <button class="mobile-menu-btn" onclick="toggleMobileNav()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" onclick="toggleMobileNav()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="#home" onclick="toggleMobileNav()">Home</a>
+    <a href="#menu" onclick="toggleMobileNav()">Menu</a>
+    <a href="#experience" onclick="toggleMobileNav()">Experience</a>
+    <a href="sushi.html">Sushi Bay</a>
+    <a href="story.html">Our Story</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero hero-cafe">
+    <div class="hero-bg">
+      <img src="images/cafe-hero.webp" alt="Beautiful café interior with warm lighting and coffee being poured">
+      <div class="hero-overlay-bottom"></div>
+      <div class="hero-overlay-left"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <span class="hero-tag">The Good Living</span>
+        <h1 class="hero-title font-display">
+          Start Your Day <br><em>Supreme</em>
+        </h1>
+        <p class="hero-desc">
+          Premium coffee, hearty breakfasts, and international mains crafted with love. Life is too short for bad coffee
+          or average meals.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary btn-primary-cafe">
+            <span>View Menu</span>
+            <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+          </a>
+          <a href="order.html" class="btn-outline">
+            <span>Order Online</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="material-symbols-outlined" style="color:rgba(255,255,255,0.5);">keyboard_arrow_down</span>
+    </div>
+  </header>
+
+  <!-- Highlights Section -->
+  <section class="section section-cafe">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-tag cafe-tag">Signature Highlights</span>
+          <h2 class="section-title font-display">What We're Known For</h2>
+        </div>
+        <p class="section-desc" style="margin-left:auto;">From our legendary Molten Cake to the perfect Spanish Latte,
+          discover what makes Café Supreme unforgettable.</p>
+      </div>
+      <div class="card-grid cafe-feature fade-in">
+        <!-- Coffee -->
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="images/highlight-coffee.webp" alt="Spanish Latte being crafted with beautiful latte art">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">Premium Coffee</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">From classic Espresso to our signature Spanish Latte — every cup is crafted
+              from premium beans.</p>
+          </div>
+        </div>
+        <!-- Breakfast -->
+        <div class="feature-card" style="margin-top:3rem;">
+          <div class="feature-card-img">
+            <img src="images/highlight-breakfast.webp"
+              alt="Beautiful breakfast spread with eggs, croissants, and fresh juices">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">All-Day Breakfast</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">Egg Pie, Classic Omelette, Salmon on Loaf — our breakfast menu serves comfort
+              any hour of the day.</p>
+          </div>
+        </div>
+        <!-- Desserts -->
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="images/highlight-desserts.webp"
+              alt="Signature molten cake with vanilla ice cream, warm chocolate flowing">
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <h3 class="feature-card-title font-display">Irresistible Desserts</h3>
+            <div class="feature-card-line"></div>
+            <p class="feature-card-desc">Our legendary Molten Cake, Lotus Carrot Cake, and handcrafted Waffles — the
+              perfect sweet ending.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Menu Section -->
+  <section id="menu" class="section section-cafe-alt cafe-menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag cafe-tag">Full Menu</span>
+        <h2 class="section-title font-display">The Café Supreme Menu</h2>
+        <p class="section-desc">From breakfast to dessert, every dish is made with care and served with love.</p>
+      </div>
+      <div class="menu-tabs cafe-tabs"></div>
+      <div class="menu-grid" id="cafe-menu-grid">
+        <div class="cart-empty" style="grid-column:1/-1;">Loading menu...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Experience Section -->
+  <section id="experience" class="section section-cafe cafe-story">
+    <div class="container">
+      <div class="story-section fade-in">
+        <div class="story-text">
+          <div>
+            <span class="section-tag cafe-tag">The Experience</span>
+            <h2 class="section-title font-display" style="margin-top:0.5rem;">
+              The Good Living <br>Philosophy
+            </h2>
+          </div>
+          <div class="story-text-body">
+            <div class="story-line cafe-story-line"></div>
+            <div class="story-paragraphs">
+              <p>
+                At Café Supreme, we believe that life is too short for bad coffee or average meals. Our "Good Living"
+                philosophy is about creating a space that feels like a second home.
+              </p>
+              <p>
+                From the warm lighting to the plush seating, every detail is designed to invite you to stay awhile.
+                Whether you're here for a quick espresso or a long brunch with friends, you're part of our family.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="story.html" class="btn-outline" style="display:inline-flex;">
+              <span>Read Our Full Story</span>
+              <span class="material-symbols-outlined" style="font-size:1rem;">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <div class="story-image">
+          <div class="story-image-wrapper">
+            <div class="story-image-border"></div>
+            <img src="images/cafe-interior.webp" alt="Cozy café interior with warm lighting and comfortable seating">
+            <div class="story-badge" style="background:var(--cafe-surface);">
+              <span class="story-badge-number" style="color:var(--cafe-warm);">♥</span>
+              <span class="story-badge-label">Good Living</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section-cafe-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag cafe-tag">Gallery</span>
+        <h2 class="section-title font-display">Inside Café Supreme</h2>
+      </div>
+      <div class="gallery-grid fade-in">
+        <div class="gallery-item"><img src="images/cafe-gallery-1.webp" alt="Café interior warm seating area"
+            loading="lazy"></div>
+        <div class="gallery-item"><img src="images/cafe-gallery-2.webp" alt="Barista crafting coffee" loading="lazy">
+        </div>
+        <div class="gallery-item"><img src="images/cafe-gallery-3.webp" alt="Breakfast spread on table" loading="lazy">
+        </div>
+        <div class="gallery-item"><img src="images/cafe-gallery-4.webp" alt="Molten cake dessert" loading="lazy"></div>
+        <div class="gallery-item"><img src="images/cafe-gallery-5.webp" alt="Friends enjoying brunch" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Switch Banner -->
+  <section class="section section-cafe" style="padding:3rem 0;">
+    <div class="container">
+      <div class="switch-banner">
+        <div class="switch-banner-text">
+          <h3 class="switch-banner-title font-display">Craving Something Different?</h3>
+          <p class="switch-banner-desc">Try our Sushi Bay for fresh Japanese cuisine — right under the same roof.</p>
+        </div>
+        <a href="sushi.html" class="btn-primary" style="flex-shrink:0;">
+          <span>Explore Sushi Bay</span>
+          <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip section-cafe-alt cafe-cta">
+    <span class="material-symbols-outlined cta-icon">local_cafe</span>
+    <h2 class="cta-title font-display">Ready for the Good Living?</h2>
+    <p class="cta-desc">Order your favorites online or visit us at any of our locations. The perfect meal is waiting.
+    </p>
+    <div class="cta-buttons">
+      <a href="order.html" class="btn-primary btn-primary-cafe" style="min-width:160px;">Order Online</a>
+      <a href="locations.html" class="btn-outline" style="min-width:160px;">Find Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-sep">|</span>
+        <span class="footer-est">Sushi Bay</span>
+      </div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3 class="cart-title font-display">Your Order</h3>
+      <button class="cart-close" onclick="toggleCart()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-value" id="cart-total">0 L.E</span>
+      </div>
+      <button class="cart-checkout-btn" style="background:var(--cafe-primary);"
+        onclick="window.location.href='order.html'">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadMenu('cafe.json', 'cafe-menu-grid', 'Café Supreme', true);
+    });
+  </script>
+</body>
+
+</html>

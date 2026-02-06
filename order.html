@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online — Café Supreme & Sushi Bay</title>
+  <meta name="description"
+    content="Order from both Café Supreme and Sushi Bay in one cart. Mix and match your favorites for delivery or pickup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .order-step {
+      display: none;
+    }
+
+    .order-step.active {
+      display: block;
+    }
+
+    .step-indicator {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 3rem;
+    }
+
+    .step-dot {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .step-dot:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .step-dot:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .step-dot.active {
+      color: #fff;
+      background: var(--sushi-primary);
+      border-color: var(--sushi-primary);
+    }
+
+    .step-dot.completed {
+      color: var(--sushi-gold);
+      background: rgba(179, 144, 78, 0.1);
+      border-color: rgba(179, 144, 78, 0.2);
+    }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .step-dot.active .step-num {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .step-dot.completed .step-num {
+      background: var(--sushi-gold);
+      color: #000;
+    }
+
+    .branch-select {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .branch-option {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 2px solid rgba(255, 255, 255, 0.06);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .branch-option:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .branch-option.selected {
+      border-color: var(--sushi-gold);
+      background: rgba(179, 144, 78, 0.05);
+    }
+
+    .branch-option h3 {
+      font-family: 'Noto Serif', serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .branch-option p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .order-menu-switch {
+      display: flex;
+      gap: 0;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    .menu-switch-btn {
+      padding: 0.75rem 2rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .menu-switch-btn:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .menu-switch-btn:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .menu-switch-btn.active {
+      color: #fff;
+      background: var(--sushi-primary);
+      border-color: var(--sushi-primary);
+    }
+
+    .menu-switch-btn.cafe-active {
+      background: var(--cafe-primary);
+      border-color: var(--cafe-primary);
+      color: #fff;
+    }
+
+    .checkout-summary {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="texture-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="site-nav nav-shared">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="material-symbols-outlined" style="color:var(--sushi-gold);font-size:1.75rem;">shopping_cart</span>
+        <span class="nav-logo-text">Order Online</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="cafe.html">Café Supreme</a></li>
+        <li><a href="sushi.html">Sushi Bay</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-btn nav-btn-sushi" onclick="toggleCart()" style="position:relative;">
+          <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
+          Cart
+          <span class="cart-badge cart-count" style="display:none;">0</span>
+        </button>
+        <button class="mobile-menu-btn" onclick="toggleMobileNav()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" onclick="toggleMobileNav()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Café Supreme</a>
+    <a href="sushi.html">Sushi Bay</a>
+    <a href="story.html">Our Story</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Order Flow -->
+  <section class="section section-shared">
+    <div class="container">
+      <div class="story-hero-section fade-in" style="padding-bottom:1rem;">
+        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Unified Cart</span>
+        <h1 class="story-hero-title font-display" style="font-size:2.5rem;">Order Online</h1>
+        <p class="story-hero-subtitle">
+          Mix and match from both Café Supreme and Sushi Bay in a single order.
+        </p>
+      </div>
+
+      <!-- Step Indicators -->
+      <div class="step-indicator">
+        <div class="step-dot active" id="step-dot-1" onclick="goToStep(1)">
+          <span class="step-num">1</span>
+          Select Branch
+        </div>
+        <div class="step-dot" id="step-dot-2" onclick="goToStep(2)">
+          <span class="step-num">2</span>
+          Add Items
+        </div>
+        <div class="step-dot" id="step-dot-3" onclick="goToStep(3)">
+          <span class="step-num">3</span>
+          Checkout
+        </div>
+      </div>
+
+      <!-- Step 1: Select Branch -->
+      <div class="order-step active" id="step-1">
+        <h2 class="section-title font-display" style="text-align:center;margin-bottom:2rem;font-size:1.5rem;">Choose
+          Your Branch</h2>
+        <div class="branch-select">
+          <div class="branch-option" onclick="selectBranch(this, 'Main Branch')">
+            <span class="material-symbols-outlined"
+              style="font-size:2.5rem;color:var(--sushi-gold);margin-bottom:1rem;">storefront</span>
+            <h3>Main Branch</h3>
+            <p>Café Supreme + Sushi Bay</p>
+            <span class="branch-badge badge-both" style="margin-top:1rem;">Both Menus</span>
+          </div>
+          <div class="branch-option" onclick="selectBranch(this, 'Gezerat El Ward Club')">
+            <span class="material-symbols-outlined"
+              style="font-size:2.5rem;color:var(--sushi-gold);margin-bottom:1rem;">storefront</span>
+            <h3>Gezerat El Ward Club</h3>
+            <p>Café Supreme + Sushi Bay</p>
+            <span class="branch-badge badge-both" style="margin-top:1rem;">Both Menus</span>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <button class="btn-primary" id="step1-next" onclick="goToStep(2)" disabled style="opacity:0.5;">
+            <span>Continue to Menu</span>
+            <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Add Items -->
+      <div class="order-step" id="step-2">
+        <div class="order-menu-switch">
+          <button class="menu-switch-btn cafe-active" id="switch-cafe" onclick="showOrderMenu('cafe')">
+            <span class="material-symbols-outlined"
+              style="font-size:1rem;vertical-align:middle;margin-right:0.5rem;">local_cafe</span>
+            Café Supreme
+          </button>
+          <button class="menu-switch-btn" id="switch-sushi" onclick="showOrderMenu('sushi')">
+            <span class="material-symbols-outlined"
+              style="font-size:1rem;vertical-align:middle;margin-right:0.5rem;">set_meal</span>
+            Sushi Bay
+          </button>
+        </div>
+
+        <!-- Cafe Menu -->
+        <div id="order-cafe-section" class="cafe-menu">
+          <div class="menu-tabs cafe-tabs"></div>
+          <div class="menu-grid" id="order-cafe-grid">
+            <div class="cart-empty" style="grid-column:1/-1;">Loading café menu...</div>
+          </div>
+        </div>
+
+        <!-- Sushi Menu -->
+        <div id="order-sushi-section" style="display:none;">
+          <div class="menu-tabs"></div>
+          <div class="menu-grid" id="order-sushi-grid">
+            <div class="cart-empty" style="grid-column:1/-1;">Loading sushi menu...</div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <button class="btn-outline" onclick="goToStep(1)">
+            <span class="material-symbols-outlined" style="font-size:1rem;">arrow_back</span>
+            <span>Back</span>
+          </button>
+          <button class="btn-primary" onclick="goToStep(3)">
+            <span>Proceed to Checkout</span>
+            <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Checkout -->
+      <div class="order-step" id="step-3">
+        <div class="checkout-summary">
+          <h2 class="section-title font-display" style="text-align:center;margin-bottom:0.5rem;font-size:1.5rem;">Order
+            Summary</h2>
+          <p style="text-align:center;color:rgba(255,255,255,0.4);font-size:0.85rem;margin-bottom:2rem;"
+            id="checkout-branch">Branch: —</p>
+          <div id="checkout-items"></div>
+          <div
+            style="border-top:1px solid rgba(255,255,255,0.08);margin-top:1.5rem;padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:1rem;color:rgba(255,255,255,0.5);">Total</span>
+            <span class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--sushi-gold);"
+              id="checkout-total">0 L.E</span>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <h3 class="font-display" style="font-size:1rem;margin-bottom:1rem;">Delivery Details</h3>
+            <div class="form-grid" style="grid-template-columns:1fr 1fr;">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-input" placeholder="+20 xxx xxx xxxx">
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Address</label>
+                <textarea class="form-textarea" style="min-height:80px;" placeholder="Delivery address..."></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Notes</label>
+                <input type="text" class="form-input" placeholder="Any special requests?">
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:center;margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <button class="btn-outline" onclick="goToStep(2)">
+              <span class="material-symbols-outlined" style="font-size:1rem;">arrow_back</span>
+              <span>Add More Items</span>
+            </button>
+            <button class="btn-primary" style="flex:1;max-width:300px;justify-content:center;"
+              onclick="alert('Order placed! Thank you. You will receive a confirmation call shortly.')">
+              <span>Place Order</span>
+              <span class="material-symbols-outlined" style="font-size:1rem;">check_circle</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-sep">&</span>
+        <span class="footer-brand-name font-display">Sushi Bay</span>
+      </div>
+      <div class="footer-links">
+        <a href="cafe.html">Café</a>
+        <a href="sushi.html">Sushi</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3 class="cart-title font-display">Your Order</h3>
+      <button class="cart-close" onclick="toggleCart()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-value" id="cart-total">0 L.E</span>
+      </div>
+      <button class="cart-checkout-btn" onclick="toggleCart(); goToStep(3);">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    let selectedBranch = '';
+
+    function selectBranch(el, name) {
+      document.querySelectorAll('.branch-option').forEach(b => b.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedBranch = name;
+      const btn = document.getElementById('step1-next');
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }
+
+    function goToStep(n) {
+      if (n === 2 && !selectedBranch) return;
+      document.querySelectorAll('.order-step').forEach(s => s.classList.remove('active'));
+      document.getElementById('step-' + n).classList.add('active');
+      document.querySelectorAll('.step-dot').forEach((d, i) => {
+        d.classList.remove('active', 'completed');
+        if (i + 1 === n) d.classList.add('active');
+        else if (i + 1 < n) d.classList.add('completed');
+      });
+
+      if (n === 3) updateCheckout();
+      window.scrollTo({ top: 200, behavior: 'smooth' });
+    }
+
+    function showOrderMenu(type) {
+      const cafe = document.getElementById('order-cafe-section');
+      const sushi = document.getElementById('order-sushi-section');
+      const btnCafe = document.getElementById('switch-cafe');
+      const btnSushi = document.getElementById('switch-sushi');
+
+      if (type === 'cafe') {
+        cafe.style.display = '';
+        sushi.style.display = 'none';
+        btnCafe.classList.add('cafe-active');
+        btnSushi.classList.remove('active');
+      } else {
+        cafe.style.display = 'none';
+        sushi.style.display = '';
+        btnCafe.classList.remove('cafe-active');
+        btnSushi.classList.add('active');
+      }
+    }
+
+    function updateCheckout() {
+      document.getElementById('checkout-branch').textContent = 'Branch: ' + (selectedBranch || '—');
+      const items = Cart.items;
+      const container = document.getElementById('checkout-items');
+      if (items.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">No items in cart. Go back and add some items!</p>';
+      } else {
+        container.innerHTML = items.map(item => `
+                    <div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                        <div>
+                            <div style="font-size:0.9rem;">${item.name} <span style="color:rgba(255,255,255,0.3);">×${item.qty}</span></div>
+                            <div style="font-size:0.7rem;color:rgba(255,255,255,0.3);">${item.brand}</div>
+                        </div>
+                        <div style="color:var(--sushi-gold);font-family:'Noto Serif',serif;">${item.price * item.qty} L.E</div>
+                    </div>
+                `).join('');
+      }
+      document.getElementById('checkout-total').textContent = Cart.getTotal().toLocaleString() + ' L.E';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadMenu('cafe.json', 'order-cafe-grid', 'Café Supreme', true);
+      loadMenu('sushi.json', 'order-sushi-grid', 'Sushi Bay', false);
+    });
+  </script>
+</body>
+
+</html>
