@@ -483,7 +483,7 @@ body {
 
 .hero-title {
   font-family: 'Noto Serif', serif;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 400;
   line-height: 1.1;
   color: #fff;
@@ -545,6 +545,7 @@ body {
 .btn-outline {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   height: 3.5rem;
   padding: 0 2rem;
@@ -822,7 +823,7 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .feature-card {
@@ -1114,7 +1115,7 @@ body {
 
 .branch-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
