@@ -25,17 +25,22 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <span class="material-symbols-outlined" style="color:var(--sushi-gold);font-size:1.75rem;">restaurant</span>
-        <span class="nav-logo-text">Our Story</span>
+        <span class="nav-logo-text" data-i18n="nav_our_story">Our Story</span>
       </a>
       <ul class="nav-links">
-        <li><a href="cafe.html">Café Supreme</a></li>
-        <li><a href="sushi.html">Sushi Bay</a></li>
-        <li><a href="story.html" class="active">Our Story</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a></li>
+        <li><a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a></li>
+        <li><a href="story.html" class="active" data-i18n="nav_our_story">Our Story</a></li>
+        <li><a href="locations.html" data-i18n="nav_locations">Locations</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="order.html" class="nav-btn nav-btn-sushi">Order Now</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+            <span class="lang-btn-text">ع</span>
+          </button>
+        </div>
+        <a href="order.html" class="nav-btn nav-btn-sushi" data-i18n="nav_order_now">Order Now</a>
         <button class="mobile-menu-btn" onclick="toggleMobileNav()">
           <span class="material-symbols-outlined">menu</span>
         </button>
@@ -48,21 +53,22 @@
     <button class="mobile-close" onclick="toggleMobileNav()">
       <span class="material-symbols-outlined">close</span>
     </button>
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Café Supreme</a>
-    <a href="sushi.html">Sushi Bay</a>
-    <a href="story.html">Our Story</a>
-    <a href="locations.html">Locations</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="home_link">Home</a>
+    <a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a>
+    <a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a>
+    <a href="story.html" data-i18n="nav_our_story">Our Story</a>
+    <a href="locations.html" data-i18n="nav_locations">Locations</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Hero / Intro -->
   <section class="section section-shared" style="padding-top:4rem;">
     <div class="container">
       <div class="story-hero-section fade-in">
-        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Our Story</span>
-        <h1 class="story-hero-title font-display">Two Worlds. One Table.</h1>
-        <p class="story-hero-subtitle">
+        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;" data-i18n="nav_our_story">Our
+          Story</span>
+        <h1 class="story-hero-title font-display" data-i18n="story_title">Two Worlds. One Table.</h1>
+        <p class="story-hero-subtitle" data-i18n="story_subtitle">
           At Café Supreme & Sushi Bay, we believe you shouldn't have to compromise when it comes to good food.
           What started as a passion for the "Good Living" lifestyle has evolved into a unique dining destination where
           East meets West.
@@ -76,12 +82,16 @@
     <div class="container">
       <div class="story-block fade-in">
         <div class="story-block-content">
-          <span class="section-tag" style="display:block;margin-bottom:0.5rem;">How We Began</span>
-          <h2 class="section-title font-display" style="margin-bottom:1.5rem;">East Meets West</h2>
+          <span class="section-tag" style="display:block;margin-bottom:0.5rem;" data-i18n="story_how_began">How We
+            Began</span>
+          <h2 class="section-title font-display" style="margin-bottom:1.5rem;" data-i18n="story_east_meets_west">East
+            Meets West</h2>
           <div class="story-paragraphs">
-            <p>We recognized that the best moments happen when friends and families gather, but we also know that
+            <p data-i18n="story_combined_desc_1">We recognized that the best moments happen when friends and families
+              gather, but we also know that
               cravings are unique. That's why we brought two distinct culinary worlds together under one roof.</p>
-            <p>Whether you are craving the comfort of a gourmet burger and a hot latte, or the fresh snap of artisan
+            <p data-i18n="story_combined_desc_2">Whether you are craving the comfort of a gourmet burger and a hot
+              latte, or the fresh snap of artisan
               sushi, we have a seat waiting for you.</p>
           </div>
         </div>
@@ -97,20 +107,25 @@
     <div class="container">
       <div class="story-block reverse fade-in">
         <div class="story-block-content cafe-promise">
-          <span class="section-tag cafe-tag" style="display:block;margin-bottom:0.5rem;">The Café Supreme Story</span>
-          <h2 class="section-title font-display" style="margin-bottom:1.5rem;color:var(--cafe-warm);">
+          <span class="section-tag cafe-tag" style="display:block;margin-bottom:0.5rem;"
+            data-i18n="story_cafe_story">The Café Supreme Story</span>
+          <h2 class="section-title font-display" style="margin-bottom:1.5rem;color:var(--cafe-warm);"
+            data-i18n="story_good_living_quote">
             "The Good Living"
           </h2>
           <div class="story-paragraphs">
-            <p>Café Supreme was born out of a simple desire: to create a space that feels like a second home. We operate
+            <p data-i18n="story_cafe_desc_1">Café Supreme was born out of a simple desire: to create a space that feels
+              like a second home. We operate
               on the philosophy of "Good Living" — the idea that life is too short for bad coffee or average meals.</p>
-            <p>From our signature Spanish Latte to our legendary Molten Cake, every item on our menu is crafted to bring
+            <p data-i18n="story_cafe_desc_2">From our signature Spanish Latte to our legendary Molten Cake, every item
+              on our menu is crafted to bring
               you comfort. We are more than just a coffee shop; we are a destination for hearty breakfasts,
               international main courses, and the perfect environment to work, relax, or catch up with old friends.</p>
-            <p>When you are with us, you are family.</p>
+            <p data-i18n="story_cafe_desc_3">When you are with us, you are family.</p>
           </div>
           <div class="promise-box">
-            <p><strong>Our Promise:</strong> Premium beans, home-style recipes, and an atmosphere that invites you to
+            <p data-i18n="story_cafe_promise"><strong>Our Promise:</strong> Premium beans, home-style recipes, and an
+              atmosphere that invites you to
               stay a while.</p>
           </div>
         </div>
@@ -127,21 +142,27 @@
     <div class="container">
       <div class="story-block fade-in">
         <div class="story-block-content">
-          <span class="section-tag" style="display:block;margin-bottom:0.5rem;">The Sushi Bay Story</span>
-          <h2 class="section-title font-display" style="margin-bottom:1.5rem;color:var(--sushi-gold);">
+          <span class="section-tag" style="display:block;margin-bottom:0.5rem;" data-i18n="story_sushi_story">The Sushi
+            Bay Story</span>
+          <h2 class="section-title font-display" style="margin-bottom:1.5rem;color:var(--sushi-gold);"
+            data-i18n="story_freshness_quote">
             "Freshness Rolled Daily"
           </h2>
           <div class="story-paragraphs">
-            <p>Sushi Bay adds a different flavor to our story — one defined by precision, freshness, and creativity. We
+            <p data-i18n="story_sushi_desc_1">Sushi Bay adds a different flavor to our story — one defined by precision,
+              freshness, and creativity. We
               saw a need for high-quality Japanese cuisine that is both authentic and accessible.</p>
-            <p>Our chefs treat every roll as a canvas. Whether it's the crunch of our Fried Rolls or the delicate
+            <p data-i18n="story_sushi_desc_2">Our chefs treat every roll as a canvas. Whether it's the crunch of our
+              Fried Rolls or the delicate
               balance of our Sashimi Platters, we prioritize ingredients that are sourced fresh and prepared with skill.
             </p>
-            <p>We bring the vibrant energy of Asian fusion dining to your table, offering a lighter, zestier counterpart
+            <p data-i18n="story_sushi_desc_3">We bring the vibrant energy of Asian fusion dining to your table, offering
+              a lighter, zestier counterpart
               to your dining experience.</p>
           </div>
           <div class="promise-box" style="border-left-color:var(--sushi-gold);">
-            <p><strong>Our Promise:</strong> Catch-of-the-day freshness, artistic presentation, and bold flavors that
+            <p data-i18n="story_sushi_promise"><strong>Our Promise:</strong> Catch-of-the-day freshness, artistic
+              presentation, and bold flavors that
               excite the palate.</p>
           </div>
         </div>
@@ -159,12 +180,15 @@
       <div class="better-together fade-in">
         <span class="material-symbols-outlined"
           style="font-size:3rem;color:var(--sushi-gold);margin-bottom:1.5rem;">favorite</span>
-        <h3 class="font-display">Why We Are Better Together</h3>
-        <p>Have you ever tried to plan a dinner where one person wants pizza and the other wants sushi? We solved that.
+        <h3 class="font-display" data-i18n="story_better_together">Why We Are Better Together</h3>
+        <p data-i18n="story_better_desc_1">Have you ever tried to plan a dinner where one person wants pizza and the
+          other wants sushi? We solved that.
         </p>
-        <p>By uniting Café Supreme and Sushi Bay, we offer the ultimate dining freedom. You can enjoy a Supreme Club
+        <p data-i18n="story_better_desc_2">By uniting Café Supreme and Sushi Bay, we offer the ultimate dining freedom.
+          You can enjoy a Supreme Club
           Sandwich while your partner enjoys a Spicy Lemon Roll, and you can both split a Molten Cake for dessert.</p>
-        <p class="tagline font-display">Diverse Tastes. Unified Quality. Unforgettable Memories.</p>
+        <p class="tagline font-display" data-i18n="story_tagline">Diverse Tastes. Unified Quality. Unforgettable
+          Memories.</p>
       </div>
     </div>
   </section>
@@ -172,11 +196,14 @@
   <!-- CTA -->
   <section class="cta-strip section-shared-alt">
     <span class="material-symbols-outlined cta-icon">restaurant</span>
-    <h2 class="cta-title font-display">Come Experience It Yourself</h2>
-    <p class="cta-desc">Visit any of our locations or order online. Your table is waiting.</p>
+    <h2 class="cta-title font-display" data-i18n="story_cta_title">Come Experience It Yourself</h2>
+    <p class="cta-desc" data-i18n="story_cta_desc">Visit any of our locations or order online. Your table is waiting.
+    </p>
     <div class="cta-buttons">
-      <a href="cafe.html" class="btn-primary btn-primary-cafe" style="min-width:180px;">Explore Café Supreme</a>
-      <a href="sushi.html" class="btn-primary" style="min-width:180px;">Explore Sushi Bay</a>
+      <a href="cafe.html" class="btn-primary btn-primary-cafe" style="min-width:180px;"
+        data-i18n="story_explore_cafe">Explore Café Supreme</a>
+      <a href="sushi.html" class="btn-primary" style="min-width:180px;" data-i18n="story_explore_sushi">Explore Sushi
+        Bay</a>
     </div>
   </section>
 
@@ -184,21 +211,22 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-brand-name font-display" data-i18n="cafe_name">Café Supreme</span>
         <span class="footer-sep">&</span>
-        <span class="footer-brand-name font-display">Sushi Bay</span>
+        <span class="footer-brand-name font-display" data-i18n="sushi_name">Sushi Bay</span>
       </div>
       <div class="footer-links">
-        <a href="cafe.html">Café</a>
-        <a href="sushi.html">Sushi</a>
-        <a href="locations.html">Locations</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Instagram</a>
+        <a href="cafe.html" data-i18n="cafe_link">Café</a>
+        <a href="sushi.html" data-i18n="sushi_link">Sushi</a>
+        <a href="locations.html" data-i18n="footer_locations">Locations</a>
+        <a href="contact.html" data-i18n="footer_contact">Contact</a>
+        <a href="#" data-i18n="footer_instagram">Instagram</a>
       </div>
-      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+      <div class="footer-copy" data-i18n="footer_copyright">© 2026 Café Supreme & Sushi Bay.</div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 

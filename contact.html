@@ -25,17 +25,23 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <span class="material-symbols-outlined" style="color:var(--sushi-gold);font-size:1.75rem;">mail</span>
-        <span class="nav-logo-text">Contact</span>
+        <span class="nav-logo-text" data-i18n="nav_contact">Contact</span>
       </a>
       <ul class="nav-links">
-        <li><a href="cafe.html">Café Supreme</a></li>
-        <li><a href="sushi.html">Sushi Bay</a></li>
-        <li><a href="story.html">Our Story</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a></li>
+        <li><a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a></li>
+        <li><a href="story.html" data-i18n="nav_our_story">Our Story</a></li>
+        <li><a href="locations.html" data-i18n="nav_locations">Locations</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="order.html" class="nav-btn nav-btn-sushi">Order Now</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+            <span class="lang-btn-text">ع</span>
+          </button>
+        </div>
+        <a href="#" class="nav-btn nav-btn-sushi btn-disabled" data-coming-soon="Coming Soon"
+          data-i18n="nav_order_now">Order Now</a>
         <button class="mobile-menu-btn" onclick="toggleMobileNav()">
           <span class="material-symbols-outlined">menu</span>
         </button>
@@ -48,21 +54,22 @@
     <button class="mobile-close" onclick="toggleMobileNav()">
       <span class="material-symbols-outlined">close</span>
     </button>
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Café Supreme</a>
-    <a href="sushi.html">Sushi Bay</a>
-    <a href="story.html">Our Story</a>
-    <a href="locations.html">Locations</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="home_link">Home</a>
+    <a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a>
+    <a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a>
+    <a href="story.html" data-i18n="nav_our_story">Our Story</a>
+    <a href="locations.html" data-i18n="nav_locations">Locations</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Header -->
   <section class="section section-shared" style="padding-bottom:2rem;">
     <div class="container">
       <div class="story-hero-section fade-in" style="padding-bottom:2rem;">
-        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Get In Touch</span>
-        <h1 class="story-hero-title font-display">Contact & Feedback</h1>
-        <p class="story-hero-subtitle">
+        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;" data-i18n="contact_get_in_touch">Get
+          In Touch</span>
+        <h1 class="story-hero-title font-display" data-i18n="contact_title">Contact & Feedback</h1>
+        <p class="story-hero-subtitle" data-i18n="contact_subtitle">
           Whether it's a catering request, corporate event, or career inquiry — we'd love to hear from you.
         </p>
       </div>
@@ -72,45 +79,50 @@
   <!-- Contact Form + Info -->
   <section class="section section-shared-alt" style="padding-top:2rem;">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+      <div class="contact-grid">
         <!-- Form -->
         <div class="fade-in">
-          <h2 class="section-title font-display" style="font-size:1.75rem;margin-bottom:2rem;">Send Us a Message</h2>
+          <h2 class="section-title font-display" style="font-size:1.75rem;margin-bottom:2rem;"
+            data-i18n="contact_send_message">Send Us a Message</h2>
           <form class="form-grid"
-            onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent. We will get back to you shortly.');">
+            onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'ar' ? 'شكراً لك! تم إرسال رسالتك. سنعود إليك قريباً.' : 'Thank you! Your message has been sent. We will get back to you shortly.');">
             <div class="form-group">
-              <label class="form-label">Full Name</label>
-              <input type="text" class="form-input" placeholder="Your name" required>
+              <label class="form-label" data-i18n="contact_name">Full Name</label>
+              <input type="text" class="form-input" placeholder="Your name" data-i18n="contact_form_name_placeholder"
+                required>
             </div>
             <div class="form-group">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-input" placeholder="your@email.com" required>
+              <label class="form-label" data-i18n="contact_email">Email</label>
+              <input type="email" class="form-input" placeholder="your@email.com"
+                data-i18n="contact_form_email_placeholder" required>
             </div>
             <div class="form-group">
-              <label class="form-label">Phone</label>
-              <input type="tel" class="form-input" placeholder="+20 xxx xxx xxxx">
+              <label class="form-label" data-i18n="contact_phone">Phone</label>
+              <input type="tel" class="form-input" placeholder="+20 xxx xxx xxxx"
+                data-i18n="contact_form_phone_placeholder">
             </div>
             <div class="form-group">
-              <label class="form-label">Subject</label>
+              <label class="form-label" data-i18n="contact_subject">Subject</label>
               <select class="form-select" required>
-                <option value="">Select a topic...</option>
-                <option>General Inquiry</option>
-                <option>Catering Request — Wedding</option>
-                <option>Catering Request — Corporate Event</option>
-                <option>Catering Request — Private Party</option>
-                <option>Feedback</option>
-                <option>Partnership Opportunity</option>
-                <option>Career Application</option>
-                <option>Other</option>
+                <option value="" data-i18n="contact_form_subject_placeholder">Select a topic...</option>
+                <option data-i18n="contact_form_subject_general">General Inquiry</option>
+                <option data-i18n="contact_form_subject_catering_wedding">Catering Request — Wedding</option>
+                <option data-i18n="contact_form_subject_catering_corporate">Catering Request — Corporate Event</option>
+                <option data-i18n="contact_form_subject_catering_party">Catering Request — Private Party</option>
+                <option data-i18n="contact_form_subject_feedback">Feedback</option>
+                <option data-i18n="contact_form_subject_partnership">Partnership Opportunity</option>
+                <option data-i18n="contact_form_subject_career">Career Application</option>
+                <option data-i18n="contact_form_subject_other">Other</option>
               </select>
             </div>
             <div class="form-group full-width">
-              <label class="form-label">Message</label>
-              <textarea class="form-textarea" placeholder="Tell us more..." required></textarea>
+              <label class="form-label" data-i18n="contact_message">Message</label>
+              <textarea class="form-textarea" placeholder="Tell us more..." data-i18n="contact_form_message_placeholder"
+                required></textarea>
             </div>
             <div class="form-group full-width">
               <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
-                <span>Send Message</span>
+                <span data-i18n="contact_send_btn">Send Message</span>
                 <span class="material-symbols-outlined" style="font-size:1rem;">send</span>
               </button>
             </div>
@@ -119,7 +131,8 @@
 
         <!-- Info Side -->
         <div class="fade-in">
-          <h2 class="section-title font-display" style="font-size:1.75rem;margin-bottom:2rem;">Quick Contact</h2>
+          <h2 class="section-title font-display" style="font-size:1.75rem;margin-bottom:2rem;"
+            data-i18n="contact_quick">Quick Contact</h2>
 
           <div style="display:flex;flex-direction:column;gap:2rem;">
             <!-- Phone -->
@@ -129,8 +142,9 @@
                 <span class="material-symbols-outlined" style="color:var(--sushi-gold);">call</span>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem;">Call Us</div>
-                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;">19000 — Available daily</div>
+                <div style="font-weight:600;margin-bottom:0.25rem;" data-i18n="contact_call_us">Call Us</div>
+                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;">19000 — <span
+                    data-i18n="contact_available">Available daily</span></div>
               </div>
             </div>
 
@@ -141,8 +155,9 @@
                 <span class="material-symbols-outlined" style="color:var(--sushi-gold);">mail</span>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem;">Email</div>
-                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;">info@cafesupreme.com</div>
+                <div style="font-weight:600;margin-bottom:0.25rem;" data-i18n="contact_email_label">Email</div>
+                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;" data-i18n="contact_email_value">
+                  info@cafesupreme.com</div>
               </div>
             </div>
 
@@ -153,8 +168,9 @@
                 <span class="material-symbols-outlined" style="color:var(--sushi-gold);">schedule</span>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem;">Opening Hours</div>
-                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;">Daily: 8:00 AM – 2:00 AM</div>
+                <div style="font-weight:600;margin-bottom:0.25rem;" data-i18n="contact_hours_title">Opening Hours</div>
+                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;" data-i18n="contact_hours_value">Daily: 8:00
+                  AM – 2:00 AM</div>
               </div>
             </div>
 
@@ -165,8 +181,9 @@
                 <span class="material-symbols-outlined" style="color:var(--sushi-gold);">location_on</span>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem;">Locations</div>
-                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;">Main Branch, Cairo · Gezerat El Ward Club
+                <div style="font-weight:600;margin-bottom:0.25rem;" data-i18n="contact_locations_title">Locations</div>
+                <div style="color:rgba(255,255,255,0.4);font-size:0.9rem;" data-i18n="contact_locations_value">Main
+                  Branch, Cairo · Gezerat El Ward Club
                 </div>
               </div>
             </div>
@@ -178,25 +195,31 @@
             <h3 class="font-display" style="font-size:1.25rem;margin-bottom:0.75rem;">
               <span class="material-symbols-outlined"
                 style="color:var(--sushi-gold);vertical-align:middle;margin-right:0.5rem;">work</span>
-              Career Opportunities
+              <span data-i18n="contact_careers_title">Career Opportunities</span>
             </h3>
-            <p style="color:rgba(255,255,255,0.4);font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;">
+            <p style="color:rgba(255,255,255,0.4);font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;"
+              data-i18n="contact_careers_desc">
               We're always looking for talented people to join our team. Whether you're a passionate barista, skilled
               sushi chef, or hospitality professional — we'd love to meet you.
             </p>
             <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
               <span
-                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(200,149,108,0.3);color:var(--cafe-warm);border-radius:2px;">Barista</span>
+                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(200,149,108,0.3);color:var(--cafe-warm);border-radius:2px;"
+                data-i18n="contact_career_barista">Barista</span>
               <span
-                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(200,149,108,0.3);color:var(--cafe-warm);border-radius:2px;">Kitchen
+                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(200,149,108,0.3);color:var(--cafe-warm);border-radius:2px;"
+                data-i18n="contact_career_chef">Kitchen
                 Chef</span>
               <span
-                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(179,144,78,0.3);color:var(--sushi-gold);border-radius:2px;">Sushi
+                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(179,144,78,0.3);color:var(--sushi-gold);border-radius:2px;"
+                data-i18n="contact_career_sushi_chef">Sushi
                 Chef</span>
               <span
-                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(179,144,78,0.3);color:var(--sushi-gold);border-radius:2px;">Server</span>
+                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(179,144,78,0.3);color:var(--sushi-gold);border-radius:2px;"
+                data-i18n="contact_career_server">Server</span>
               <span
-                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);border-radius:2px;">Manager</span>
+                style="padding:0.4rem 1rem;font-size:0.7rem;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);border-radius:2px;"
+                data-i18n="contact_career_manager">Manager</span>
             </div>
           </div>
         </div>
@@ -208,20 +231,21 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-brand-name font-display" data-i18n="cafe_name">Café Supreme</span>
         <span class="footer-sep">&</span>
-        <span class="footer-brand-name font-display">Sushi Bay</span>
+        <span class="footer-brand-name font-display" data-i18n="sushi_name">Sushi Bay</span>
       </div>
       <div class="footer-links">
-        <a href="cafe.html">Café</a>
-        <a href="sushi.html">Sushi</a>
-        <a href="story.html">Our Story</a>
-        <a href="locations.html">Locations</a>
+        <a href="cafe.html" data-i18n="cafe_link">Café</a>
+        <a href="sushi.html" data-i18n="sushi_link">Sushi</a>
+        <a href="story.html" data-i18n="footer_our_story">Our Story</a>
+        <a href="locations.html" data-i18n="footer_locations">Locations</a>
       </div>
-      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+      <div class="footer-copy" data-i18n="footer_copyright">© 2026 Café Supreme & Sushi Bay.</div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 

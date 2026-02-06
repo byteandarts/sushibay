@@ -32,11 +32,12 @@
             <div class="splash-content">
                 <img src="images/cafe-logo.png" alt="Café Supreme" class="splash-logo"
                     style="background: rgba(255,255,255,0.9); border-radius: 12px; padding: 10px;">
-                <h2 class="splash-title font-display">Café Supreme</h2>
-                <p class="splash-subtitle">The Good Living — Premium coffee, hearty breakfasts, and international mains
+                <h2 class="splash-title font-display" data-i18n="cafe_name">Café Supreme</h2>
+                <p class="splash-subtitle" data-i18n="splash_cafe_desc">The Good Living — Premium coffee, hearty
+                    breakfasts, and international mains
                     crafted with love.</p>
                 <a href="cafe.html" class="splash-btn splash-btn-cafe">
-                    Enter Good Living
+                    <span data-i18n="splash_enter_cafe">Enter Good Living</span>
                     <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
                 </a>
             </div>
@@ -49,29 +50,40 @@
             <div class="splash-content">
                 <img src="images/sushi-logo.png" alt="Sushi Bay" class="splash-logo"
                     style="border-radius: 12px; padding: 5px;">
-                <h2 class="splash-title font-display">Sushi Bay</h2>
-                <p class="splash-subtitle">Freshly Rolled. Artfully Crafted — Creative sushi and Japanese cuisine made
+                <h2 class="splash-title font-display" data-i18n="sushi_name">Sushi Bay</h2>
+                <p class="splash-subtitle" data-i18n="splash_sushi_desc">Freshly Rolled. Artfully Crafted — Creative
+                    sushi and Japanese cuisine made
                     from the freshest catch.</p>
                 <a href="sushi.html" class="splash-btn splash-btn-sushi">
-                    Enter Sushi Bay
+                    <span data-i18n="splash_enter_sushi">Enter Sushi Bay</span>
                     <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- Language Switcher (floating) -->
+    <div class="lang-switcher" style="position:fixed;top:1rem;right:1rem;z-index:100;">
+        <button class="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+            <span class="lang-btn-text">ع</span>
+        </button>
+    </div>
+
     <!-- Shared Footer -->
     <div class="splash-footer">
-        <span class="splash-footer-text font-display">"Two Great Tastes, One Location."</span>
+        <span class="splash-footer-text font-display" data-i18n="splash_tagline">"Two Great Tastes, One
+            Location."</span>
         <a href="locations.html" class="splash-footer-link">
             <span class="material-symbols-outlined" style="font-size:1rem;">location_on</span>
-            Find Nearest Branch
+            <span data-i18n="splash_find_branch">Find Nearest Branch</span>
         </a>
         <a href="story.html" class="splash-footer-link">
             <span class="material-symbols-outlined" style="font-size:1rem;">auto_stories</span>
-            Our Story
+            <span data-i18n="nav_our_story">Our Story</span>
         </a>
     </div>
+
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

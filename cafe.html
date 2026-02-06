@@ -28,23 +28,23 @@
         <span class="nav-logo-text">Café Supreme</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="sushi.html">Sushi Bay</a></li>
-        <li><a href="story.html">Our Story</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+        <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a></li>
+        <li><a href="story.html" data-i18n="nav_our_story">Our Story</a></li>
+        <li><a href="locations.html" data-i18n="nav_locations">Locations</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <div class="nav-delivery" style="display:none;">
-          <span class="nav-delivery-label">Delivery</span>
-          <span class="nav-delivery-number" style="color:var(--cafe-warm);">19000</span>
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+            <span class="lang-btn-text">ع</span>
+          </button>
         </div>
-        <button class="nav-btn nav-btn-cafe" onclick="toggleCart()" style="position:relative;">
+        <button class="nav-btn nav-btn-cafe btn-disabled" data-coming-soon="Coming Soon" style="position:relative;">
           <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
-          Order
-          <span class="cart-badge cart-count" style="display:none;">0</span>
+          <span data-i18n="nav_order">Order</span>
         </button>
         <button class="mobile-menu-btn" onclick="toggleMobileNav()">
           <span class="material-symbols-outlined">menu</span>
@@ -58,13 +58,13 @@
     <button class="mobile-close" onclick="toggleMobileNav()">
       <span class="material-symbols-outlined">close</span>
     </button>
-    <a href="#home" onclick="toggleMobileNav()">Home</a>
-    <a href="#menu" onclick="toggleMobileNav()">Menu</a>
-    <a href="#experience" onclick="toggleMobileNav()">Experience</a>
-    <a href="sushi.html">Sushi Bay</a>
-    <a href="story.html">Our Story</a>
-    <a href="locations.html">Locations</a>
-    <a href="contact.html">Contact</a>
+    <a href="#home" onclick="toggleMobileNav()" data-i18n="nav_home">Home</a>
+    <a href="#menu" onclick="toggleMobileNav()" data-i18n="nav_menu">Menu</a>
+    <a href="#experience" onclick="toggleMobileNav()" data-i18n="nav_experience">Experience</a>
+    <a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a>
+    <a href="story.html" data-i18n="nav_our_story">Our Story</a>
+    <a href="locations.html" data-i18n="nav_locations">Locations</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Hero Section -->
@@ -76,21 +76,21 @@
     </div>
     <div class="hero-content">
       <div class="hero-content-inner">
-        <span class="hero-tag">The Good Living</span>
+        <span class="hero-tag" data-i18n="hero_cafe_tag">The Good Living</span>
         <h1 class="hero-title font-display">
-          Start Your Day <br><em>Supreme</em>
+          <span data-i18n="hero_cafe_title_1">Start Your Day</span> <br><em data-i18n="hero_cafe_title_2">Supreme</em>
         </h1>
-        <p class="hero-desc">
+        <p class="hero-desc" data-i18n="cafe_hero_desc_full">
           Premium coffee, hearty breakfasts, and international mains crafted with love. Life is too short for bad coffee
           or average meals.
         </p>
         <div class="hero-buttons">
           <a href="#menu" class="btn-primary btn-primary-cafe">
-            <span>View Menu</span>
+            <span data-i18n="hero_view_menu">View Menu</span>
             <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
           </a>
-          <a href="order.html" class="btn-outline">
-            <span>Order Online</span>
+          <a href="#" class="btn-outline btn-disabled" data-coming-soon="Coming Soon">
+            <span data-i18n="hero_order_online">Order Online</span>
           </a>
         </div>
       </div>
@@ -105,10 +105,11 @@
     <div class="container">
       <div class="section-header-flex">
         <div>
-          <span class="section-tag cafe-tag">Signature Highlights</span>
-          <h2 class="section-title font-display">What We're Known For</h2>
+          <span class="section-tag cafe-tag" data-i18n="section_highlights">Signature Highlights</span>
+          <h2 class="section-title font-display" data-i18n="section_highlights_title">What We're Known For</h2>
         </div>
-        <p class="section-desc" style="margin-left:auto;">From our legendary Molten Cake to the perfect Spanish Latte,
+        <p class="section-desc" style="margin-left:auto;" data-i18n="section_highlights_desc">From our legendary Molten
+          Cake to the perfect Spanish Latte,
           discover what makes Café Supreme unforgettable.</p>
       </div>
       <div class="card-grid cafe-feature fade-in">
@@ -119,9 +120,10 @@
             <div class="overlay"></div>
           </div>
           <div>
-            <h3 class="feature-card-title font-display">Premium Coffee</h3>
+            <h3 class="feature-card-title font-display" data-i18n="feature_coffee_title">Premium Coffee</h3>
             <div class="feature-card-line"></div>
-            <p class="feature-card-desc">From classic Espresso to our signature Spanish Latte — every cup is crafted
+            <p class="feature-card-desc" data-i18n="feature_coffee_desc">From classic Espresso to our signature Spanish
+              Latte — every cup is crafted
               from premium beans.</p>
           </div>
         </div>
@@ -133,9 +135,10 @@
             <div class="overlay"></div>
           </div>
           <div>
-            <h3 class="feature-card-title font-display">All-Day Breakfast</h3>
+            <h3 class="feature-card-title font-display" data-i18n="feature_breakfast_title">All-Day Breakfast</h3>
             <div class="feature-card-line"></div>
-            <p class="feature-card-desc">Egg Pie, Classic Omelette, Salmon on Loaf — our breakfast menu serves comfort
+            <p class="feature-card-desc" data-i18n="feature_breakfast_desc">Egg Pie, Classic Omelette, Salmon on Loaf —
+              our breakfast menu serves comfort
               any hour of the day.</p>
           </div>
         </div>
@@ -147,9 +150,10 @@
             <div class="overlay"></div>
           </div>
           <div>
-            <h3 class="feature-card-title font-display">Irresistible Desserts</h3>
+            <h3 class="feature-card-title font-display" data-i18n="feature_desserts_title">Irresistible Desserts</h3>
             <div class="feature-card-line"></div>
-            <p class="feature-card-desc">Our legendary Molten Cake, Lotus Carrot Cake, and handcrafted Waffles — the
+            <p class="feature-card-desc" data-i18n="feature_desserts_desc">Our legendary Molten Cake, Lotus Carrot Cake,
+              and handcrafted Waffles — the
               perfect sweet ending.</p>
           </div>
         </div>
@@ -161,13 +165,14 @@
   <section id="menu" class="section section-cafe-alt cafe-menu">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag cafe-tag">Full Menu</span>
-        <h2 class="section-title font-display">The Café Supreme Menu</h2>
-        <p class="section-desc">From breakfast to dessert, every dish is made with care and served with love.</p>
+        <span class="section-tag cafe-tag" data-i18n="section_full_menu">Full Menu</span>
+        <h2 class="section-title font-display" data-i18n="section_cafe_menu_title">The Café Supreme Menu</h2>
+        <p class="section-desc" data-i18n="section_cafe_menu_desc">From breakfast to dessert, every dish is made with
+          care and served with love.</p>
       </div>
       <div class="menu-tabs cafe-tabs"></div>
-      <div class="menu-grid" id="cafe-menu-grid">
-        <div class="cart-empty" style="grid-column:1/-1;">Loading menu...</div>
+      <div class="menu-list-container" id="cafe-menu-grid">
+        <div class="cart-empty" style="padding:3rem;text-align:center;" data-i18n="menu_loading">Loading menu...</div>
       </div>
     </div>
   </section>
@@ -178,19 +183,19 @@
       <div class="story-section fade-in">
         <div class="story-text">
           <div>
-            <span class="section-tag cafe-tag">The Experience</span>
+            <span class="section-tag cafe-tag" data-i18n="nav_experience">The Experience</span>
             <h2 class="section-title font-display" style="margin-top:0.5rem;">
-              The Good Living <br>Philosophy
+              <span data-i18n="section_experience_title">The Good Living <br>Philosophy</span>
             </h2>
           </div>
           <div class="story-text-body">
             <div class="story-line cafe-story-line"></div>
             <div class="story-paragraphs">
-              <p>
+              <p data-i18n="cafe_experience_desc_1">
                 At Café Supreme, we believe that life is too short for bad coffee or average meals. Our "Good Living"
                 philosophy is about creating a space that feels like a second home.
               </p>
-              <p>
+              <p data-i18n="cafe_experience_desc_2">
                 From the warm lighting to the plush seating, every detail is designed to invite you to stay awhile.
                 Whether you're here for a quick espresso or a long brunch with friends, you're part of our family.
               </p>
@@ -198,7 +203,7 @@
           </div>
           <div>
             <a href="story.html" class="btn-outline" style="display:inline-flex;">
-              <span>Read Our Full Story</span>
+              <span data-i18n="cafe_read_full_story">Read Our Full Story</span>
               <span class="material-symbols-outlined" style="font-size:1rem;">arrow_right_alt</span>
             </a>
           </div>
@@ -209,7 +214,7 @@
             <img src="images/cafe-interior.webp" alt="Cozy café interior with warm lighting and comfortable seating">
             <div class="story-badge" style="background:var(--cafe-surface);">
               <span class="story-badge-number" style="color:var(--cafe-warm);">♥</span>
-              <span class="story-badge-label">Good Living</span>
+              <span class="story-badge-label" data-i18n="hero_cafe_tag">Good Living</span>
             </div>
           </div>
         </div>
@@ -221,8 +226,8 @@
   <section class="section section-cafe-alt">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag cafe-tag">Gallery</span>
-        <h2 class="section-title font-display">Inside Café Supreme</h2>
+        <span class="section-tag cafe-tag" data-i18n="section_gallery">Gallery</span>
+        <h2 class="section-title font-display" data-i18n="section_cafe_gallery_title">Inside Café Supreme</h2>
       </div>
       <div class="gallery-grid fade-in">
         <div class="gallery-item"><img src="images/cafe-gallery-1.webp" alt="Café interior warm seating area"
@@ -243,11 +248,12 @@
     <div class="container">
       <div class="switch-banner">
         <div class="switch-banner-text">
-          <h3 class="switch-banner-title font-display">Craving Something Different?</h3>
-          <p class="switch-banner-desc">Try our Sushi Bay for fresh Japanese cuisine — right under the same roof.</p>
+          <h3 class="switch-banner-title font-display" data-i18n="switch_cafe_title">Craving Something Different?</h3>
+          <p class="switch-banner-desc" data-i18n="switch_cafe_desc">Try our Sushi Bay for fresh Japanese cuisine —
+            right under the same roof.</p>
         </div>
         <a href="sushi.html" class="btn-primary" style="flex-shrink:0;">
-          <span>Explore Sushi Bay</span>
+          <span data-i18n="switch_cafe_btn">Explore Sushi Bay</span>
           <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
         </a>
       </div>
@@ -257,12 +263,14 @@
   <!-- CTA Strip -->
   <section class="cta-strip section-cafe-alt cafe-cta">
     <span class="material-symbols-outlined cta-icon">local_cafe</span>
-    <h2 class="cta-title font-display">Ready for the Good Living?</h2>
-    <p class="cta-desc">Order your favorites online or visit us at any of our locations. The perfect meal is waiting.
+    <h2 class="cta-title font-display" data-i18n="cta_cafe_title">Ready for the Good Living?</h2>
+    <p class="cta-desc" data-i18n="cta_cafe_desc">Order your favorites online or visit us at any of our locations. The
+      perfect meal is waiting.
     </p>
     <div class="cta-buttons">
-      <a href="order.html" class="btn-primary btn-primary-cafe" style="min-width:160px;">Order Online</a>
-      <a href="locations.html" class="btn-outline" style="min-width:160px;">Find Us</a>
+      <a href="#" class="btn-primary btn-primary-cafe btn-disabled" style="min-width:160px;"
+        data-coming-soon="Coming Soon" data-i18n="cta_order_online">Order Online</a>
+      <a href="locations.html" class="btn-outline" style="min-width:160px;" data-i18n="cta_find_us">Find Us</a>
     </div>
   </section>
 
@@ -270,17 +278,17 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-brand-name font-display">Café Supreme</span>
+        <span class="footer-brand-name font-display" data-i18n="cafe_name">Café Supreme</span>
         <span class="footer-sep">|</span>
-        <span class="footer-est">Sushi Bay</span>
+        <span class="footer-est" data-i18n="sushi_name">Sushi Bay</span>
       </div>
       <div class="footer-links">
-        <a href="story.html">Our Story</a>
-        <a href="locations.html">Locations</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Instagram</a>
+        <a href="story.html" data-i18n="footer_our_story">Our Story</a>
+        <a href="locations.html" data-i18n="footer_locations">Locations</a>
+        <a href="contact.html" data-i18n="footer_contact">Contact</a>
+        <a href="#" data-i18n="footer_instagram">Instagram</a>
       </div>
-      <div class="footer-copy">© 2026 Café Supreme & Sushi Bay.</div>
+      <div class="footer-copy" data-i18n="footer_copyright">© 2026 Café Supreme & Sushi Bay.</div>
     </div>
   </footer>
 
@@ -288,7 +296,7 @@
   <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
   <div class="cart-sidebar" id="cart-sidebar">
     <div class="cart-header">
-      <h3 class="cart-title font-display">Your Order</h3>
+      <h3 class="cart-title font-display" data-i18n="your_order">Your Order</h3>
       <button class="cart-close" onclick="toggleCart()">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -296,16 +304,17 @@
     <div class="cart-items" id="cart-items"></div>
     <div class="cart-footer">
       <div class="cart-total">
-        <span class="cart-total-label">Total</span>
+        <span class="cart-total-label" data-i18n="total">Total</span>
         <span class="cart-total-value" id="cart-total">0 L.E</span>
       </div>
       <button class="cart-checkout-btn" style="background:var(--cafe-primary);"
-        onclick="window.location.href='order.html'">
+        onclick="window.location.href='order.html'" data-i18n="proceed_checkout">
         Proceed to Checkout
       </button>
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

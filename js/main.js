@@ -128,20 +128,27 @@ function filterMenu(category, containerId) {
   if (!container) return;
 
   // Update tabs
-  const tabs = container.closest('.section').querySelectorAll('.menu-tab');
+  const section = container.closest('.section') || container.closest('section');
+  const tabs = section ? section.querySelectorAll('.menu-tab') : [];
   tabs.forEach((t) =>
     t.classList.toggle('active', t.dataset.category === category),
   );
 
-  // Show/hide cards
-  const cards = container.querySelectorAll('.menu-card');
-  cards.forEach((card) => {
-    if (category === 'all' || card.dataset.category === category) {
-      card.style.display = '';
+  // Show/hide items
+  const items = container.querySelectorAll('.menu-list-item');
+  items.forEach((item) => {
+    if (category === 'all' || item.dataset.category === category) {
+      item.style.display = '';
     } else {
-      card.style.display = 'none';
+      item.style.display = 'none';
     }
   });
+
+  // Hide hint if category selected
+  const hint = container.querySelector('.menu-category-hint');
+  if (hint) {
+    hint.style.display = category === 'all' ? '' : 'none';
+  }
 }
 
 // ===== Load Menu from JSON =====
@@ -150,52 +157,45 @@ async function loadMenu(jsonFile, containerId, brand, isCafe = false) {
     const resp = await fetch(jsonFile);
     const data = await resp.json();
     const container = document.getElementById(containerId);
-    const tabsContainer = container
-      ?.closest('.section')
-      ?.querySelector('.menu-tabs');
+    const section =
+      container?.closest('.section') || container?.closest('section');
+    const tabsContainer = section?.querySelector('.menu-tabs');
     if (!container) return;
 
     const categories = data.menu.map((c) => c.category);
 
-    // Build tabs
+    // Build tabs (no "All" tab - user must select a category)
     if (tabsContainer) {
-      let tabsHTML = `<button class="menu-tab active" data-category="all" onclick="filterMenu('all', '${containerId}')">All</button>`;
-      categories.forEach((cat) => {
-        tabsHTML += `<button class="menu-tab" data-category="${cat}" onclick="filterMenu('${cat}', '${containerId}')">${cat}</button>`;
+      let tabsHTML = '';
+      categories.forEach((cat, i) => {
+        const activeClass = i === 0 ? ' active' : '';
+        tabsHTML += `<button class="menu-tab${activeClass}" data-category="${cat}" onclick="filterMenu('${cat}', '${containerId}')">${cat}</button>`;
       });
       tabsContainer.innerHTML = tabsHTML;
     }
 
-    // Build cards
-    let cardsHTML = '';
+    // Build compact list items
+    let listHTML = '<div class="menu-list">';
+    const firstCategory = categories[0];
+
     data.menu.forEach((cat) => {
       cat.items.forEach((item) => {
-        const id = (brand + '_' + item.name_en)
-          .replace(/[^a-zA-Z0-9]/g, '_')
-          .toLowerCase();
-        const priceNum = parseFloat(item.price.replace(/[^0-9.]/g, ''));
-        cardsHTML += `
-                    <div class="menu-card" data-category="${cat.category}">
-                        <div class="menu-card-img">
-                            <img src="images/menu/${item.image}" alt="${item.name_en}" loading="lazy" 
-                                 onerror="this.src='images/placeholder.svg'">
-                        </div>
-                        <div class="menu-card-body">
-                            <div class="menu-card-type">${item.type || cat.category}</div>
-                            <div class="menu-card-name">${item.name_en}</div>
-                            <div class="menu-card-name-ar">${item.name_ar}</div>
-                            <div class="menu-card-footer">
-                                <div class="menu-card-price">${item.price}</div>
-                                <button class="add-to-cart-btn" onclick="Cart.add({id:'${id}',name:'${item.name_en.replace(/'/g, "\\'")}',price:${priceNum},brand:'${brand}'})">
-                                    <span class="material-symbols-outlined" style="font-size:1rem;">add</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                `;
+        const isFirst = cat.category === firstCategory;
+        const hideStyle = isFirst ? '' : ' style="display:none;"';
+        listHTML += `
+          <div class="menu-list-item" data-category="${cat.category}"${hideStyle}>
+            <div class="menu-item-info">
+              <div class="menu-item-type">${item.type || cat.category}</div>
+              <div class="menu-item-name">${item.name_en}</div>
+              <div class="menu-item-name-ar">${item.name_ar}</div>
+            </div>
+            <div class="menu-item-price">${item.price}</div>
+          </div>
+        `;
       });
     });
-    container.innerHTML = cardsHTML;
+    listHTML += '</div>';
+    container.innerHTML = listHTML;
   } catch (err) {
     console.error('Failed to load menu:', err);
   }
