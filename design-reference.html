@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sushi Bay - Luxury Dining</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<!-- Material Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind Config -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sushi Bay - Luxury Dining</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind Config -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -36,234 +44,287 @@
             },
         }
     </script>
-<style>
+    <style>
         /* Custom scrollbar for webkit */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #141c1e;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #2c3335;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #B3904E;
         }
-        
+
         .text-shadow-sm {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased overflow-x-hidden">
-<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root font-body">
-<!-- Texture Overlay -->
-<div class="pointer-events-none fixed inset-0 z-0 h-full w-full opacity-30 mix-blend-overlay bg-noise"></div>
-<!-- Top Navigation -->
-<nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#141c1e]/90 backdrop-blur-md">
-<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-<!-- Logo -->
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-gold text-3xl">restaurant</span>
-<span class="font-display text-2xl font-bold tracking-tight text-white">Sushi Bay</span>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden items-center gap-10 md:flex">
-<a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest" href="#about">About</a>
-<a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest" href="#menu">Menu</a>
-<a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest" href="#gallery">Gallery</a>
-</div>
-<!-- Right Actions -->
-<div class="flex items-center gap-6">
-<div class="hidden items-center gap-2 text-right md:flex">
-<span class="block text-[10px] uppercase tracking-widest text-gray-400">Delivery</span>
-<span class="font-display text-lg font-bold text-gold">19000</span>
-</div>
-<button class="relative overflow-hidden rounded-sm bg-primary px-6 py-2.5 transition-all hover:bg-primary/80 hover:shadow-[0_0_20px_rgba(28,66,74,0.5)]">
-<span class="relative z-10 text-xs font-bold uppercase tracking-widest text-white">Order Now</span>
-</button>
-<!-- Mobile Menu Icon -->
-<button class="md:hidden text-white">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative flex min-h-[90vh] w-full items-center justify-center overflow-hidden">
-<!-- Background Image -->
-<div class="absolute inset-0 z-0">
-<img alt="Close up of high end sushi rolls on a dark slate plate with dramatic lighting" class="h-full w-full object-cover object-center transition-transform duration-[20s] hover:scale-105" data-alt="Cinematic dark sushi rolls close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYCieBLsBlB9xMhWUJ6ugrelxms-CgItmKvAA2sr_56e93s7ElP8X5f27Ns4gBC4-p4SNoVy4Al1xOHnyL0YEnMckFIheXJq50eOqrL70LoNMe6MYv7br4XLrnjneDDdZEolmMk-c7_e7uf275anqbzUjWYPISovfCZB4qGt0sY_ks0j2-S65qnWP0hxqenufBZyMuATcc85hq-Ym5hVksmLSvwdVhN1Z2s7yq0Br78JhBSzqhXBqy-mH3FhphjWa88LjQzSD0E2U"/>
-<div class="absolute inset-0 bg-gradient-to-t from-[#141c1e] via-[#141c1e]/40 to-black/30"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-[#141c1e]/90 via-transparent to-[#141c1e]/20"></div>
-</div>
-<!-- Content -->
-<div class="relative z-10 flex w-full max-w-7xl flex-col px-6 lg:px-8 pt-20">
-<div class="max-w-2xl">
-<span class="mb-4 inline-block border-b border-gold pb-1 text-xs font-bold uppercase tracking-[0.2em] text-gold">Premium Japanese Cuisine</span>
-<h1 class="font-display text-5xl font-medium leading-tight text-white text-shadow-sm md:text-7xl lg:text-8xl">
-                        The Art of <br/> <span class="italic text-gray-400">Omakase</span>
-</h1>
-<p class="mt-6 max-w-lg text-lg leading-relaxed text-gray-300 font-body font-light">
-                        Experience the delicate balance of traditional techniques and modern flavors. Premium ingredients, masterfully crafted for an unforgettable journey.
+    <div
+        class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root font-body">
+        <!-- Texture Overlay -->
+        <div class="pointer-events-none fixed inset-0 z-0 h-full w-full opacity-30 mix-blend-overlay bg-noise"></div>
+        <!-- Top Navigation -->
+        <nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#141c1e]/90 backdrop-blur-md">
+            <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gold text-3xl">restaurant</span>
+                    <span class="font-display text-2xl font-bold tracking-tight text-white">Sushi Bay</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden items-center gap-10 md:flex">
+                    <a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest"
+                        href="#about">About</a>
+                    <a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest"
+                        href="#menu">Menu</a>
+                    <a class="text-sm font-medium text-gray-300 hover:text-gold transition-colors uppercase tracking-widest"
+                        href="#gallery">Gallery</a>
+                </div>
+                <!-- Right Actions -->
+                <div class="flex items-center gap-6">
+                    <div class="hidden items-center gap-2 text-right md:flex">
+                        <span class="block text-[10px] uppercase tracking-widest text-gray-400">Delivery</span>
+                        <span class="font-display text-lg font-bold text-gold">19000</span>
+                    </div>
+                    <button
+                        class="relative overflow-hidden rounded-sm bg-primary px-6 py-2.5 transition-all hover:bg-primary/80 hover:shadow-[0_0_20px_rgba(28,66,74,0.5)]">
+                        <span class="relative z-10 text-xs font-bold uppercase tracking-widest text-white">Order
+                            Now</span>
+                    </button>
+                    <!-- Mobile Menu Icon -->
+                    <button class="md:hidden text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <header class="relative flex min-h-[90vh] w-full items-center justify-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img alt="Close up of high end sushi rolls on a dark slate plate with dramatic lighting"
+                    class="h-full w-full object-cover object-center transition-transform duration-[20s] hover:scale-105"
+                    data-alt="Cinematic dark sushi rolls close-up"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYCieBLsBlB9xMhWUJ6ugrelxms-CgItmKvAA2sr_56e93s7ElP8X5f27Ns4gBC4-p4SNoVy4Al1xOHnyL0YEnMckFIheXJq50eOqrL70LoNMe6MYv7br4XLrnjneDDdZEolmMk-c7_e7uf275anqbzUjWYPISovfCZB4qGt0sY_ks0j2-S65qnWP0hxqenufBZyMuATcc85hq-Ym5hVksmLSvwdVhN1Z2s7yq0Br78JhBSzqhXBqy-mH3FhphjWa88LjQzSD0E2U" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#141c1e] via-[#141c1e]/40 to-black/30"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#141c1e]/90 via-transparent to-[#141c1e]/20"></div>
+            </div>
+            <!-- Content -->
+            <div class="relative z-10 flex w-full max-w-7xl flex-col px-6 lg:px-8 pt-20">
+                <div class="max-w-2xl">
+                    <span
+                        class="mb-4 inline-block border-b border-gold pb-1 text-xs font-bold uppercase tracking-[0.2em] text-gold">Premium
+                        Japanese Cuisine</span>
+                    <h1
+                        class="font-display text-5xl font-medium leading-tight text-white text-shadow-sm md:text-7xl lg:text-8xl">
+                        The Art of <br /> <span class="italic text-gray-400">Omakase</span>
+                    </h1>
+                    <p class="mt-6 max-w-lg text-lg leading-relaxed text-gray-300 font-body font-light">
+                        Experience the delicate balance of traditional techniques and modern flavors. Premium
+                        ingredients, masterfully crafted for an unforgettable journey.
                     </p>
-<div class="mt-10 flex flex-wrap gap-4">
-<button class="group relative flex h-14 items-center justify-center gap-3 overflow-hidden rounded-sm bg-primary px-8 transition-all hover:bg-[#23535d]">
-<span class="text-sm font-bold uppercase tracking-widest text-white">Reserve a Table</span>
-<span class="material-symbols-outlined text-sm text-white transition-transform group-hover:translate-x-1">arrow_forward</span>
-</button>
-<button class="flex h-14 items-center justify-center gap-2 rounded-sm border border-white/20 bg-transparent px-8 transition-all hover:border-gold hover:bg-white/5">
-<span class="text-sm font-bold uppercase tracking-widest text-white">View Menu</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Scroll Indicator -->
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-<span class="material-symbols-outlined text-white/50">keyboard_arrow_down</span>
-</div>
-</header>
-<!-- Chef's Specials Section -->
-<section class="relative z-10 w-full py-24 bg-background-dark">
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 border-b border-white/5 pb-6">
-<div>
-<span class="text-gold text-xs font-bold uppercase tracking-[0.2em]">Culinary Masterpieces</span>
-<h2 class="mt-2 font-display text-4xl font-normal text-white md:text-5xl">Chef's Specials</h2>
-</div>
-<p class="max-w-md text-gray-400 font-light text-sm md:text-right">
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <button
+                            class="group relative flex h-14 items-center justify-center gap-3 overflow-hidden rounded-sm bg-primary px-8 transition-all hover:bg-[#23535d]">
+                            <span class="text-sm font-bold uppercase tracking-widest text-white">Reserve a Table</span>
+                            <span
+                                class="material-symbols-outlined text-sm text-white transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        </button>
+                        <button
+                            class="flex h-14 items-center justify-center gap-2 rounded-sm border border-white/20 bg-transparent px-8 transition-all hover:border-gold hover:bg-white/5">
+                            <span class="text-sm font-bold uppercase tracking-widest text-white">View Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                <span class="material-symbols-outlined text-white/50">keyboard_arrow_down</span>
+            </div>
+        </header>
+        <!-- Chef's Specials Section -->
+        <section class="relative z-10 w-full py-24 bg-background-dark">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div
+                    class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 border-b border-white/5 pb-6">
+                    <div>
+                        <span class="text-gold text-xs font-bold uppercase tracking-[0.2em]">Culinary
+                            Masterpieces</span>
+                        <h2 class="mt-2 font-display text-4xl font-normal text-white md:text-5xl">Chef's Specials</h2>
+                    </div>
+                    <p class="max-w-md text-gray-400 font-light text-sm md:text-right">
                         Selected daily by our head chef, featuring the freshest catch from global waters.
                     </p>
-</div>
-<!-- Grid -->
-<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-<!-- Item 1 -->
-<div class="group relative flex flex-col gap-4">
-<div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
-<img alt="Close up of fresh salmon nigiri on dark background" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Salmon nigiri with delicate garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB56yJRGoNsd-XaE-S4aFZf7DCeXbt3eeStIjjQBzStDSEebaMxtYRp8sUTj9bOKXn9uqCnglaDmxvFRU9SpvUkkhK7ugwZTJ2BWwpAFkxSfD39Bp2ltYLAMEPq56yFY6V5AGQIl4arqktKsrEDm0EYo-i39br43-7qH-7z52ED1FqOh5QAy9iyeRXO1BBuzgp8ie0hpABgNot0j08iMCaBo8dVLEbT9HvMCxzpXMNokpI7BHncjBHT72brW_jGZ7SY5D3HIxZ-Td0"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40"></div>
-</div>
-<div class="flex flex-col">
-<h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Salmon Nigiri</h3>
-<div class="mt-2 h-[1px] w-12 bg-white/20"></div>
-<p class="mt-3 text-sm text-gray-400">Norwegian salmon, aged soy, fresh wasabi root.</p>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="group relative flex flex-col gap-4 md:mt-12"> <!-- Offset layout effect -->
-<div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
-<img alt="Elaborate dragon roll sushi with avocado and eel sauce" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dragon roll with avocado and eel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEjlwRQs_ClE2yK01PzmXYG2SnT8ehTMDYkocj-kgOZCqs04DPpfr75PgSP-ERgv55tRjuSuJhsM3v111qkPhbQTTToLSIcZS6UgTN2m9h8uG3VvOQCEwpzpGOF5DKboVll93_nlESfGcUzZwnEUfGuZI8N7IQ0lrsGk7cV9svxywQ2FTuxaDKod8RfpYV3xw6ObuHapcehaQCm2OUPIYVLgSjVZkCT_PWq81VkSGbF7dUZgW94LCqQcQMHDkr8NpPjGRVh03fV_Q"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40"></div>
-</div>
-<div class="flex flex-col">
-<h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Dragon Roll</h3>
-<div class="mt-2 h-[1px] w-12 bg-white/20"></div>
-<p class="mt-3 text-sm text-gray-400">Freshwater eel, avocado, edible gold leaf, unagi sauce.</p>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="group relative flex flex-col gap-4">
-<div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
-<img alt="High quality otoro sashimi slices arranged on ice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Premium Otoro sashimi slices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeL9keTs2vlzU9MAzAvlUtRoJ9H2tFg6BJ5PYfFcXneolx76ohyEpq1oep7H8WSwipuoHg2tIacqeBnlzWkYYEr8-Wx9RA1cKE_3JMOHXXKdeTeQSTrQSoc1l74EzJg0CDTV0zG_jZB6s8dnrCcrc8hdyGAYOgzlNagXtdXrKbGogmPt3T5IUBHoPLzM78sF1z4O6Fnikt6LeBl7Pxu6d7exbChAYOv8cLkHn3o--SZ5AKPA_ROoAb2aBdVdEpkapSspO-TPG33yU"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40"></div>
-</div>
-<div class="flex flex-col">
-<h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Otoro Sashimi</h3>
-<div class="mt-2 h-[1px] w-12 bg-white/20"></div>
-<p class="mt-3 text-sm text-gray-400">Bluefin tuna belly, served on ice with shiso leaf.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Story Section -->
-<section class="relative z-10 w-full bg-[#111618] py-24">
-<div class="mx-auto max-w-7xl px-6 lg:px-8">
-<div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-<!-- Text Side -->
-<div class="flex flex-1 flex-col gap-8 order-2 lg:order-1">
-<div class="flex flex-col gap-4">
-<span class="text-gold text-xs font-bold uppercase tracking-[0.2em]">Our Heritage</span>
-<h2 class="font-display text-4xl font-normal leading-tight text-white lg:text-6xl">
-                                Tradition Meets <br/> Modernity
+                </div>
+                <!-- Grid -->
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Item 1 -->
+                    <div class="group relative flex flex-col gap-4">
+                        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
+                            <img alt="Close up of fresh salmon nigiri on dark background"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Salmon nigiri with delicate garnish"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB56yJRGoNsd-XaE-S4aFZf7DCeXbt3eeStIjjQBzStDSEebaMxtYRp8sUTj9bOKXn9uqCnglaDmxvFRU9SpvUkkhK7ugwZTJ2BWwpAFkxSfD39Bp2ltYLAMEPq56yFY6V5AGQIl4arqktKsrEDm0EYo-i39br43-7qH-7z52ED1FqOh5QAy9iyeRXO1BBuzgp8ie0hpABgNot0j08iMCaBo8dVLEbT9HvMCxzpXMNokpI7BHncjBHT72brW_jGZ7SY5D3HIxZ-Td0" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Salmon
+                                Nigiri</h3>
+                            <div class="mt-2 h-[1px] w-12 bg-white/20"></div>
+                            <p class="mt-3 text-sm text-gray-400">Norwegian salmon, aged soy, fresh wasabi root.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="group relative flex flex-col gap-4 md:mt-12"> <!-- Offset layout effect -->
+                        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
+                            <img alt="Elaborate dragon roll sushi with avocado and eel sauce"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Dragon roll with avocado and eel"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEjlwRQs_ClE2yK01PzmXYG2SnT8ehTMDYkocj-kgOZCqs04DPpfr75PgSP-ERgv55tRjuSuJhsM3v111qkPhbQTTToLSIcZS6UgTN2m9h8uG3VvOQCEwpzpGOF5DKboVll93_nlESfGcUzZwnEUfGuZI8N7IQ0lrsGk7cV9svxywQ2FTuxaDKod8RfpYV3xw6ObuHapcehaQCm2OUPIYVLgSjVZkCT_PWq81VkSGbF7dUZgW94LCqQcQMHDkr8NpPjGRVh03fV_Q" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Dragon
+                                Roll</h3>
+                            <div class="mt-2 h-[1px] w-12 bg-white/20"></div>
+                            <p class="mt-3 text-sm text-gray-400">Freshwater eel, avocado, edible gold leaf, unagi
+                                sauce.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="group relative flex flex-col gap-4">
+                        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface-dark">
+                            <img alt="High quality otoro sashimi slices arranged on ice"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Premium Otoro sashimi slices"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeL9keTs2vlzU9MAzAvlUtRoJ9H2tFg6BJ5PYfFcXneolx76ohyEpq1oep7H8WSwipuoHg2tIacqeBnlzWkYYEr8-Wx9RA1cKE_3JMOHXXKdeTeQSTrQSoc1l74EzJg0CDTV0zG_jZB6s8dnrCcrc8hdyGAYOgzlNagXtdXrKbGogmPt3T5IUBHoPLzM78sF1z4O6Fnikt6LeBl7Pxu6d7exbChAYOv8cLkHn3o--SZ5AKPA_ROoAb2aBdVdEpkapSspO-TPG33yU" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="font-display text-2xl text-white group-hover:text-gold transition-colors">Otoro
+                                Sashimi</h3>
+                            <div class="mt-2 h-[1px] w-12 bg-white/20"></div>
+                            <p class="mt-3 text-sm text-gray-400">Bluefin tuna belly, served on ice with shiso leaf.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Story Section -->
+        <section class="relative z-10 w-full bg-[#111618] py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+                    <!-- Text Side -->
+                    <div class="flex flex-1 flex-col gap-8 order-2 lg:order-1">
+                        <div class="flex flex-col gap-4">
+                            <span class="text-gold text-xs font-bold uppercase tracking-[0.2em]">Our Heritage</span>
+                            <h2 class="font-display text-4xl font-normal leading-tight text-white lg:text-6xl">
+                                Tradition Meets <br /> Modernity
                             </h2>
-</div>
-<div class="flex gap-6">
-<!-- Decorative vertical line -->
-<div class="w-[1px] bg-gradient-to-b from-gold to-transparent h-auto hidden sm:block"></div>
-<div class="space-y-6 text-gray-400 font-light leading-relaxed">
-<p>
-                                    At Sushi Bay, we believe that sushi is more than just food; it is an art form that demands patience, precision, and respect for nature.
+                        </div>
+                        <div class="flex gap-6">
+                            <!-- Decorative vertical line -->
+                            <div class="w-[1px] bg-gradient-to-b from-gold to-transparent h-auto hidden sm:block"></div>
+                            <div class="space-y-6 text-gray-400 font-light leading-relaxed">
+                                <p>
+                                    At Sushi Bay, we believe that sushi is more than just food; it is an art form that
+                                    demands patience, precision, and respect for nature.
                                 </p>
-<p>
-                                    Our executive chef brings decades of experience from Tokyo's most prestigious kitchens. By blending time-honored traditional techniques with bold, modern flavors, we create a dining experience that honors the past while embracing the future.
+                                <p>
+                                    Our executive chef brings decades of experience from Tokyo's most prestigious
+                                    kitchens. By blending time-honored traditional techniques with bold, modern flavors,
+                                    we create a dining experience that honors the past while embracing the future.
                                 </p>
-</div>
-</div>
-<div class="pt-4">
-<button class="flex items-center gap-3 text-white transition-colors hover:text-gold group">
-<span class="text-sm font-bold uppercase tracking-widest">Read Full Story</span>
-<span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_right_alt</span>
-</button>
-</div>
-</div>
-<!-- Image Side -->
-<div class="relative flex-1 w-full order-1 lg:order-2">
-<div class="relative aspect-[3/4] w-full max-w-md mx-auto lg:mx-0 lg:ml-auto">
-<!-- Border Offset Effect -->
-<div class="absolute -right-4 -top-4 h-full w-full border border-gold/30 rounded-sm"></div>
-<div class="relative h-full w-full overflow-hidden rounded-sm">
-<img alt="Chef preparing sushi with focused precision" class="h-full w-full object-cover" data-alt="Chef crafting sushi with precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYOMd9aITldXIXXTeirqiPTSVDZzEXpbEz5G5B-m3RcZIEgR3dz7T4LgNm7tz7wZRg0EyCDewpHV1JoBTJjjBskwT0lhvRlLQWmkUtios_1Amj_7qWGL91YJGXpgx1H_Ig8oBkTE-mCrvUEyOTAd7cVzPvPIfNm2xAaPLgY1cE4_6ebW-4BKhzAX6LFnB8POEm3Wfz0j1ie4z3ZHR57R-RmxuDs15Fp_Jy2pII1rI2L_qPus_I87Y1n3LjMDiIOswjT4WtNn3ZNQ"/>
-</div>
-<!-- Floating Badge -->
-<div class="absolute -bottom-6 -left-6 flex h-24 w-24 items-center justify-center rounded-full bg-surface-dark border border-white/10 shadow-xl backdrop-blur-sm">
-<div class="text-center">
-<span class="block font-display text-xl font-bold text-gold">25+</span>
-<span class="block text-[10px] uppercase tracking-widest text-gray-400">Years</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA / Reservation Strip -->
-<section class="relative z-10 w-full border-t border-white/5 bg-background-dark py-20">
-<div class="mx-auto flex max-w-4xl flex-col items-center justify-center gap-8 px-6 text-center">
-<span class="material-symbols-outlined text-4xl text-gold">sailing</span>
-<h2 class="font-display text-3xl font-medium text-white md:text-5xl">Ready to taste the ocean?</h2>
-<p class="max-w-xl text-gray-400 font-light">
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="flex items-center gap-3 text-white transition-colors hover:text-gold group">
+                                <span class="text-sm font-bold uppercase tracking-widest">Read Full Story</span>
+                                <span
+                                    class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_right_alt</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Image Side -->
+                    <div class="relative flex-1 w-full order-1 lg:order-2">
+                        <div class="relative aspect-[3/4] w-full max-w-md mx-auto lg:mx-0 lg:ml-auto">
+                            <!-- Border Offset Effect -->
+                            <div class="absolute -right-4 -top-4 h-full w-full border border-gold/30 rounded-sm"></div>
+                            <div class="relative h-full w-full overflow-hidden rounded-sm">
+                                <img alt="Chef preparing sushi with focused precision"
+                                    class="h-full w-full object-cover" data-alt="Chef crafting sushi with precision"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYOMd9aITldXIXXTeirqiPTSVDZzEXpbEz5G5B-m3RcZIEgR3dz7T4LgNm7tz7wZRg0EyCDewpHV1JoBTJjjBskwT0lhvRlLQWmkUtios_1Amj_7qWGL91YJGXpgx1H_Ig8oBkTE-mCrvUEyOTAd7cVzPvPIfNm2xAaPLgY1cE4_6ebW-4BKhzAX6LFnB8POEm3Wfz0j1ie4z3ZHR57R-RmxuDs15Fp_Jy2pII1rI2L_qPus_I87Y1n3LjMDiIOswjT4WtNn3ZNQ" />
+                            </div>
+                            <!-- Floating Badge -->
+                            <div
+                                class="absolute -bottom-6 -left-6 flex h-24 w-24 items-center justify-center rounded-full bg-surface-dark border border-white/10 shadow-xl backdrop-blur-sm">
+                                <div class="text-center">
+                                    <span class="block font-display text-xl font-bold text-gold">25+</span>
+                                    <span class="block text-[10px] uppercase tracking-widest text-gray-400">Years</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA / Reservation Strip -->
+        <section class="relative z-10 w-full border-t border-white/5 bg-background-dark py-20">
+            <div class="mx-auto flex max-w-4xl flex-col items-center justify-center gap-8 px-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold">sailing</span>
+                <h2 class="font-display text-3xl font-medium text-white md:text-5xl">Ready to taste the ocean?</h2>
+                <p class="max-w-xl text-gray-400 font-light">
                     Limited seating available for our Omakase experience. Reservations are highly recommended.
                 </p>
-<div class="flex flex-col gap-4 sm:flex-row">
-<button class="min-w-[160px] rounded-sm bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-primary/80">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <button
+                        class="min-w-[160px] rounded-sm bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-primary/80">
                         Book a Table
                     </button>
-<button class="min-w-[160px] rounded-sm border border-white/10 bg-transparent px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/5">
+                    <button
+                        class="min-w-[160px] rounded-sm border border-white/10 bg-transparent px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/5">
                         Call 19000
                     </button>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="relative z-10 w-full border-t border-white/5 bg-[#0d1214] py-12 text-sm">
-<div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
-<div class="flex items-center gap-2">
-<span class="font-display text-lg font-bold text-white">Sushi Bay</span>
-<span class="text-gray-600">|</span>
-<span class="text-gray-400">Est. 1998</span>
-</div>
-<div class="flex gap-8 text-gray-400">
-<a class="hover:text-gold transition-colors" href="#">Privacy</a>
-<a class="hover:text-gold transition-colors" href="#">Terms</a>
-<a class="hover:text-gold transition-colors" href="#">Instagram</a>
-</div>
-<div class="text-gray-500">
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="relative z-10 w-full border-t border-white/5 bg-[#0d1214] py-12 text-sm">
+            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
+                <div class="flex items-center gap-2">
+                    <span class="font-display text-lg font-bold text-white">Sushi Bay</span>
+                    <span class="text-gray-600">|</span>
+                    <span class="text-gray-400">Est. 1998</span>
+                </div>
+                <div class="flex gap-8 text-gray-400">
+                    <a class="hover:text-gold transition-colors" href="#">Privacy</a>
+                    <a class="hover:text-gold transition-colors" href="#">Terms</a>
+                    <a class="hover:text-gold transition-colors" href="https://www.instagram.com/sushibaymansoura/"
+                        target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <div class="text-gray-500">
                     © 2023 Sushi Bay Restaurant.
                 </div>
-</div>
-</footer>
-</div>
-</body></html>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
