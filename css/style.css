@@ -112,7 +112,7 @@ body {
 }
 
 .splash-logo {
-  width: 160px;
+  width: 100px;
   height: auto;
   margin-bottom: 2rem;
   filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
@@ -121,6 +121,7 @@ body {
 /* make lgoo for ushi bigger in width */
 .sushi-logo {
   width: 250px;
+  margin-bottom: 0rem;
 }
 
 .splash-title {
@@ -1711,6 +1712,10 @@ html[dir="rtl"] .footer-links {
 @media (max-width: 480px) {
   .splash-logo {
     width: 120px;
+  }
+
+  .sushi-logo {
+    width: 250px;
   }
 
   .splash-title {
