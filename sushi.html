@@ -33,8 +33,8 @@
         <span class="nav-logo-text">Sushi Bay</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
-        <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="sushi.html" class="active" data-i18n="nav_home">Home</a></li>
+        <li><a href="sushi-menu.html" data-i18n="nav_menu">Menu</a></li>
         <li><a href="#craft" data-i18n="nav_craft">The Craft</a></li>
         <li><a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a></li>
         <li><a href="story.html" data-i18n="nav_our_story">Our Story</a></li>
@@ -63,8 +63,8 @@
     <button class="mobile-close" onclick="toggleMobileNav()">
       <span class="material-symbols-outlined">close</span>
     </button>
-    <a href="#home" onclick="toggleMobileNav()" data-i18n="nav_home">Home</a>
-    <a href="#menu" onclick="toggleMobileNav()" data-i18n="nav_menu">Menu</a>
+    <a href="sushi.html" onclick="toggleMobileNav()" data-i18n="nav_home">Home</a>
+    <a href="sushi-menu.html" onclick="toggleMobileNav()" data-i18n="nav_menu">Menu</a>
     <a href="#craft" onclick="toggleMobileNav()" data-i18n="nav_craft">The Craft</a>
     <a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a>
     <a href="story.html" data-i18n="nav_our_story">Our Story</a>
@@ -84,15 +84,15 @@
       <div class="hero-content-inner">
         <span class="hero-tag" data-i18n="hero_sushi_tag">Premium Japanese Cuisine</span>
         <h1 class="hero-title font-display">
-          <span data-i18n="hero_sushi_title_1">Freshly Rolled.</span> <br><em data-i18n="hero_sushi_title_2">Artfully
-            Crafted.</em>
+          <span data-i18n="hero_sushi_title_1">Freshly Rolled</span> <br><em data-i18n="hero_sushi_title_2">Artfully
+            Crafted</em>
         </h1>
         <p class="hero-desc" data-i18n="sushi_hero_desc_full">
           Experience the delicate balance of traditional techniques and modern flavors. Premium ingredients, masterfully
           crafted for an unforgettable journey.
         </p>
         <div class="hero-buttons">
-          <a href="#menu" class="btn-primary">
+          <a href="sushi-menu.html" class="btn-primary">
             <span data-i18n="hero_view_menu">View Menu</span>
             <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
           </a>
@@ -166,19 +166,92 @@
     </div>
   </section>
 
-  <!-- Full Menu Section -->
+  <!-- Menu Categories Section -->
   <section id="menu" class="section section-sushi-alt">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-i18n="section_full_menu">Full Menu</span>
+        <span class="section-tag" data-i18n="section_full_menu">Our Menu</span>
         <h2 class="section-title font-display" data-i18n="section_sushi_menu_title">The Sushi Bay Menu</h2>
         <p class="section-desc" data-i18n="section_sushi_menu_desc">From classic nigiri to creative signature rolls —
-          every piece tells a story of freshness
-          and craft.</p>
+          every piece tells a story of freshness and craft.</p>
       </div>
-      <div class="menu-tabs"></div>
-      <div class="menu-list-container" id="sushi-menu-grid">
-        <div class="cart-empty" style="padding:3rem;text-align:center;" data-i18n="menu_loading">Loading menu...</div>
+      <div class="category-grid fade-in">
+        <a href="sushi-menu.html#soup" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/soup.webp" alt="Soup" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Soup</h3>
+        </a>
+        <a href="sushi-menu.html#salad" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/salad.webp" alt="Salad" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Salad</h3>
+        </a>
+        <a href="sushi-menu.html#appetizers" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/appetizer.webp" alt="Appetizers" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Appetizers</h3>
+        </a>
+        <a href="sushi-menu.html#noodles" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/noodles.webp" alt="Noodles" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Noodles</h3>
+        </a>
+        <a href="sushi-menu.html#nigiri" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/nigiri.webp" alt="Nigiri" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Nigiri</h3>
+        </a>
+        <a href="sushi-menu.html#sashimi" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/sashimi.webp" alt="Sashimi" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Sashimi</h3>
+        </a>
+        <a href="sushi-menu.html#maki-rolls" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/maki_rolls.webp" alt="Maki Rolls" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Maki Rolls</h3>
+        </a>
+        <a href="sushi-menu.html#signature-rolls" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/signature_rolls.webp" alt="Signature Rolls" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Signature Rolls</h3>
+        </a>
+        <a href="sushi-menu.html#fried-rolls" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/fried_rolls.webp" alt="Fried Rolls" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Fried Rolls</h3>
+        </a>
+        <a href="sushi-menu.html#combinations" class="category-card category-card-sushi">
+          <div class="category-card-img">
+            <img src="images/categories/sushi/combinations.webp" alt="Combinations" loading="lazy">
+            <div class="category-card-overlay"></div>
+          </div>
+          <h3 class="category-card-title font-display">Combinations</h3>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="sushi-menu.html" class="btn-primary">
+          <span data-i18n="hero_view_menu">View Full Menu</span>
+          <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
+        </a>
       </div>
     </div>
   </section>
@@ -328,11 +401,6 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      loadMenu('sushi.json', 'sushi-menu-grid', 'Sushi Bay', false);
-    });
-  </script>
 </body>
 
 </html>

@@ -201,6 +201,165 @@ async function loadMenu(jsonFile, containerId, brand, isCafe = false) {
   }
 }
 
+// ===== Load Menu Page (Full with images) =====
+async function loadMenuPage(
+  jsonFile,
+  containerId,
+  tabsContainerId,
+  isCafe = false,
+) {
+  try {
+    const resp = await fetch(jsonFile);
+    const data = await resp.json();
+    const container = document.getElementById(containerId);
+    const tabsContainer = document.getElementById(tabsContainerId);
+    if (!container) return;
+
+    const categories = data.menu.map((c) => c.category);
+
+    // Build sticky category tabs
+    if (tabsContainer) {
+      let tabsHTML = '';
+      categories.forEach((cat) => {
+        const slug = slugify(cat);
+        tabsHTML += `<a href="#${slug}" class="menu-tab" data-slug="${slug}">${cat}</a>`;
+      });
+      tabsContainer.innerHTML = tabsHTML;
+    }
+
+    // Build full menu with image cards
+    let contentHTML = '';
+    const placeholderSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280' fill='none'%3E%3Crect width='400' height='280' fill='%23${isCafe ? '231810' : '1e2629'}'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23555' font-size='14' font-family='sans-serif'%3EPhoto Coming Soon%3C/text%3E%3C/svg%3E`;
+
+    data.menu.forEach((cat) => {
+      const slug = slugify(cat.category);
+      contentHTML += `
+        <div class="menu-page-category" id="${slug}">
+          <div class="menu-page-category-header">
+            <h2 class="menu-page-category-title font-display">${cat.category}</h2>
+            <span class="menu-page-category-count">${cat.items.length} items</span>
+          </div>
+          <div class="menu-page-grid">
+      `;
+
+      cat.items.forEach((item) => {
+        const imgSrc = item.image
+          ? `images/menu/${item.image}`
+          : placeholderSvg;
+
+        contentHTML += `
+          <div class="menu-item-card">
+            <div class="menu-item-card-img">
+              <img src="${placeholderSvg}" alt="${item.name_en}" loading="lazy">
+            </div>
+            <div class="menu-item-card-body">
+              <div class="menu-item-card-type">${item.type || cat.category}</div>
+              <div class="menu-item-card-name">${item.name_en}</div>
+              <div class="menu-item-card-name-ar">${item.name_ar}</div>
+              <div class="menu-item-card-footer">
+                <span class="menu-item-card-price">${item.price}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      contentHTML += '</div></div>';
+    });
+
+    container.innerHTML = contentHTML;
+
+    // Highlight active tab on scroll
+    initCategoryScrollSpy(categories);
+
+    // Handle hash navigation
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      }
+    }
+  } catch (err) {
+    console.error('Failed to load menu page:', err);
+  }
+}
+
+// ===== Slug helper =====
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[&]/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// ===== Category ScrollSpy =====
+function initCategoryScrollSpy(categories) {
+  const tabs = document.querySelectorAll('.menu-category-nav-inner .menu-tab');
+  const sections = categories
+    .map((cat) => document.getElementById(slugify(cat)))
+    .filter(Boolean);
+
+  if (!tabs.length || !sections.length) return;
+
+  let ticking = false;
+
+  function updateActiveTab() {
+    if (ticking) return;
+    ticking = true;
+
+    requestAnimationFrame(() => {
+      // Find which section is most visible
+      let maxVisibility = 0;
+      let activeSection = null;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const navHeight = 120;
+        const viewportHeight = window.innerHeight;
+
+        // Calculate visibility
+        const visibleTop = Math.max(navHeight, rect.top);
+        const visibleBottom = Math.min(viewportHeight, rect.bottom);
+        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+        const visibility = visibleHeight / (rect.height || 1);
+
+        if (visibility > maxVisibility) {
+          maxVisibility = visibility;
+          activeSection = section;
+        }
+      });
+
+      if (activeSection) {
+        const slug = activeSection.id;
+        tabs.forEach((tab) => {
+          tab.classList.toggle('active', tab.dataset.slug === slug);
+        });
+        // Scroll active tab into view
+        const activeTab = document.querySelector(
+          `.menu-category-nav-inner .menu-tab[data-slug="${slug}"]`,
+        );
+        if (activeTab) {
+          activeTab.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center',
+          });
+        }
+      }
+
+      ticking = false;
+    });
+  }
+
+  // Update on scroll
+  window.addEventListener('scroll', updateActiveTab, { passive: true });
+  // Initial update
+  updateActiveTab();
+}
+
 // ===== Intersection Observer for fade-in =====
 function initScrollAnimations() {
   const observer = new IntersectionObserver(

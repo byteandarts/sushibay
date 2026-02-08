@@ -25,8 +25,8 @@ const translations = {
 
     // Hero - Sushi
     hero_sushi_tag: 'Premium Japanese Cuisine',
-    hero_sushi_title_1: 'Freshly Rolled.',
-    hero_sushi_title_2: 'Artfully Crafted.',
+    hero_sushi_title_1: 'Freshly Rolled',
+    hero_sushi_title_2: 'Artfully Crafted',
     hero_sushi_desc:
       'Experience the delicate balance of traditional techniques and modern flavors. Premium ingredients, masterfully crafted for an unforgettable journey.',
 

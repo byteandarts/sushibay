@@ -1,0 +1,7 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "cp": true,
+    "cwebp": true,
+    "mv": true
+  }
+}
