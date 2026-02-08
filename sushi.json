@@ -8,28 +8,36 @@
           "name_ar": "شوربة فواكه البحر بالكريمة",
           "price": "250.00 LE",
           "type": "Soup",
-          "image": "sea_food_cream_soup.webp"
+          "image": "sea_food_cream_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Coconut Soup",
           "name_ar": "شوربة جوز الهند",
           "price": "255.00 LE",
           "type": "Soup",
-          "image": "coconut_soup.webp"
+          "image": "coconut_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Miso Soup",
           "name_ar": "شوربة ميسو",
           "price": "135.00 LE",
           "type": "Soup",
-          "image": "miso_soup.webp"
+          "image": "miso_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Seafood Soup",
           "name_ar": "شوربة فواكه بحر حارة",
           "price": "225.00 LE",
           "type": "Soup",
-          "image": "spicy_seafood_soup.webp"
+          "image": "spicy_seafood_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -41,28 +49,36 @@
           "name_ar": "سلطة تونة حارة",
           "price": "250.00 LE",
           "type": "Salad",
-          "image": "spicy_tuna_salad.webp"
+          "image": "spicy_tuna_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crab Salad",
           "name_ar": "سلطة كابوريا",
           "price": "195.00 LE",
           "type": "Salad",
-          "image": "crab_salad.webp"
+          "image": "crab_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Healthy Salad",
           "name_ar": "سلطة صحية",
           "price": "195.00 LE",
           "type": "Salad",
-          "image": "healthy_salad.webp"
+          "image": "healthy_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Salad",
           "name_ar": "سلطة سلمون",
           "price": "265.00 LE",
           "type": "Salad",
-          "image": "salmon_salad.webp"
+          "image": "salmon_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -74,21 +90,27 @@
           "name_ar": "إيبي تمبورا",
           "price": "185.00 LE",
           "type": "Appetizer",
-          "image": "ebi_tempura.webp"
+          "image": "ebi_tempura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Wrapped Finger Shrimps",
           "name_ar": "أصابع الجمبري الملفوفة",
           "price": "265.00 LE",
           "type": "Appetizer",
-          "image": "wrapped_finger_shrimps.webp"
+          "image": "wrapped_finger_shrimps.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spring Rolls",
           "name_ar": "سبرينج رولز",
           "price": "95.00 LE",
           "type": "Appetizer",
-          "image": "spring_rolls.webp"
+          "image": "spring_rolls.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -100,70 +122,90 @@
           "name_ar": "نودلز الأرز بالجمبري الحار",
           "price": "310.00 LE",
           "type": "Noodles",
-          "image": "spicy_shrimp_rice_noodles.webp"
+          "image": "spicy_shrimp_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Rice Noodles",
           "name_ar": "نودلز الأرز باللحم",
           "price": "290.00 LE",
           "type": "Noodles",
-          "image": "beef_rice_noodles.webp"
+          "image": "beef_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Rice Noodles",
           "name_ar": "نودلز الأرز بالدجاج",
           "price": "240.00 LE",
           "type": "Noodles",
-          "image": "chicken_rice_noodles.webp"
+          "image": "chicken_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Noodles",
           "name_ar": "نودلز الجمبري الحار",
           "price": "290.00 LE",
           "type": "Noodles",
-          "image": "spicy_shrimp_noodles.webp"
+          "image": "spicy_shrimp_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Noodles",
           "name_ar": "نودلز باللحم",
           "price": "270.00 LE",
           "type": "Noodles",
-          "image": "beef_noodles.webp"
+          "image": "beef_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Noodles",
           "name_ar": "نودلز بالدجاج",
           "price": "220.00 LE",
           "type": "Noodles",
-          "image": "chicken_noodles.webp"
+          "image": "chicken_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Veggie Noodles",
           "name_ar": "نودلز بالخضروات",
           "price": "140.00 LE",
           "type": "Noodles",
-          "image": "veggie_noodles.webp"
+          "image": "veggie_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Glass Noodles",
           "name_ar": "نودلز زجاجية بالجمبري الحار",
           "price": "310.00 LE",
           "type": "Noodles",
-          "image": "spicy_shrimp_glass_noodles.webp"
+          "image": "spicy_shrimp_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Glass Noodles",
           "name_ar": "نودلز زجاجية باللحم",
           "price": "290.00 LE",
           "type": "Noodles",
-          "image": "beef_glass_noodles.webp"
+          "image": "beef_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Glass Noodles",
           "name_ar": "نودلز زجاجية بالدجاج",
           "price": "240.00 LE",
           "type": "Noodles",
-          "image": "chicken_glass_noodles.webp"
+          "image": "chicken_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -175,14 +217,18 @@
           "name_ar": "دجاج حلو وحامض",
           "price": "295.00 LE",
           "type": "Main Course",
-          "image": "sweet_and_sour_chicken.webp"
+          "image": "sweet_and_sour_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sweet & Sour Shrimp",
           "name_ar": "جمبري حلو وحامض",
           "price": "370.00 LE",
           "type": "Main Course",
-          "image": "sweet_and_sour_shrimp.webp"
+          "image": "sweet_and_sour_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -194,21 +240,27 @@
           "name_ar": "دلو بلح البحر رقم 1 (ديجون)",
           "price": "305.00 LE",
           "type": "Seafood",
-          "image": "mussels_bucket_no_1_dijon.webp"
+          "image": "mussels_bucket_no_1_dijon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mussels Bucket No 2 (Basil Tomato)",
           "name_ar": "دلو بلح البحر رقم 2 (ريحان وطماطم)",
           "price": "305.00 LE",
           "type": "Seafood",
-          "image": "mussels_bucket_no_2_basil_tomato.webp"
+          "image": "mussels_bucket_no_2_basil_tomato.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mussels Bucket No 3 (Seafood)",
           "name_ar": "دلو بلح البحر رقم 3 (فواكه بحر)",
           "price": "375.00 LE",
           "type": "Seafood",
-          "image": "mussels_bucket_no_3_seafood.webp"
+          "image": "mussels_bucket_no_3_seafood.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -220,35 +272,45 @@
           "name_ar": "نيجيري جمبري",
           "price": "46.00 LE",
           "type": "Nigiri",
-          "image": "shrimp_nigiri.webp"
+          "image": "shrimp_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crab Nigiri",
           "name_ar": "نيجيري كابوريا",
           "price": "41.00 LE",
           "type": "Nigiri",
-          "image": "crab_nigiri.webp"
+          "image": "crab_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Squid Nigiri",
           "name_ar": "نيجيري كاليماري",
           "price": "41.00 LE",
           "type": "Nigiri",
-          "image": "squid_nigiri.webp"
+          "image": "squid_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Nigiri",
           "name_ar": "نيجيري سلمون",
           "price": "46.00 LE",
           "type": "Nigiri",
-          "image": "salmon_nigiri.webp"
+          "image": "salmon_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Nigiri",
           "name_ar": "نيجيري تونة",
           "price": "51.00 LE",
           "type": "Nigiri",
-          "image": "tuna_nigiri.webp"
+          "image": "tuna_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -260,35 +322,45 @@
           "name_ar": "ساشيمي سلمون",
           "price": "320.00 LE",
           "type": "Sashimi",
-          "image": "salmon_sashimi.webp"
+          "image": "salmon_sashimi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Sashimi",
           "name_ar": "ساشيمي تونة",
           "price": "320.00 LE",
           "type": "Sashimi",
-          "image": "tuna_sashimi.webp"
+          "image": "tuna_sashimi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Squid Sashimi",
           "name_ar": "ساشيمي كاليماري",
           "price": "230.00 LE",
           "type": "Sashimi",
-          "image": "squid_sashimi.webp"
+          "image": "squid_sashimi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Seared Salmon With Edamame Beans",
           "name_ar": "سلمون مشوح مع ادامامي",
           "price": "275.00 LE",
           "type": "Sashimi",
-          "image": "seared_salmon_with_edamame_beans.webp"
+          "image": "seared_salmon_with_edamame_beans.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Seared Tuna With Asparagus",
           "name_ar": "تونة مشوحة مع الهليون",
           "price": "275.00 LE",
           "type": "Sashimi",
-          "image": "seared_tuna_with_asparagus.webp"
+          "image": "seared_tuna_with_asparagus.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -300,56 +372,72 @@
           "name_ar": "ماكي سلمون",
           "price": "125.00 LE",
           "type": "Sushi Roll",
-          "image": "shake_salmon.webp"
+          "image": "shake_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tekka (Tuna)",
           "name_ar": "ماكي تونة",
           "price": "125.00 LE",
           "type": "Sushi Roll",
-          "image": "tekka_tuna.webp"
+          "image": "tekka_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ebi (Shrimp)",
           "name_ar": "ماكي جمبري",
           "price": "135.00 LE",
           "type": "Sushi Roll",
-          "image": "ebi_shrimp.webp"
+          "image": "ebi_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ebi Tempura",
           "name_ar": "ماكي جمبري تمبورا",
           "price": "135.00 LE",
           "type": "Sushi Roll",
-          "image": "ebi_tempura.webp"
+          "image": "ebi_tempura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Caviar Hosso Maki",
           "name_ar": "ماكي كافيار",
           "price": "165.00 LE",
           "type": "Sushi Roll",
-          "image": "caviar_hosso_maki.webp"
+          "image": "caviar_hosso_maki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Kani Kama",
           "name_ar": "ماكي كابوريا",
           "price": "105.00 LE",
           "type": "Sushi Roll",
-          "image": "kani_kama.webp"
+          "image": "kani_kama.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Kappa",
           "name_ar": "ماكي خيار",
           "price": "85.00 LE",
           "type": "Sushi Roll",
-          "image": "kappa.webp"
+          "image": "kappa.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Avocado Hosso Maki",
           "name_ar": "ماكي أفوكادو",
           "price": "110.00 LE",
           "type": "Sushi Roll",
-          "image": "avocado_hosso_maki.webp"
+          "image": "avocado_hosso_maki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -361,14 +449,18 @@
           "name_ar": "تشكيلة ساشيمي ونيجيري",
           "price": "485.00 LE",
           "type": "Platter",
-          "image": "assorted_sashimi_and_nigiri.webp"
+          "image": "assorted_sashimi_and_nigiri.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chirashi Sushi",
           "name_ar": "تشيراشي سوشي",
           "price": "420.00 LE",
           "type": "Sushi Bowl",
-          "image": "chirashi_sushi.webp"
+          "image": "chirashi_sushi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -380,252 +472,324 @@
           "name_ar": "ديناميت زون",
           "price": "215.00 LE",
           "type": "Sushi Roll",
-          "image": "dynamite_zone.webp"
+          "image": "dynamite_zone.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "California Roll",
           "name_ar": "كاليفورنيا رول",
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "california_roll.webp"
+          "image": "california_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Philadelphia Roll",
           "name_ar": "فيلادلفيا رول",
           "price": "280.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "philadelphia_roll.webp"
+          "image": "philadelphia_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Ura Maki",
           "name_ar": "أورا ماكي مقرمش",
           "price": "210.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "crispy_ura_maki.webp"
+          "image": "crispy_ura_maki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ura Shake",
           "name_ar": "أورا سلمون",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "ura_shake.webp"
+          "image": "ura_shake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Yuki",
           "name_ar": "سلمون يوكي",
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "salmon_yuki.webp"
+          "image": "salmon_yuki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Futo Maki",
           "name_ar": "فوتو ماكي",
           "price": "175.00 LE",
           "type": "Sushi Roll",
-          "image": "futo_maki.webp"
+          "image": "futo_maki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Yuki",
           "name_ar": "تونة يوكي",
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "tuna_yuki.webp"
+          "image": "tuna_yuki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fishing Cucumber",
           "name_ar": "فيشينج كيوكمبر",
           "price": "185.00 LE",
           "type": "Sushi Roll",
-          "image": "fishing_cucumber.webp"
+          "image": "fishing_cucumber.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Veggie Roll",
           "name_ar": "رول خضروات",
           "price": "160.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "veggie_roll.webp"
+          "image": "veggie_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crab Paste Roll",
           "name_ar": "رول معجون الكابوريا",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "crab_paste_roll.webp"
+          "image": "crab_paste_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ura Tekka",
           "name_ar": "أورا تيكة (تونة)",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "ura_tekka.webp"
+          "image": "ura_tekka.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ura Ebi Tempura",
           "name_ar": "أورا إيبي تمبورا",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "ura_ebi_tempura.webp"
+          "image": "ura_ebi_tempura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Transparent Roll",
           "name_ar": "الرول الشفاف",
           "price": "140.00 LE",
           "type": "Sushi Roll",
-          "image": "transparent_roll.webp"
+          "image": "transparent_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Dragon Roll",
           "name_ar": "دراجون رول",
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "dragon_roll.webp"
+          "image": "dragon_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "See Through Roll",
           "name_ar": "سي ثرو رول",
           "price": "295.00 LE",
           "type": "Sushi Roll",
-          "image": "see_through_roll.webp"
+          "image": "see_through_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Porto Canyon",
           "name_ar": "بورتو كانيون",
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "porto_canyon.webp"
+          "image": "porto_canyon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Euro Flakes",
           "name_ar": "يورو فليكس",
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "euro_flakes.webp"
+          "image": "euro_flakes.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Snow Flakes",
           "name_ar": "سنو فليكس",
           "price": "295.00 LE",
           "type": "Sushi Roll",
-          "image": "snow_flakes.webp"
+          "image": "snow_flakes.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Jalapeno Roll",
           "name_ar": "هالابينو رول",
           "price": "175.00 LE",
           "type": "Sushi Roll",
-          "image": "jalapeno_roll.webp"
+          "image": "jalapeno_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Green Splash",
           "name_ar": "جرين سبلاش",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "green_splash.webp"
+          "image": "green_splash.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Green Spikes",
           "name_ar": "جرين سبايكس",
           "price": "160.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "green_spikes.webp"
+          "image": "green_spikes.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Caesar Roll",
           "name_ar": "تشيكن سيزر رول",
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "chicken_caesar_roll.webp"
+          "image": "chicken_caesar_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Mango",
           "name_ar": "سلمون مانجو",
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "salmon_mango.webp"
+          "image": "salmon_mango.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Buddha Paste",
           "name_ar": "بوذا بيست",
           "price": "225.00 LE",
           "type": "Sushi Roll",
-          "image": "buddha_paste.webp"
+          "image": "buddha_paste.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Lava",
           "name_ar": "تونة لافا",
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "tuna_lava.webp"
+          "image": "tuna_lava.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Salmon Roll",
           "name_ar": "سبايسي سلمون رول",
           "price": "195.00 LE",
           "type": "Sushi Roll",
-          "image": "spicy_salmon_roll.webp"
+          "image": "spicy_salmon_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Philly Crispy",
           "name_ar": "فيلي كريسبي",
           "price": "295.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "philly_crispy.webp"
+          "image": "philly_crispy.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sky Fall",
           "name_ar": "سكاي فول",
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "sky_fall.webp"
+          "image": "sky_fall.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fire Fly",
           "name_ar": "فاير فلاي",
           "price": "195.00 LE",
           "type": "Sushi Roll",
-          "image": "fire_fly.webp"
+          "image": "fire_fly.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Onion Fortissimo",
           "name_ar": "أونيون فورتيسيمو",
           "price": "150.00 LE",
           "type": "Sushi Roll",
-          "image": "onion_fortissimo.webp"
+          "image": "onion_fortissimo.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spoiled Shrimp",
           "name_ar": "سبويلد شرمب",
           "price": "290.00 LE",
           "type": "Sushi Roll",
-          "image": "spoiled_shrimp.webp"
+          "image": "spoiled_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Mango",
           "name_ar": "تونة مانجو",
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "tuna_mango.webp"
+          "image": "tuna_mango.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Oshi Salmon",
           "name_ar": "أوشي سلمون",
           "price": "295.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "oshi_salmon.webp"
+          "image": "oshi_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sombrero Calamari",
           "name_ar": "سومبريرو كاليماري",
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "sombrero_calamari.webp"
+          "image": "sombrero_calamari.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Oshi Tempura",
           "name_ar": "أوشي تمبورا",
           "price": "190.00 LE (8pcs)",
           "type": "Sushi Roll",
-          "image": "oshi_tempura.webp"
+          "image": "oshi_tempura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -637,98 +801,126 @@
           "name_ar": "تمبورا مقرمش",
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "crispy_tempura.webp"
+          "image": "crispy_tempura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Rainbow Roll",
           "name_ar": "رينبو رول",
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "rainbow_roll.webp"
+          "image": "rainbow_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Queen Shrimp",
           "name_ar": "كوين شرمب",
           "price": "275.00 LE",
           "type": "Signature Roll",
-          "image": "queen_shrimp.webp"
+          "image": "queen_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Volcano",
           "name_ar": "فولكانو",
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "volcano.webp"
+          "image": "volcano.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite",
           "name_ar": "هوت ديناميت",
           "price": "220.00 LE",
           "type": "Signature Roll",
-          "image": "hot_dynamite.webp"
+          "image": "hot_dynamite.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Dynamite Oshi",
           "name_ar": "ديناميت أوشي",
           "price": "260.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "dynamite_oshi.webp"
+          "image": "dynamite_oshi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Golden Black",
           "name_ar": "جولدن بلاك",
           "price": "195.00 LE",
           "type": "Signature Roll",
-          "image": "golden_black.webp"
+          "image": "golden_black.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Tempura Tuna",
           "name_ar": "كريسبي تمبورا تونة",
           "price": "250.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "crispy_tempura_tuna.webp"
+          "image": "crispy_tempura_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Golden Amazing",
           "name_ar": "جولدن أميزينج",
           "price": "235.00 LE",
           "type": "Signature Roll",
-          "image": "golden_amazing.webp"
+          "image": "golden_amazing.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Angry Volcano",
           "name_ar": "أنجري فولكانو",
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "angry_volcano.webp"
+          "image": "angry_volcano.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Golden Oshi",
           "name_ar": "جولدن أوشي",
           "price": "310.00 LE",
           "type": "Signature Roll",
-          "image": "golden_oshi.webp"
+          "image": "golden_oshi.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crunchy Amazing",
           "name_ar": "كرانشي أميزينج",
           "price": "220.00 LE",
           "type": "Signature Roll",
-          "image": "crunchy_amazing.webp"
+          "image": "crunchy_amazing.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Yoshi Spicy Tuna",
           "name_ar": "يوشي سبايسي تونة",
           "price": "295.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "yoshi_spicy_tuna.webp"
+          "image": "yoshi_spicy_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Amazing",
           "name_ar": "كريسبي أميزينج",
           "price": "260.00 LE (8pcs)",
           "type": "Signature Roll",
-          "image": "crispy_amazing.webp"
+          "image": "crispy_amazing.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -740,140 +932,180 @@
           "name_ar": "كريزي فرايد رولز",
           "price": "260.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "crazy_fried_rolls.webp"
+          "image": "crazy_fried_rolls.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite Crazy",
           "name_ar": "هوت ديناميت كريزي",
           "price": "165.00 LE",
           "type": "Fried Roll",
-          "image": "hot_dynamite_crazy.webp"
+          "image": "hot_dynamite_crazy.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Mono Fried Tuna",
           "name_ar": "هوت مونو تونة مقلية",
           "price": "195.00 LE",
           "type": "Fried Roll",
-          "image": "hot_mono_fried_tuna.webp"
+          "image": "hot_mono_fried_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Mono Fried Crab",
           "name_ar": "هوت مونو كابوريا مقلية",
           "price": "130.00 LE",
           "type": "Fried Roll",
-          "image": "hot_mono_fried_crab.webp"
+          "image": "hot_mono_fried_crab.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Lava Cheese",
           "name_ar": "لافا تشيز",
           "price": "295.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "lava_cheese.webp"
+          "image": "lava_cheese.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Katsu Roll",
           "name_ar": "كاتسو رول",
           "price": "295.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "katsu_roll.webp"
+          "image": "katsu_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite Tuna",
           "name_ar": "هوت ديناميت تونة",
           "price": "195.00 LE",
           "type": "Fried Roll",
-          "image": "hot_dynamite_tuna.webp"
+          "image": "hot_dynamite_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hosso Fried Shrimp",
           "name_ar": "هوسو جمبري مقلي",
           "price": "165.00 LE",
           "type": "Fried Roll",
-          "image": "hosso_fried_shrimp.webp"
+          "image": "hosso_fried_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hosso Fried Salmon",
           "name_ar": "هوسو سلمون مقلي",
           "price": "175.00 LE",
           "type": "Fried Roll",
-          "image": "hosso_fried_salmon.webp"
+          "image": "hosso_fried_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite Crab",
           "name_ar": "هوت ديناميت كابوريا",
           "price": "155.00 LE",
           "type": "Fried Roll",
-          "image": "hot_dynamite_crab.webp"
+          "image": "hot_dynamite_crab.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "New Fried Roll",
           "name_ar": "نيو فرايد رول",
           "price": "230.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "new_fried_roll.webp"
+          "image": "new_fried_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "New Style Katsu",
           "name_ar": "نيو ستايل كاتسو",
           "price": "320.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "new_style_katsu.webp"
+          "image": "new_style_katsu.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Golden Crab",
           "name_ar": "جولدن كراب",
           "price": "140.00 LE",
           "type": "Fried Roll",
-          "image": "golden_crab.webp"
+          "image": "golden_crab.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Lemon",
           "name_ar": "سبايسي ليمون",
           "price": "235.00 LE",
           "type": "Fried Roll",
-          "image": "spicy_lemon.webp"
+          "image": "spicy_lemon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Super Crunchy Lava",
           "name_ar": "سوبر كرانشي لافا",
           "price": "165.00 LE",
           "type": "Fried Roll",
-          "image": "super_crunchy_lava.webp"
+          "image": "super_crunchy_lava.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crunchy Lemon",
           "name_ar": "كرانشي ليمون",
           "price": "215.00 LE",
           "type": "Fried Roll",
-          "image": "crunchy_lemon.webp"
+          "image": "crunchy_lemon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Mono Fried Salmon",
           "name_ar": "هوت مونو سلمون مقلي",
           "price": "210.00 LE",
           "type": "Fried Roll",
-          "image": "hot_mono_fried_salmon.webp"
+          "image": "hot_mono_fried_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite Shrimp",
           "name_ar": "هوت ديناميت جمبري",
           "price": "195.00 LE",
           "type": "Fried Roll",
-          "image": "hot_dynamite_shrimp.webp"
+          "image": "hot_dynamite_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dynamite Salmon",
           "name_ar": "هوت ديناميت سلمون",
           "price": "225.00 LE",
           "type": "Fried Roll",
-          "image": "hot_dynamite_salmon.webp"
+          "image": "hot_dynamite_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Bonzo Roll",
           "name_ar": "بونزو رول",
           "price": "300.00 LE (8pcs)",
           "type": "Fried Roll",
-          "image": "bonzo_roll.webp"
+          "image": "bonzo_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -885,84 +1117,108 @@
           "name_ar": "نيو سبايسي تونة رول",
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "new_spicy_tuna_roll.webp"
+          "image": "new_spicy_tuna_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Creamy Crab",
           "name_ar": "كريمي كراب",
           "price": "345.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "creamy_crab.webp"
+          "image": "creamy_crab.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Gisha Roll",
           "name_ar": "سبايسي جيشا رول",
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "spicy_gisha_roll.webp"
+          "image": "spicy_gisha_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crazy Dragon",
           "name_ar": "كريزي دراجون",
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "crazy_dragon.webp"
+          "image": "crazy_dragon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Classic Roll",
           "name_ar": "كلاسيك رول",
           "price": "330.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "classic_roll.webp"
+          "image": "classic_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Roll",
           "name_ar": "سبايسي شرمب رول",
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "spicy_shrimp_roll.webp"
+          "image": "spicy_shrimp_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "New Style Crispy Roll",
           "name_ar": "نيو ستايل كريسبي رول",
           "price": "295.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "new_style_crispy_roll.webp"
+          "image": "new_style_crispy_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Picasso Roll",
           "name_ar": "بيكاسو رول",
           "price": "220.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "picasso_roll.webp"
+          "image": "picasso_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Special One",
           "name_ar": "سبيشال وان",
           "price": "290.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "special_one.webp"
+          "image": "special_one.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mega Roll",
           "name_ar": "ميجا رول",
           "price": "340.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "mega_roll.webp"
+          "image": "mega_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "New Style Philadelphia",
           "name_ar": "نيو ستايل فيلادلفيا",
           "price": "340.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "new_style_philadelphia.webp"
+          "image": "new_style_philadelphia.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Togarashi Roll",
           "name_ar": "توجاراشي رول",
           "price": "330.00 LE (8pcs)",
           "type": "Premium Roll",
-          "image": "togarashi_roll.webp"
+          "image": "togarashi_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -974,42 +1230,54 @@
           "name_ar": "ديناميت سلمون",
           "price": "225.00 LE",
           "type": "Dynamite Roll",
-          "image": "dynamite_salmon.webp"
+          "image": "dynamite_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Dynamite Shrimp Fried",
           "name_ar": "ديناميت جمبري مقلي",
           "price": "195.00 LE",
           "type": "Dynamite Roll",
-          "image": "dynamite_shrimp_fried.webp"
+          "image": "dynamite_shrimp_fried.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Dynamite Tuna",
           "name_ar": "ديناميت تونة",
           "price": "195.00 LE",
           "type": "Dynamite Roll",
-          "image": "dynamite_tuna.webp"
+          "image": "dynamite_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fire Cracker",
           "name_ar": "فاير كراكر",
           "price": "260.00 LE (8pcs)",
           "type": "Dynamite Roll",
-          "image": "fire_cracker.webp"
+          "image": "fire_cracker.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "King Roll",
           "name_ar": "كينج رول",
           "price": "290.00 LE (8pcs)",
           "type": "Dynamite Roll",
-          "image": "king_roll.webp"
+          "image": "king_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Bold Roll",
           "name_ar": "بولد رول",
           "price": "300.00 LE (8pcs)",
           "type": "Dynamite Roll",
-          "image": "bold_roll.webp"
+          "image": "bold_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -1021,126 +1289,162 @@
           "name_ar": "تونة مقلية ونيئة",
           "price": "295.00 LE",
           "type": "Special Roll",
-          "image": "fried_and_raw_tuna.webp"
+          "image": "fried_and_raw_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Dynamite New Style",
           "name_ar": "ديناميت نيو ستايل",
           "price": "310.00 LE",
           "type": "Special Roll",
-          "image": "dynamite_new_style.webp"
+          "image": "dynamite_new_style.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fried and Raw Salmon",
           "name_ar": "سلمون مقلي ونيء",
           "price": "295.00 LE",
           "type": "Special Roll",
-          "image": "fried_and_raw_salmon.webp"
+          "image": "fried_and_raw_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Sexy Roll",
           "name_ar": "هوت سكسي رول",
           "price": "295.00 LE",
           "type": "Special Roll",
-          "image": "hot_sexy_roll.webp"
+          "image": "hot_sexy_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Golden Bermuda",
           "name_ar": "جولدن برمودا",
           "price": "275.00 LE",
           "type": "Special Roll",
-          "image": "golden_bermuda.webp"
+          "image": "golden_bermuda.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Smoked Bermuda",
           "name_ar": "سموكة برمودا",
           "price": "280.00 LE",
           "type": "Special Roll",
-          "image": "smoked_bermuda.webp"
+          "image": "smoked_bermuda.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sushi Sandwich Tuna",
           "name_ar": "سوشي ساندوتش تونة",
           "price": "195.00 LE",
           "type": "Sushi Sandwich",
-          "image": "sushi_sandwich_tuna.webp"
+          "image": "sushi_sandwich_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sushi Sandwich Shrimp",
           "name_ar": "سوشي ساندوتش جمبري",
           "price": "195.00 LE",
           "type": "Sushi Sandwich",
-          "image": "sushi_sandwich_shrimp.webp"
+          "image": "sushi_sandwich_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sushi Sandwich Salmon",
           "name_ar": "سوشي ساندوتش سلمون",
           "price": "260.00 LE",
           "type": "Sushi Sandwich",
-          "image": "sushi_sandwich_salmon.webp"
+          "image": "sushi_sandwich_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sushi Sandwich Crazy Mix",
           "name_ar": "سوشي ساندوتش كريزي ميكس",
           "price": "145.00 LE",
           "type": "Sushi Sandwich",
-          "image": "sushi_sandwich_crazy_mix.webp"
+          "image": "sushi_sandwich_crazy_mix.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crazy Burger",
           "name_ar": "كريزي برجر",
           "price": "165.00 LE",
           "type": "Sushi Burger",
-          "image": "crazy_burger.webp"
+          "image": "crazy_burger.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Burger",
           "name_ar": "سلمون برجر",
           "price": "280.00 LE",
           "type": "Sushi Burger",
-          "image": "salmon_burger.webp"
+          "image": "salmon_burger.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Shrimp Burger",
           "name_ar": "جمبري برجر",
           "price": "295.00 LE",
           "type": "Sushi Burger",
-          "image": "shrimp_burger.webp"
+          "image": "shrimp_burger.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Caviar Roll",
           "name_ar": "كافيار رول",
           "price": "520.00 LE (8pcs)",
           "type": "Special Roll",
-          "image": "caviar_roll.webp"
+          "image": "caviar_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tsunami Roll",
           "name_ar": "تسونامي رول",
           "price": "540.00 LE (8pcs)",
           "type": "Special Roll",
-          "image": "tsunami_roll.webp"
+          "image": "tsunami_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Wrapped Tuna",
           "name_ar": "رول تونة ملفوف",
           "price": "440.00 LE (8pcs)",
           "type": "Special Roll",
-          "image": "wrapped_tuna.webp"
+          "image": "wrapped_tuna.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Wrapped Salmon",
           "name_ar": "رول سلمون ملفوف",
           "price": "440.00 LE (8pcs)",
           "type": "Special Roll",
-          "image": "wrapped_salmon.webp"
+          "image": "wrapped_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crazy Squid Roll",
           "name_ar": "كريزي سكويد رول",
           "price": "420.00 LE (8pcs)",
           "type": "Special Roll",
-          "image": "crazy_squid_roll.webp"
+          "image": "crazy_squid_roll.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -1152,91 +1456,117 @@
           "name_ar": "كافيار مارشيه",
           "price": "335.00 LE",
           "type": "Gunkan",
-          "image": "caviar_marche.webp"
+          "image": "caviar_marche.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan Ikura",
           "name_ar": "جونكان إيكورا",
           "price": "120.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_ikura.webp"
+          "image": "gunkan_ikura.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan Crab",
           "name_ar": "جونكان كابوريا",
           "price": "70.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_crab.webp"
+          "image": "gunkan_crab.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan California",
           "name_ar": "جونكان كاليفورنيا",
           "price": "65.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_california.webp"
+          "image": "gunkan_california.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan Caterpillar",
           "name_ar": "جونكان كاتربيلر",
           "price": "85.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_caterpillar.webp"
+          "image": "gunkan_caterpillar.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan Caviar",
           "name_ar": "جونكان كافيار",
           "price": "95.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_caviar.webp"
+          "image": "gunkan_caviar.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Gunkan Salmon",
           "name_ar": "جونكان سلمون",
           "price": "95.00 LE",
           "type": "Gunkan",
-          "image": "gunkan_salmon.webp"
+          "image": "gunkan_salmon.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fortune Paste Temaki",
           "name_ar": "فورتشن بيست تيماكي",
           "price": "145.00 LE",
           "type": "Temaki",
-          "image": "fortune_paste_temaki.webp"
+          "image": "fortune_paste_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ikura Temaki",
           "name_ar": "إيكورا تيماكي",
           "price": "195.00 LE",
           "type": "Temaki",
-          "image": "ikura_temaki.webp"
+          "image": "ikura_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Temaki",
           "name_ar": "سلمون تيماكي",
           "price": "125.00 LE",
           "type": "Temaki",
-          "image": "salmon_temaki.webp"
+          "image": "salmon_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Temaki",
           "name_ar": "تونة تيماكي",
           "price": "115.00 LE",
           "type": "Temaki",
-          "image": "tuna_temaki.webp"
+          "image": "tuna_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Shrimp Temaki",
           "name_ar": "جمبري مقرمش تيماكي",
           "price": "125.00 LE",
           "type": "Temaki",
-          "image": "crispy_shrimp_temaki.webp"
+          "image": "crispy_shrimp_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Salmon Temaki",
           "name_ar": "سبايسي سلمون تيماكي",
           "price": "140.00 LE",
           "type": "Temaki",
-          "image": "spicy_salmon_temaki.webp"
+          "image": "spicy_salmon_temaki.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -1248,35 +1578,45 @@
           "name_ar": "كومبو 12 قطعة",
           "price": "390.00 LE",
           "type": "Combo Platter",
-          "image": "combo_12_pcs.webp"
+          "image": "combo_12_pcs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Combo 24 Pcs",
           "name_ar": "كومبو 24 قطعة",
           "price": "720.00 LE",
           "type": "Combo Platter",
-          "image": "combo_24_pcs.webp"
+          "image": "combo_24_pcs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Combo 36 Pcs",
           "name_ar": "كومبو 36 قطعة",
           "price": "935.00 LE",
           "type": "Combo Platter",
-          "image": "combo_36_pcs.webp"
+          "image": "combo_36_pcs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Combo 48 Pcs",
           "name_ar": "كومبو 48 قطعة",
           "price": "1175.00 LE",
           "type": "Combo Platter",
-          "image": "combo_48_pcs.webp"
+          "image": "combo_48_pcs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Combo 60 Pcs",
           "name_ar": "كومبو 60 قطعة",
           "price": "1420.00 LE",
           "type": "Combo Platter",
-          "image": "combo_60_pcs.webp"
+          "image": "combo_60_pcs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     }

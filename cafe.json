@@ -8,98 +8,126 @@
           "name_ar": "كرواسون كلاسيك",
           "price": "90 L.E",
           "type": "Bakery",
-          "image": "classic_croissant.webp"
+          "image": "classic_croissant.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheese Croissant",
           "name_ar": "كرواسون بالجبنة",
           "price": "100 L.E",
           "type": "Bakery",
-          "image": "cheese_croissant.webp"
+          "image": "cheese_croissant.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Stuffed Croissant",
           "name_ar": "كرواسون محشو",
           "price": "125 L.E",
           "type": "Bakery",
-          "image": "stuffed_croissant.webp"
+          "image": "stuffed_croissant.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mornings Offer",
           "name_ar": "عرض الصباح",
           "price": "150 L.E",
           "type": "Breakfast Deal",
-          "image": "mornings_offer.webp"
+          "image": "mornings_offer.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Coffee & Doughnut",
           "name_ar": "قهوة ودونات",
           "price": "150 L.E",
           "type": "Breakfast Deal",
-          "image": "coffee_and_doughnut.webp"
+          "image": "coffee_and_doughnut.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Fried Egg On Loaf",
           "name_ar": "بيض مقلي مع سلمون على التوست",
           "price": "270 L.E",
           "type": "Breakfast",
-          "image": "salmon_fried_egg_on_loaf.webp"
+          "image": "salmon_fried_egg_on_loaf.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Scrambled Egg On Loaf",
           "name_ar": "بيض مخفوق على التوست",
           "price": "160 L.E",
           "type": "Breakfast",
-          "image": "scrambled_egg_on_loaf.webp"
+          "image": "scrambled_egg_on_loaf.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Labneh Bites",
           "name_ar": "قطع اللبنة",
           "price": "170 L.E",
           "type": "Breakfast",
-          "image": "labneh_bites.webp"
+          "image": "labneh_bites.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Egg Pie",
           "name_ar": "فطيرة البيض",
           "price": "225 L.E",
           "type": "Breakfast",
-          "image": "egg_pie.webp"
+          "image": "egg_pie.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Classic Omelette or Two Boiled Eggs",
           "name_ar": "أومليت كلاسيك أو بيض مسلوق",
           "price": "135 L.E",
           "type": "Breakfast",
-          "image": "classic_omelette_or_two_boiled_eggs.webp"
+          "image": "classic_omelette_or_two_boiled_eggs.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheese Omelette",
           "name_ar": "أومليت بالجبنة",
           "price": "145 L.E",
           "type": "Breakfast",
-          "image": "cheese_omelette.webp"
+          "image": "cheese_omelette.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Stuffed Omelette",
           "name_ar": "أومليت محشو",
           "price": "175 L.E",
           "type": "Breakfast",
-          "image": "stuffed_omelette.webp"
+          "image": "stuffed_omelette.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "American Breakfast",
           "name_ar": "إفطار أمريكي",
           "price": "215 L.E",
           "type": "Breakfast",
-          "image": "american_breakfast.webp"
+          "image": "american_breakfast.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Breakfast",
           "name_ar": "إفطار سوبريم",
           "price": "240 L.E",
           "type": "Breakfast",
-          "image": "supreme_breakfast.webp"
+          "image": "supreme_breakfast.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -111,42 +139,54 @@
           "name_ar": "شوربة مشروم",
           "price": "120 L.E",
           "type": "Soup",
-          "image": "mushroom_soup.webp"
+          "image": "mushroom_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Cream Soup",
           "name_ar": "شوربة كريمة الدجاج",
           "price": "130 L.E",
           "type": "Soup",
-          "image": "chicken_cream_soup.webp"
+          "image": "chicken_cream_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Mushroom Soup",
           "name_ar": "شوربة دجاج بالمشروم",
           "price": "160 L.E",
           "type": "Soup",
-          "image": "chicken_mushroom_soup.webp"
+          "image": "chicken_mushroom_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sea Food Cream Soup",
           "name_ar": "شوربة فواكه البحر بالكريمة",
           "price": "250 L.E",
           "type": "Soup",
-          "image": "sea_food_cream_soup.webp"
+          "image": "sea_food_cream_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tom Yum Soup",
           "name_ar": "شوربة توم يام",
           "price": "225 L.E",
           "type": "Soup",
-          "image": "tom_yum_soup.webp"
+          "image": "tom_yum_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Coconut Soup",
           "name_ar": "شوربة جوز الهند",
           "price": "255 L.E",
           "type": "Soup",
-          "image": "coconut_soup.webp"
+          "image": "coconut_soup.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -158,56 +198,72 @@
           "name_ar": "جمبري ديناميت",
           "price": "270 L.E",
           "type": "Appetizer",
-          "image": "shrimp_dynamite.webp"
+          "image": "shrimp_dynamite.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Bites",
           "name_ar": "قطع السلمون",
           "price": "295 L.E",
           "type": "Appetizer",
-          "image": "salmon_bites.webp"
+          "image": "salmon_bites.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Chicken Strips",
           "name_ar": "أصابع الدجاج المقرمشة",
           "price": "190 L.E",
           "type": "Appetizer",
-          "image": "crispy_chicken_strips.webp"
+          "image": "crispy_chicken_strips.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crispy Shrimps",
           "name_ar": "جمبري مقرمش",
           "price": "250 L.E",
           "type": "Appetizer",
-          "image": "crispy_shrimps.webp"
+          "image": "crispy_shrimps.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Texas Cheese Fries",
           "name_ar": "بطاطس تكساس بالجبنة",
           "price": "190 L.E",
           "type": "Appetizer",
-          "image": "texas_cheese_fries.webp"
+          "image": "texas_cheese_fries.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Quesadilla",
           "name_ar": "كاساديا الدجاج",
           "price": "225 L.E",
           "type": "Appetizer",
-          "image": "chicken_quesadilla.webp"
+          "image": "chicken_quesadilla.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheese Garlic Bread",
           "name_ar": "خبز بالثوم والجبنة",
           "price": "115 L.E",
           "type": "Appetizer",
-          "image": "cheese_garlic_bread.webp"
+          "image": "cheese_garlic_bread.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Crunchy To Share",
           "name_ar": "طبق مقرمشات للمشاركة",
           "price": "260 L.E",
           "type": "Appetizer",
-          "image": "crunchy_to_share.webp"
+          "image": "crunchy_to_share.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -219,56 +275,72 @@
           "name_ar": "سلطة تونة",
           "price": "225 L.E",
           "type": "Salad",
-          "image": "tuna_salad.webp"
+          "image": "tuna_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Island",
           "name_ar": "سلطة سالمون أيلاند",
           "price": "395 L.E",
           "type": "Salad",
-          "image": "salmon_island.webp"
+          "image": "salmon_island.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Caesar Salad",
           "name_ar": "سيزر سالاد",
           "price": "155 L.E",
           "type": "Salad",
-          "image": "caesar_salad.webp"
+          "image": "caesar_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Caesar Salad",
           "name_ar": "سيزر سالاد بالدجاج",
           "price": "200 L.E",
           "type": "Salad",
-          "image": "chicken_caesar_salad.webp"
+          "image": "chicken_caesar_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Greek Salad",
           "name_ar": "سلطة يونانية",
           "price": "145 L.E",
           "type": "Salad",
-          "image": "greek_salad.webp"
+          "image": "greek_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Los Maruscos Salad",
           "name_ar": "سلطة لوس ماروسكوس",
           "price": "345 L.E",
           "type": "Salad",
-          "image": "los_maruscos_salad.webp"
+          "image": "los_maruscos_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sea Food Salad",
           "name_ar": "سلطة فواكه البحر",
           "price": "295 L.E",
           "type": "Salad",
-          "image": "sea_food_salad.webp"
+          "image": "sea_food_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Nesoaz Salad (Niçoise)",
           "name_ar": "سلطة نيسواز",
           "price": "235 L.E",
           "type": "Salad",
-          "image": "nesoaz_salad.webp"
+          "image": "nesoaz_salad.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -280,98 +352,126 @@
           "name_ar": "ساندوتش دجاج مقلي بالهالابينو",
           "price": "265 L.E",
           "type": "Sandwich",
-          "image": "jalapeno_fried_chicken_sandwich.webp"
+          "image": "jalapeno_fried_chicken_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Burger",
           "name_ar": "برجر سوبريم",
           "price": "235 L.E",
           "type": "Burger",
-          "image": "supreme_burger.webp"
+          "image": "supreme_burger.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Sandwich",
           "name_ar": "ساندوتش سلمون",
           "price": "330 L.E",
           "type": "Sandwich",
-          "image": "salmon_sandwich.webp"
+          "image": "salmon_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Texas Burger",
           "name_ar": "برجر تكساس",
           "price": "260 L.E",
           "type": "Burger",
-          "image": "texas_burger.webp"
+          "image": "texas_burger.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Fillet",
           "name_ar": "دجاج فيليه",
           "price": "185 L.E",
           "type": "Sandwich",
-          "image": "chicken_fillet.webp"
+          "image": "chicken_fillet.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Shish Tawook Sandwich",
           "name_ar": "ساندوتش شيش طاووق",
           "price": "185 L.E",
           "type": "Sandwich",
-          "image": "shish_tawook_sandwich.webp"
+          "image": "shish_tawook_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Shrimp Sandwich",
           "name_ar": "ساندوتش جمبري",
           "price": "225 L.E",
           "type": "Sandwich",
-          "image": "shrimp_sandwich.webp"
+          "image": "shrimp_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheesy Beef Sandwich",
           "name_ar": "ساندوتش بيف بالجبنة",
           "price": "260 L.E",
           "type": "Sandwich",
-          "image": "cheesy_beef_sandwich.webp"
+          "image": "cheesy_beef_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Club Sandwich",
           "name_ar": "كلوب ساندوتش سوبريم",
           "price": "195 L.E",
           "type": "Sandwich",
-          "image": "supreme_club_sandwich.webp"
+          "image": "supreme_club_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tuna Melt Sandwich",
           "name_ar": "ساندوتش تونة ميلت",
           "price": "195 L.E",
           "type": "Sandwich",
-          "image": "tuna_melt_sandwich.webp"
+          "image": "tuna_melt_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Salami Sandwich",
           "name_ar": "ساندوتش دجاج بالسلامي",
           "price": "215 L.E",
           "type": "Sandwich",
-          "image": "chicken_salami_sandwich.webp"
+          "image": "chicken_salami_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Croque Madame",
           "name_ar": "كروك مدام",
           "price": "160 L.E",
           "type": "Sandwich",
-          "image": "croque_madame.webp"
+          "image": "croque_madame.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Dog",
           "name_ar": "هوت دوج",
           "price": "140 L.E",
           "type": "Sandwich",
-          "image": "hot_dog.webp"
+          "image": "hot_dog.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sausage Sandwich",
           "name_ar": "ساندوتش سجق",
           "price": "140 L.E",
           "type": "Sandwich",
-          "image": "sausage_sandwich.webp"
+          "image": "sausage_sandwich.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -383,126 +483,162 @@
           "name_ar": "سباجيتي بولونيز",
           "price": "235 L.E",
           "type": "Pasta",
-          "image": "spaghetti_bolognese.webp"
+          "image": "spaghetti_bolognese.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Seafood Linguine",
           "name_ar": "لينجويني فواكه البحر",
           "price": "390 L.E",
           "type": "Pasta",
-          "image": "seafood_linguine.webp"
+          "image": "seafood_linguine.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Seafood Conchiglie",
           "name_ar": "كونكيلي فواكه البحر",
           "price": "390 L.E",
           "type": "Pasta",
-          "image": "seafood_conchiglie.webp"
+          "image": "seafood_conchiglie.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Penne Arrabiata (Spicy)",
           "name_ar": "بيني أرابياتا (حار)",
           "price": "225 L.E",
           "type": "Pasta",
-          "image": "penne_arrabiata_spicy.webp"
+          "image": "penne_arrabiata_spicy.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salmon Pasta",
           "name_ar": "مكرونة بالسلمون",
           "price": "390 L.E",
           "type": "Pasta",
-          "image": "salmon_pasta.webp"
+          "image": "salmon_pasta.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Signature Pasta",
           "name_ar": "مكرونة سوبريم المميزة",
           "price": "270 L.E",
           "type": "Pasta",
-          "image": "supreme_signature_pasta.webp"
+          "image": "supreme_signature_pasta.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheesy Pasta",
           "name_ar": "مكرونة بالجبنة",
           "price": "270 L.E",
           "type": "Pasta",
-          "image": "cheesy_pasta.webp"
+          "image": "cheesy_pasta.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Penne Fried Chicken",
           "name_ar": "بيني دجاج مقلي",
           "price": "270 L.E",
           "type": "Pasta",
-          "image": "penne_fried_chicken.webp"
+          "image": "penne_fried_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Noodles",
           "name_ar": "نودلز جمبري حار",
           "price": "290 L.E",
           "type": "Noodles",
-          "image": "spicy_shrimp_noodles.webp"
+          "image": "spicy_shrimp_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Noodles",
           "name_ar": "نودلز باللحم",
           "price": "270 L.E",
           "type": "Noodles",
-          "image": "beef_noodles.webp"
+          "image": "beef_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Noodles",
           "name_ar": "نودلز بالدجاج",
           "price": "220 L.E",
           "type": "Noodles",
-          "image": "chicken_noodles.webp"
+          "image": "chicken_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Veggie Noodles",
           "name_ar": "نودلز بالخضروات",
           "price": "140 L.E",
           "type": "Noodles",
-          "image": "veggie_noodles.webp"
+          "image": "veggie_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Glass Noodles",
           "name_ar": "نودلز زجاجية بالجمبري الحار",
           "price": "310 L.E",
           "type": "Noodles",
-          "image": "spicy_shrimp_glass_noodles.webp"
+          "image": "spicy_shrimp_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Glass Noodles",
           "name_ar": "نودلز زجاجية باللحم",
           "price": "290 L.E",
           "type": "Noodles",
-          "image": "beef_glass_noodles.webp"
+          "image": "beef_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Glass Noodles",
           "name_ar": "نودلز زجاجية بالدجاج",
           "price": "240 L.E",
           "type": "Noodles",
-          "image": "chicken_glass_noodles.webp"
+          "image": "chicken_glass_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Spicy Shrimp Rice Noodles",
           "name_ar": "نودلز الأرز بالجمبري الحار",
           "price": "310 L.E",
           "type": "Noodles",
-          "image": "spicy_shrimp_rice_noodles.webp"
+          "image": "spicy_shrimp_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Rice Noodles",
           "name_ar": "نودلز الأرز باللحم",
           "price": "290 L.E",
           "type": "Noodles",
-          "image": "beef_rice_noodles.webp"
+          "image": "beef_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Rice Noodles",
           "name_ar": "نودلز الأرز بالدجاج",
           "price": "240 L.E",
           "type": "Noodles",
-          "image": "chicken_rice_noodles.webp"
+          "image": "chicken_rice_noodles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -514,63 +650,81 @@
           "name_ar": "بيتزا فواكه البحر",
           "price": "390 L.E",
           "type": "Pizza",
-          "image": "seafood_pizza.webp"
+          "image": "seafood_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Meat Lover Pizza",
           "name_ar": "بيتزا عشاق اللحوم",
           "price": "290 L.E",
           "type": "Pizza",
-          "image": "meat_lover_pizza.webp"
+          "image": "meat_lover_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Salami Pizza",
           "name_ar": "بيتزا سلامي",
           "price": "240 L.E",
           "type": "Pizza",
-          "image": "salami_pizza.webp"
+          "image": "salami_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "BBQ Chicken Pizza",
           "name_ar": "بيتزا دجاج باربيكيو",
           "price": "240 L.E",
           "type": "Pizza",
-          "image": "bbq_chicken_pizza.webp"
+          "image": "bbq_chicken_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Veggie Pizza",
           "name_ar": "بيتزا خضروات",
           "price": "195 L.E",
           "type": "Pizza",
-          "image": "veggie_pizza.webp"
+          "image": "veggie_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Margherita Pizza",
           "name_ar": "بيتزا مارجريتا",
           "price": "190 L.E",
           "type": "Pizza",
-          "image": "margherita_pizza.webp"
+          "image": "margherita_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cheese Lovers Pizza",
           "name_ar": "بيتزا عشاق الجبنة",
           "price": "255 L.E",
           "type": "Pizza",
-          "image": "cheese_lovers_pizza.webp"
+          "image": "cheese_lovers_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Special Pizza",
           "name_ar": "بيتزا سوبريم سبيشال",
           "price": "235 L.E",
           "type": "Pizza",
-          "image": "supreme_special_pizza.webp"
+          "image": "supreme_special_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Ranch Pizza",
           "name_ar": "بيتزا دجاج رانش",
           "price": "245 L.E",
           "type": "Pizza",
-          "image": "chicken_ranch_pizza.webp"
+          "image": "chicken_ranch_pizza.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -582,147 +736,189 @@
           "name_ar": "دجاج سويت آند ساور",
           "price": "295 L.E",
           "type": "Main Course",
-          "image": "sweet_and_sour_chicken.webp"
+          "image": "sweet_and_sour_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Sweet & Sour Shrimp",
           "name_ar": "جمبري سويت آند ساور",
           "price": "370 L.E",
           "type": "Main Course",
-          "image": "sweet_and_sour_shrimp.webp"
+          "image": "sweet_and_sour_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Fillet",
           "name_ar": "فيليه لحم بقري",
           "price": "480 L.E",
           "type": "Main Course (Beef)",
-          "image": "beef_fillet.webp"
+          "image": "beef_fillet.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Stroganoff",
           "name_ar": "بيف ستروجانوف",
           "price": "375 L.E",
           "type": "Main Course (Beef)",
-          "image": "beef_stroganoff.webp"
+          "image": "beef_stroganoff.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Beef Piccata",
           "name_ar": "بيكاتا لحم",
           "price": "375 L.E",
           "type": "Main Course (Beef)",
-          "image": "beef_piccata.webp"
+          "image": "beef_piccata.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Rib Eye",
           "name_ar": "ريب آي ستيك",
           "price": "540 L.E",
           "type": "Main Course (Beef)",
-          "image": "rib_eye.webp"
+          "image": "rib_eye.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Flame Grilled Chicken",
           "name_ar": "دجاج مشوي على اللهب",
           "price": "295 L.E",
           "type": "Main Course (Chicken)",
-          "image": "flame_grilled_chicken.webp"
+          "image": "flame_grilled_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Stuffed Crusted Chicken",
           "name_ar": "دجاج محشو مقرمش",
           "price": "325 L.E",
           "type": "Main Course (Chicken)",
-          "image": "stuffed_crusted_chicken.webp"
+          "image": "stuffed_crusted_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mustard Chicken Casserole",
           "name_ar": "طاجن دجاج بالمستردة",
           "price": "270 L.E",
           "type": "Main Course (Chicken)",
-          "image": "mustard_chicken_casserole.webp"
+          "image": "mustard_chicken_casserole.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Piccata",
           "name_ar": "بيكاتا دجاج",
           "price": "270 L.E",
           "type": "Main Course (Chicken)",
-          "image": "chicken_piccata.webp"
+          "image": "chicken_piccata.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chicken Cordon Bleu",
           "name_ar": "تشيكن كوردون بلو",
           "price": "280 L.E",
           "type": "Main Course (Chicken)",
-          "image": "chicken_cordon_bleu.webp"
+          "image": "chicken_cordon_bleu.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Smoked Chicken",
           "name_ar": "دجاج مدخن",
           "price": "325 L.E",
           "type": "Main Course (Chicken)",
-          "image": "smoked_chicken.webp"
+          "image": "smoked_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Grilled Salmon Fillet",
           "name_ar": "فيليه سلمون مشوي",
           "price": "540 L.E",
           "type": "Main Course (Seafood)",
-          "image": "grilled_salmon_fillet.webp"
+          "image": "grilled_salmon_fillet.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mix Seafood",
           "name_ar": "ميكس سي فوود",
           "price": "425 L.E",
           "type": "Main Course (Seafood)",
-          "image": "mix_seafood.webp"
+          "image": "mix_seafood.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Butterfly Shrimp",
           "name_ar": "جمبري بترفلاي",
           "price": "445 L.E",
           "type": "Main Course (Seafood)",
-          "image": "butterfly_shrimp.webp"
+          "image": "butterfly_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Grilled Shrimp",
           "name_ar": "جمبري مشوي",
           "price": "445 L.E",
           "type": "Main Course (Seafood)",
-          "image": "grilled_shrimp.webp"
+          "image": "grilled_shrimp.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Seafood Rice",
           "name_ar": "أرز فواكه البحر",
           "price": "400 L.E",
           "type": "Main Course (Seafood)",
-          "image": "seafood_rice.webp"
+          "image": "seafood_rice.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Kofta",
           "name_ar": "كفتة",
           "price": "325 L.E",
           "type": "Oriental Grill",
-          "image": "kofta.webp"
+          "image": "kofta.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mix Grill",
           "name_ar": "ميكس جريل",
           "price": "455 L.E",
           "type": "Oriental Grill",
-          "image": "mix_grill.webp"
+          "image": "mix_grill.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Half Chicken",
           "name_ar": "نصف دجاجة",
           "price": "310 L.E",
           "type": "Oriental Grill",
-          "image": "half_chicken.webp"
+          "image": "half_chicken.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Shish Tawook",
           "name_ar": "شيش طاووق",
           "price": "275 L.E",
           "type": "Oriental Grill",
-          "image": "shish_tawook.webp"
+          "image": "shish_tawook.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -734,147 +930,189 @@
           "name_ar": "كيكة الجزر باللوتس",
           "price": "135 L.E",
           "type": "Dessert",
-          "image": "carrot_lotus_cake.webp"
+          "image": "carrot_lotus_cake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chocolate Mousse Cake",
           "name_ar": "كيكة موس الشوكولاتة",
           "price": "125 L.E",
           "type": "Dessert",
-          "image": "chocolate_mousse_cake.webp"
+          "image": "chocolate_mousse_cake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Lotus Cheesecake",
           "name_ar": "تشيز كيك لوتس",
           "price": "140 L.E",
           "type": "Dessert",
-          "image": "lotus_cheesecake.webp"
+          "image": "lotus_cheesecake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Caramel Cheesecake",
           "name_ar": "تشيز كيك كراميل",
           "price": "135 L.E",
           "type": "Dessert",
-          "image": "caramel_cheesecake.webp"
+          "image": "caramel_cheesecake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Blueberry Cheesecake",
           "name_ar": "تشيز كيك توت أزرق",
           "price": "125 L.E",
           "type": "Dessert",
-          "image": "blueberry_cheesecake.webp"
+          "image": "blueberry_cheesecake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Strawberry Cheesecake",
           "name_ar": "تشيز كيك فراولة",
           "price": "125 L.E",
           "type": "Dessert",
-          "image": "strawberry_cheesecake.webp"
+          "image": "strawberry_cheesecake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Molten Cake",
           "name_ar": "مولتن كيك",
           "price": "130 L.E",
           "type": "Dessert",
-          "image": "molten_cake.webp"
+          "image": "molten_cake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chocolate Brownies",
           "name_ar": "براونيز شوكولاتة",
           "price": "125 L.E",
           "type": "Dessert",
-          "image": "chocolate_brownies.webp"
+          "image": "chocolate_brownies.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Volcano Nutella",
           "name_ar": "فولكانو نوتيلا",
           "price": "130 L.E",
           "type": "Dessert",
-          "image": "volcano_nutella.webp"
+          "image": "volcano_nutella.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Tres Lychee (Tres Leches)",
           "name_ar": "كيكة تري ليتشي",
           "price": "130 L.E",
           "type": "Dessert",
-          "image": "tres_lychee.webp"
+          "image": "tres_lychee.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Red Velvet",
           "name_ar": "ريد فيلفيت",
           "price": "150 L.E",
           "type": "Dessert",
-          "image": "red_velvet.webp"
+          "image": "red_velvet.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Honey Cake",
           "name_ar": "كيكة العسل",
           "price": "125 L.E",
           "type": "Dessert",
-          "image": "honey_cake.webp"
+          "image": "honey_cake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ice Cream 2 Scoops",
           "name_ar": "آيس كريم (بولتين)",
           "price": "110 L.E",
           "type": "Dessert",
-          "image": "ice_cream_2_scoops.webp"
+          "image": "ice_cream_2_scoops.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Special Lotus Waffles",
           "name_ar": "وافل لوتس مخصوص",
           "price": "186 L.E",
           "type": "Waffles",
-          "image": "special_lotus_waffles.webp"
+          "image": "special_lotus_waffles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Nutella Waffles",
           "name_ar": "وافل نوتيلا",
           "price": "145 L.E",
           "type": "Waffles",
-          "image": "nutella_waffles.webp"
+          "image": "nutella_waffles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cinnamon Waffles",
           "name_ar": "وافل بالقرفة",
           "price": "145 L.E",
           "type": "Waffles",
-          "image": "cinnamon_waffles.webp"
+          "image": "cinnamon_waffles.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Apple Tart",
           "name_ar": "تارت تفاح",
           "price": "110 L.E",
           "type": "Bakery Dessert",
-          "image": "apple_tart.webp"
+          "image": "apple_tart.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Eclair Caramel",
           "name_ar": "إكلير كراميل",
           "price": "60 L.E",
           "type": "Bakery Dessert",
-          "image": "eclair_caramel.webp"
+          "image": "eclair_caramel.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Eclair Chocolate",
           "name_ar": "إكلير شوكولاتة",
           "price": "60 L.E",
           "type": "Bakery Dessert",
-          "image": "eclair_chocolate.webp"
+          "image": "eclair_chocolate.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Muffins",
           "name_ar": "مافن",
           "price": "70 L.E",
           "type": "Bakery Dessert",
-          "image": "muffins.webp"
+          "image": "muffins.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cookies",
           "name_ar": "كوكيز",
           "price": "50 L.E",
           "type": "Bakery Dessert",
-          "image": "cookies.webp"
+          "image": "cookies.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     },
@@ -886,133 +1124,171 @@
           "name_ar": "كوكتيل جوز هند وأفوكادو",
           "price": "135 L.E",
           "type": "Cocktail",
-          "image": "coconut_avocado_cocktail.webp"
+          "image": "coconut_avocado_cocktail.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Country Club Cocktail",
           "name_ar": "كوكتيل كانتري كلوب",
           "price": "105 L.E",
           "type": "Cocktail",
-          "image": "country_club_cocktail.webp"
+          "image": "country_club_cocktail.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supreme Dream Cocktail",
           "name_ar": "كوكتيل سوبريم دريم",
           "price": "110 L.E",
           "type": "Cocktail",
-          "image": "supreme_dream_cocktail.webp"
+          "image": "supreme_dream_cocktail.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Guava Mint Cocktail",
           "name_ar": "كوكتيل جوافة بالنعناع",
           "price": "105 L.E",
           "type": "Cocktail",
-          "image": "guava_mint_cocktail.webp"
+          "image": "guava_mint_cocktail.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Supremo Cocktail",
           "name_ar": "كوكتيل سوبريمو",
           "price": "160 L.E",
           "type": "Cocktail",
-          "image": "supremo_cocktail.webp"
+          "image": "supremo_cocktail.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Frappe Espresso",
           "name_ar": "فرابتشينو إسبريسو",
           "price": "125 L.E",
           "type": "Frappe",
-          "image": "frappe_espresso.webp"
+          "image": "frappe_espresso.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Frappe Espresso Caramel",
           "name_ar": "فرابتشينو إسبريسو كراميل",
           "price": "130 L.E",
           "type": "Frappe",
-          "image": "frappe_espresso_caramel.webp"
+          "image": "frappe_espresso_caramel.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Mocha Frappe",
           "name_ar": "موكا فرابتشينو",
           "price": "125 L.E",
           "type": "Frappe",
-          "image": "mocha_frappe.webp"
+          "image": "mocha_frappe.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Strawberry Milkshake",
           "name_ar": "ميلك شيك فراولة",
           "price": "115 L.E",
           "type": "Milkshake",
-          "image": "strawberry_milkshake.webp"
+          "image": "strawberry_milkshake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Chocolate Milkshake",
           "name_ar": "ميلك شيك شوكولاتة",
           "price": "115 L.E",
           "type": "Milkshake",
-          "image": "chocolate_milkshake.webp"
+          "image": "chocolate_milkshake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Orio Milkshake",
           "name_ar": "ميلك شيك أوريو",
           "price": "125 L.E",
           "type": "Milkshake",
-          "image": "orio_milkshake.webp"
+          "image": "orio_milkshake.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fresh Mango Juice",
           "name_ar": "عصير مانجو طازج",
           "price": "90 L.E",
           "type": "Fresh Juice",
-          "image": "fresh_mango_juice.webp"
+          "image": "fresh_mango_juice.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Fresh Orange Juice",
           "name_ar": "عصير برتقال طازج",
           "price": "85 L.E",
           "type": "Fresh Juice",
-          "image": "fresh_orange_juice.webp"
+          "image": "fresh_orange_juice.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Espresso",
           "name_ar": "إسبريسو",
           "price": "69 L.E",
           "type": "Hot Coffee",
-          "image": "espresso.webp"
+          "image": "espresso.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Turkish Coffee",
           "name_ar": "قهوة تركي",
           "price": "69 L.E",
           "type": "Hot Coffee",
-          "image": "turkish_coffee.webp"
+          "image": "turkish_coffee.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Cappuccino",
           "name_ar": "كابتشينو",
           "price": "99 L.E",
           "type": "Hot Coffee",
-          "image": "cappuccino.webp"
+          "image": "cappuccino.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Latte",
           "name_ar": "لاتيه",
           "price": "99 L.E",
           "type": "Hot Coffee",
-          "image": "latte.webp"
+          "image": "latte.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Hot Chocolate",
           "name_ar": "هوت شوكليت",
           "price": "85 L.E",
           "type": "Hot Drink",
-          "image": "hot_chocolate.webp"
+          "image": "hot_chocolate.webp",
+          "desc_en": "",
+          "desc_ar": ""
         },
         {
           "name_en": "Ice Latte",
           "name_ar": "آيس لاتيه",
           "price": "120 L.E",
           "type": "Iced Coffee",
-          "image": "ice_latte.webp"
+          "image": "ice_latte.webp",
+          "desc_en": "",
+          "desc_ar": ""
         }
       ]
     }
