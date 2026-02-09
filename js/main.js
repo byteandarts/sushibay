@@ -243,14 +243,15 @@ async function loadMenuPage(
       `;
 
       cat.items.forEach((item) => {
+        const folderName = isCafe ? 'cafe' : 'sushi';
         const imgSrc = item.image
-          ? `images/menu/${item.image}`
+          ? `images/menu/${folderName}/${item.image}`
           : placeholderSvg;
 
         contentHTML += `
           <div class="menu-item-card">
             <div class="menu-item-card-img">
-              <img src="${placeholderSvg}" alt="${item.name_en}" loading="lazy">
+              <img src="${imgSrc}" alt="${item.name_en}" loading="lazy">
             </div>
             <div class="menu-item-card-body">
               <div class="menu-item-card-type">${item.type || cat.category}</div>
