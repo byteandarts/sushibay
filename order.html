@@ -480,11 +480,8 @@
           <p style="text-align:center;color:rgba(255,255,255,0.4);font-size:0.85rem;margin-bottom:2rem;"
             id="checkout-branch">Branch: —</p>
           <div id="checkout-items"></div>
-          <div
-            style="border-top:1px solid rgba(255,255,255,0.08);margin-top:1.5rem;padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;">
-            <span style="font-size:1rem;color:rgba(255,255,255,0.5);" data-i18n="total">Total</span>
-            <span class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--sushi-gold);"
-              id="checkout-total">0 L.E</span>
+          <div style="border-top:1px solid rgba(255,255,255,0.08);margin-top:1.5rem;padding-top:1.5rem;">
+            <div id="checkout-total"></div>
           </div>
 
           <div style="margin-top:2rem;">
@@ -692,7 +689,30 @@
           </div>
         `}).join('');
       }
-      document.getElementById('checkout-total').textContent = Cart.getTotal().toLocaleString() + ' L.E';
+
+      // Calculate subtotal, VAT, and total
+      const subtotal = Cart.getTotal();
+      const vat = Cart.getVAT();
+      const total = Cart.getTotalWithVAT();
+
+      const subtotalLabel = currentLang === 'ar' ? 'المجموع الفرعي' : 'Subtotal';
+      const vatLabel = currentLang === 'ar' ? 'ضريبة القيمة المضافة (14%)' : 'VAT (14%)';
+      const totalLabel = currentLang === 'ar' ? 'الإجمالي' : 'Total';
+
+      document.getElementById('checkout-total').innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;color:rgba(255,255,255,0.6);margin-bottom:0.5rem;gap:1rem;">
+          <span style="white-space:nowrap;">${subtotalLabel}</span>
+          <span style="font-family:'Noto Serif',serif;white-space:nowrap;">${subtotal.toLocaleString()} L.E</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;color:rgba(255,255,255,0.6);margin-bottom:0.75rem;gap:1rem;">
+          <span style="white-space:nowrap;">${vatLabel}</span>
+          <span style="font-family:'Noto Serif',serif;white-space:nowrap;">${vat.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:0.5rem;border-top:1px solid rgba(255,255,255,0.1);">
+          <span style="font-size:1rem;color:rgba(255,255,255,0.5);white-space:nowrap;">${totalLabel}</span>
+          <span class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--sushi-gold);white-space:nowrap;">${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
+        </div>
+      `;
     }
 
     // ===== WhatsApp Order Builder =====
@@ -747,7 +767,9 @@
         });
 
         msg += '\n';
-        msg += `*الإجمالي:* ${Cart.getTotal().toLocaleString()} جنيه\n`;
+        msg += `*المجموع الفرعي:* ${Cart.getTotal().toLocaleString()} جنيه\n`;
+        msg += `*ضريبة القيمة المضافة (14%):* ${Cart.getVAT().toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} جنيه\n`;
+        msg += `*الإجمالي:* ${Cart.getTotalWithVAT().toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} جنيه\n`;
         if (notes) {
           msg += `\n*ملاحظات:* ${notes}\n`;
         }
@@ -769,7 +791,9 @@
         });
 
         msg += '\n';
-        msg += `*Total:* ${Cart.getTotal().toLocaleString()} L.E\n`;
+        msg += `*Subtotal:* ${Cart.getTotal().toLocaleString()} L.E\n`;
+        msg += `*VAT (14%):* ${Cart.getVAT().toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E\n`;
+        msg += `*Total:* ${Cart.getTotalWithVAT().toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E\n`;
         if (notes) {
           msg += `\n*Notes:* ${notes}\n`;
         }
