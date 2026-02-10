@@ -71,15 +71,19 @@ const Cart = {
     if (!cartItems) return;
 
     if (this.items.length === 0) {
-      cartItems.innerHTML =
-        '<div class="cart-empty"><span class="material-symbols-outlined" style="font-size:3rem;margin-bottom:1rem;display:block;">shopping_cart</span>Your cart is empty</div>';
+      const lang = localStorage.getItem('lang') || 'en';
+      const emptyMsg = lang === 'ar' ? 'السلة فارغة' : 'Your cart is empty';
+      cartItems.innerHTML = `<div class="cart-empty"><span class="material-symbols-outlined" style="font-size:3rem;margin-bottom:1rem;display:block;">shopping_cart</span>${emptyMsg}</div>`;
     } else {
+      const lang = localStorage.getItem('lang') || 'en';
       cartItems.innerHTML = this.items
-        .map(
-          (item) => `
+        .map((item) => {
+          const displayName =
+            lang === 'ar' && item.name_ar ? item.name_ar : item.name;
+          return `
                 <div class="cart-item">
                     <div class="cart-item-info">
-                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-name">${displayName}</div>
                         <div class="cart-item-price">${item.price} L.E</div>
                         <div style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:2px;">${item.brand}</div>
                     </div>
@@ -89,8 +93,8 @@ const Cart = {
                         <button class="cart-qty-btn" onclick="Cart.updateQty('${item.id}', 1)">+</button>
                     </div>
                 </div>
-            `,
-        )
+            `;
+        })
         .join('');
     }
 
@@ -249,6 +253,9 @@ async function loadMenuPage(
     // Build full menu with image cards
     let contentHTML = '';
     const placeholderSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280' fill='none'%3E%3Crect width='400' height='280' fill='%23${isCafe ? '231810' : '1e2629'}'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%23555' font-size='14' font-family='sans-serif'%3EPhoto Coming Soon%3C/text%3E%3C/svg%3E`;
+    const lang = localStorage.getItem('lang') || 'en';
+    const addLabel = lang === 'ar' ? 'أضف' : 'Add';
+    const itemsLabel = lang === 'ar' ? 'عنصر' : 'items';
 
     data.menu.forEach((cat) => {
       const slug = slugify(cat.category);
@@ -256,7 +263,7 @@ async function loadMenuPage(
         <div class="menu-page-category" id="${slug}">
           <div class="menu-page-category-header">
             <h2 class="menu-page-category-title font-display">${cat.category}</h2>
-            <span class="menu-page-category-count">${cat.items.length} items</span>
+            <span class="menu-page-category-count">${cat.items.length} ${itemsLabel}</span>
           </div>
           <div class="menu-page-grid">
       `;
@@ -287,7 +294,7 @@ async function loadMenuPage(
                 <span class="menu-item-card-price">${item.price}</span>
                 <button class="menu-item-card-add" onclick="Cart.add({id:'${itemId}',name:'${escapedNameEn}',name_ar:'${escapedNameAr}',price:${price},brand:'${brandName}'})">
                   <span class="material-symbols-outlined" style="font-size:0.85rem;">add_shopping_cart</span>
-                  Add
+                  ${addLabel}
                 </button>
               </div>
             </div>

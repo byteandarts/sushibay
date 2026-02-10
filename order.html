@@ -342,9 +342,10 @@
   <section class="section section-shared">
     <div class="container">
       <div class="story-hero-section fade-in" style="padding-bottom:1rem;">
-        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Unified Cart</span>
-        <h1 class="story-hero-title font-display" style="font-size:2.5rem;">Order Online</h1>
-        <p class="story-hero-subtitle">
+        <span class="section-tag" style="margin-bottom:1rem;display:inline-block;"
+          data-i18n="order_unified_cart">Unified Cart</span>
+        <h1 class="story-hero-title font-display" style="font-size:2.5rem;" data-i18n="order_title">Order Online</h1>
+        <p class="story-hero-subtitle" data-i18n="order_subtitle">
           Mix and match from both Café Supreme and Sushi Bay in a single order.
         </p>
       </div>
@@ -373,16 +374,18 @@
           <div class="branch-option" onclick="selectBranch(this, 'Main Branch')">
             <span class="material-symbols-outlined"
               style="font-size:2.5rem;color:var(--sushi-gold);margin-bottom:1rem;">storefront</span>
-            <h3>Main Branch</h3>
+            <h3 data-i18n="loc_main_branch">Main Branch</h3>
             <p>Café Supreme + Sushi Bay</p>
-            <span class="branch-badge badge-both" style="margin-top:1rem;">Both Menus</span>
+            <span class="branch-badge badge-both" style="margin-top:1rem;" data-i18n="badge_both_menus">Both
+              Menus</span>
           </div>
           <div class="branch-option" onclick="selectBranch(this, 'Gezerat El Ward Club')">
             <span class="material-symbols-outlined"
               style="font-size:2.5rem;color:var(--sushi-gold);margin-bottom:1rem;">storefront</span>
-            <h3>Gezerat El Ward Club</h3>
+            <h3 data-i18n="loc_gezerat_branch">Gezerat El Ward Club</h3>
             <p>Café Supreme + Sushi Bay</p>
-            <span class="branch-badge badge-both" style="margin-top:1rem;">Both Menus</span>
+            <span class="branch-badge badge-both" style="margin-top:1rem;" data-i18n="badge_both_menus">Both
+              Menus</span>
           </div>
         </div>
         <div style="text-align:center;margin-top:2rem;">
@@ -410,12 +413,14 @@
 
         <!-- Sushi Menu -->
         <div id="order-sushi-section" class="order-menu-container">
-          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">Loading sushi menu...</div>
+          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;" data-i18n="menu_loading">Loading
+            menu...</div>
         </div>
 
         <!-- Cafe Menu -->
         <div id="order-cafe-section" class="order-menu-container" style="display:none;">
-          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">Loading café menu...</div>
+          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;" data-i18n="menu_loading">Loading
+            menu...</div>
         </div>
 
         <div style="text-align:center;margin-top:3rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
@@ -440,7 +445,7 @@
           <div id="checkout-items"></div>
           <div
             style="border-top:1px solid rgba(255,255,255,0.08);margin-top:1.5rem;padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;">
-            <span style="font-size:1rem;color:rgba(255,255,255,0.5);">Total</span>
+            <span style="font-size:1rem;color:rgba(255,255,255,0.5);" data-i18n="total">Total</span>
             <span class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--sushi-gold);"
               id="checkout-total">0 L.E</span>
           </div>
@@ -454,12 +459,12 @@
                 <input type="text" class="form-input" id="order-name" placeholder="Full name">
               </div>
               <div class="form-group">
-                <label class="form-label" data-i18n="order_phone">Phone *</label>
+                <label class="form-label" data-i18n="order_phone_required">Phone *</label>
                 <input type="tel" class="form-input" id="order-phone" placeholder="+20 xxx xxx xxxx" required
                   onfocus="this.style.borderColor=''">
               </div>
               <div class="form-group full-width">
-                <label class="form-label" data-i18n="order_address">Address *</label>
+                <label class="form-label" data-i18n="order_address_required">Address *</label>
                 <textarea class="form-textarea" id="order-address" style="min-height:80px;"
                   placeholder="Delivery address..." required onfocus="this.style.borderColor=''"></textarea>
               </div>
@@ -511,7 +516,7 @@
   <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
   <div class="cart-sidebar" id="cart-sidebar">
     <div class="cart-header">
-      <h3 class="cart-title font-display">Your Order</h3>
+      <h3 class="cart-title font-display" data-i18n="your_order">Your Order</h3>
       <button class="cart-close" onclick="toggleCart()">
         <span class="material-symbols-outlined">close</span>
       </button>
@@ -522,7 +527,7 @@
         <span class="cart-total-label">Total</span>
         <span class="cart-total-value" id="cart-total">0 L.E</span>
       </div>
-      <button class="cart-checkout-btn" onclick="toggleCart(); goToStep(3);">
+      <button class="cart-checkout-btn" onclick="toggleCart(); goToStep(3);" data-i18n="proceed_checkout">
         Proceed to Checkout
       </button>
     </div>
@@ -589,6 +594,9 @@
         const container = document.getElementById(containerId);
         if (!container) return;
 
+        const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+        const addLabel = lang === 'ar' ? 'أضف' : 'Add';
+
         let html = '';
         data.menu.forEach(cat => {
           html += `<div class="order-category-title">${cat.category}</div>`;
@@ -603,15 +611,15 @@
                 </div>
                 <div class="order-item-price">${item.price}</div>
                 <button class="order-item-add" onclick="Cart.add({id:'${id}',name:'${item.name_en.replace(/'/g, "\\'")}',name_ar:'${item.name_ar.replace(/'/g, "\\'")}',price:${price},brand:'${brand}'})">
-                  + <span data-i18n="order_add">Add</span>
+                  + ${addLabel}
                 </button>
               </div>`;
           });
         });
         container.innerHTML = html;
-        // Re-apply translations if Arabic
-        if (typeof currentLang !== 'undefined' && currentLang === 'ar') {
-          applyTranslations('ar');
+        // Re-apply translations after dynamic content load
+        if (typeof applyTranslations === 'function') {
+          applyTranslations(lang);
         }
       } catch (err) {
         console.error('Failed to load order menu:', err);
@@ -619,17 +627,25 @@
     }
 
     function updateCheckout() {
+      // Branch name translation
+      const branchMap = {
+        'Main Branch': currentLang === 'ar' ? 'الفرع الرئيسي' : 'Main Branch',
+        'Gezerat El Ward Club': currentLang === 'ar' ? 'نادي جزيرة الورد' : 'Gezerat El Ward Club'
+      };
+      const branchDisplay = branchMap[selectedBranch] || selectedBranch || '—';
       document.getElementById('checkout-branch').textContent =
-        (currentLang === 'ar' ? 'الفرع: ' : 'Branch: ') + (selectedBranch || '—');
+        (currentLang === 'ar' ? 'الفرع: ' : 'Branch: ') + branchDisplay;
       const items = Cart.items;
       const container = document.getElementById('checkout-items');
       if (items.length === 0) {
-        container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;" data-i18n="order_cart_empty">No items in cart. Go back and add some items!</p>';
+        container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;" data-i18n="order_cart_empty">' + (currentLang === 'ar' ? 'السلة فارغة. ارجع وأضف بعض العناصر!' : 'No items in cart. Go back and add some items!') + '</p>';
       } else {
-        container.innerHTML = items.map(item => `
+        container.innerHTML = items.map(item => {
+          const displayName = currentLang === 'ar' && item.name_ar ? item.name_ar : item.name;
+          return `
           <div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
             <div>
-              <div style="font-size:0.9rem;">${item.name} <span style="color:rgba(255,255,255,0.3);">×${item.qty}</span></div>
+              <div style="font-size:0.9rem;">${displayName} <span style="color:rgba(255,255,255,0.3);">×${item.qty}</span></div>
               <div style="font-size:0.7rem;color:rgba(255,255,255,0.3);">${item.brand}</div>
             </div>
             <div style="display:flex;align-items:center;gap:1rem;">
@@ -637,7 +653,7 @@
               <button onclick="Cart.remove('${item.id}');updateCheckout();" style="background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.4);border-radius:3px;padding:0.15rem 0.4rem;font-size:0.7rem;cursor:pointer;" title="Remove">✕</button>
             </div>
           </div>
-        `).join('');
+        `}).join('');
       }
       document.getElementById('checkout-total').textContent = Cart.getTotal().toLocaleString() + ' L.E';
     }
@@ -675,20 +691,22 @@
 
       if (currentLang === 'ar') {
         // Arabic message
-        msg += '*طلب جديد — سوشي باي & كافيه سوبريم*\n';
+        msg += '*أريد عمل طلب جديد — سوشي باي & كافيه سوبريم*\n';
         msg += '\n';
-        msg += `*الفرع:* ${selectedBranch || '—'}\n`;
+        if (selectedBranch) msg += `*الفرع:* ${selectedBranch}\n`;
         if (name) msg += `*الاسم:* ${name}\n`;
-        msg += `*الهاتف:* ${phone}\n`;
-        msg += `*العنوان:* ${address}\n`;
+        if (phone) msg += `*الهاتف:* ${phone}\n`;
+        if (address) msg += `*العنوان:* ${address}\n`;
         msg += '\n';
         msg += '*الطلب:*\n';
         msg += '\n';
 
         items.forEach((item, i) => {
           const itemName = item.name_ar || item.name;
-          msg += `${i + 1}. ${itemName}  x${item.qty}`;
-          msg += `  —  ${(item.price * item.qty).toLocaleString()} جنيه\n`;
+          const qty = item.qty;
+          const total = (item.price * qty).toLocaleString();
+          // Use LTR embedding to prevent RTL reordering of numbers
+          msg += `${i + 1}. ${itemName}\u200F  \u200Ex${qty}\u200E  \u200E—  ${total} جنيه\u200F\n`;
         });
 
         msg += '\n';
@@ -696,15 +714,14 @@
         if (notes) {
           msg += `\n*ملاحظات:* ${notes}\n`;
         }
-        msg += '\nشكراً لكم';
       } else {
         // English message
-        msg += '*New Order — Sushi Bay & Cafe Supreme*\n';
+        msg += '*Want to make a new order — Sushi Bay & Cafe Supreme*\n';
         msg += '\n';
-        msg += `*Branch:* ${selectedBranch || '—'}\n`;
+        if (selectedBranch) msg += `*Branch:* ${selectedBranch}\n`;
         if (name) msg += `*Name:* ${name}\n`;
-        msg += `*Phone:* ${phone}\n`;
-        msg += `*Address:* ${address}\n`;
+        if (phone) msg += `*Phone:* ${phone}\n`;
+        if (address) msg += `*Address:* ${address}\n`;
         msg += '\n';
         msg += '*Order Details:*\n';
         msg += '\n';
@@ -719,7 +736,6 @@
         if (notes) {
           msg += `\n*Notes:* ${notes}\n`;
         }
-        msg += '\nThank you';
       }
 
       const encoded = encodeURIComponent(msg);

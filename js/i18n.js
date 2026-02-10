@@ -279,6 +279,12 @@ const translations = {
     order_choose_branch: 'Choose Your Branch',
     order_continue_menu: 'Continue to Menu',
     order_summary: 'Order Summary',
+    order_unified_cart: 'Unified Cart',
+    order_title: 'Order Online',
+    order_subtitle:
+      'Mix and match from both Café Supreme and Sushi Bay in a single order.',
+    order_phone_required: 'Phone *',
+    order_address_required: 'Address *',
 
     // Locations specific
     loc_find_us_tag: 'Find Us',
@@ -559,6 +565,11 @@ const translations = {
     order_choose_branch: 'اختر فرعك',
     order_continue_menu: 'متابعة للقائمة',
     order_summary: 'ملخص الطلب',
+    order_unified_cart: 'سلة موحدة',
+    order_title: 'اطلب أونلاين',
+    order_subtitle: 'امزج بين كافيه سوبريم وسوشي باي في طلب واحد.',
+    order_phone_required: 'الهاتف *',
+    order_address_required: 'العنوان *',
 
     // Locations specific
     loc_find_us_tag: 'جِدنا',
@@ -598,6 +609,36 @@ function applyTranslations(lang) {
   if (langBtn) {
     langBtn.textContent = lang === 'ar' ? 'EN' : 'ع';
   }
+
+  // Re-render cart sidebar with correct language names
+  if (typeof Cart !== 'undefined' && Cart.render) {
+    Cart.render();
+  }
+
+  // Update checkout if visible
+  if (typeof updateCheckout === 'function') {
+    const checkoutStep = document.getElementById('step-3');
+    if (checkoutStep && checkoutStep.classList.contains('active')) {
+      updateCheckout();
+    }
+  }
+
+  // Update form placeholders for order page
+  const orderName = document.getElementById('order-name');
+  const orderPhone = document.getElementById('order-phone');
+  const orderAddress = document.getElementById('order-address');
+  const orderNotes = document.getElementById('order-notes');
+  if (orderName)
+    orderName.placeholder = lang === 'ar' ? 'الاسم الكامل' : 'Full name';
+  if (orderPhone)
+    orderPhone.placeholder =
+      lang === 'ar' ? '+20 xxx xxx xxxx' : '+20 xxx xxx xxxx';
+  if (orderAddress)
+    orderAddress.placeholder =
+      lang === 'ar' ? 'عنوان التوصيل...' : 'Delivery address...';
+  if (orderNotes)
+    orderNotes.placeholder =
+      lang === 'ar' ? 'أي طلبات خاصة؟' : 'Any special requests?';
 }
 
 // Toggle language
