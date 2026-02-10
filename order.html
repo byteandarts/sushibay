@@ -197,6 +197,8 @@
     .order-item-info {
       flex: 1;
       min-width: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     .order-item-name {
@@ -298,14 +300,14 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <span class="material-symbols-outlined" style="color:var(--sushi-gold);font-size:1.75rem;">shopping_cart</span>
-        <span class="nav-logo-text">Order Online</span>
+        <span class="nav-logo-text" data-i18n="order_title">Order Online</span>
       </a>
       <ul class="nav-links">
-        <li><a href="cafe.html">Café Supreme</a></li>
-        <li><a href="sushi.html">Sushi Bay</a></li>
-        <li><a href="story.html">Our Story</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a></li>
+        <li><a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a></li>
+        <li><a href="story.html" data-i18n="nav_our_story">Our Story</a></li>
+        <li><a href="locations.html" data-i18n="nav_locations">Locations</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <div class="lang-switcher">
@@ -315,7 +317,7 @@
         </div>
         <button class="nav-btn nav-btn-sushi" onclick="toggleCart()" style="position:relative;">
           <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
-          Cart
+          <span data-i18n="nav_cart">Cart</span>
           <span class="cart-badge cart-count" style="display:none;">0</span>
         </button>
         <button class="mobile-menu-btn" onclick="toggleMobileNav()">
@@ -330,12 +332,12 @@
     <button class="mobile-close" onclick="toggleMobileNav()">
       <span class="material-symbols-outlined">close</span>
     </button>
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Café Supreme</a>
-    <a href="sushi.html">Sushi Bay</a>
-    <a href="story.html">Our Story</a>
-    <a href="locations.html">Locations</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="cafe.html" data-i18n="nav_cafe_supreme">Café Supreme</a>
+    <a href="sushi.html" data-i18n="nav_sushi_bay">Sushi Bay</a>
+    <a href="story.html" data-i18n="nav_our_story">Our Story</a>
+    <a href="locations.html" data-i18n="nav_locations">Locations</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
   </div>
 
   <!-- Order Flow -->
@@ -453,7 +455,7 @@
           <div style="margin-top:2rem;">
             <h3 class="font-display" style="font-size:1rem;margin-bottom:1rem;" data-i18n="order_delivery_details">
               Delivery Details</h3>
-            <div class="form-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="form-grid">
               <div class="form-group">
                 <label class="form-label" data-i18n="order_name">Name</label>
                 <input type="text" class="form-input" id="order-name" placeholder="Full name">
@@ -524,7 +526,7 @@
     <div class="cart-items" id="cart-items"></div>
     <div class="cart-footer">
       <div class="cart-total">
-        <span class="cart-total-label">Total</span>
+        <span class="cart-total-label" data-i18n="total">Total</span>
         <span class="cart-total-value" id="cart-total">0 L.E</span>
       </div>
       <button class="cart-checkout-btn" onclick="toggleCart(); goToStep(3);" data-i18n="proceed_checkout">
