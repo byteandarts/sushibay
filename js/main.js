@@ -105,8 +105,13 @@ const Cart = {
 
   showNotification(msg) {
     const notif = document.createElement('div');
-    notif.style.cssText =
-      'position:fixed;bottom:2rem;right:2rem;z-index:999;background:#1c424a;color:#fff;padding:1rem 1.5rem;border-radius:4px;font-size:0.85rem;animation:slideUp 0.3s ease;box-shadow:0 10px 30px rgba(0,0,0,0.4);';
+    // Detect if we're on a cafe page by checking for nav-cafe or section-cafe class
+    const isCafe =
+      document.querySelector('.nav-cafe') ||
+      document.querySelector('.section-cafe') ||
+      document.querySelector('.cafe-menu');
+    const bgColor = isCafe ? '#6B3A2A' : '#1c424a';
+    notif.style.cssText = `position:fixed;bottom:2rem;right:2rem;z-index:999;background:${bgColor};color:#fff;padding:1rem 1.5rem;border-radius:4px;font-size:0.85rem;animation:slideUp 0.3s ease;box-shadow:0 10px 30px rgba(0,0,0,0.4);`;
     notif.textContent = msg;
     document.body.appendChild(notif);
     setTimeout(() => {

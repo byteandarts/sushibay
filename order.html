@@ -60,6 +60,34 @@
       border-radius: 0 4px 4px 0;
     }
 
+    @media (max-width: 768px) {
+      .step-indicator {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .step-dot {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .step-dot {
+        font-size: 0.7rem;
+        padding: 0.65rem 1rem;
+      }
+
+      .step-num {
+        width: 22px;
+        height: 22px;
+        font-size: 0.65rem;
+      }
+    }
+
     .step-dot.active {
       color: #fff;
       background: var(--sushi-primary);
@@ -338,6 +366,13 @@
     <a href="story.html" data-i18n="nav_our_story">Our Story</a>
     <a href="locations.html" data-i18n="nav_locations">Locations</a>
     <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    <a href="#" onclick="toggleMobileNav(); toggleCart(); return false;"
+      style="display:flex; align-items:center; gap:0.5rem;">
+      <span class="material-symbols-outlined" style="font-size:1.2rem;">shopping_cart</span>
+      <span data-i18n="nav_cart">Cart</span>
+      <span class="cart-count"
+        style="margin-left:auto; background:var(--sushi-gold); color:#000; padding:0.2rem 0.5rem; border-radius:12px; font-size:0.75rem; font-weight:700;">0</span>
+    </a>
   </div>
 
   <!-- Order Flow -->
