@@ -95,8 +95,10 @@
 
     .branch-select {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .branch-option {
@@ -177,6 +179,114 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 4px;
     }
+
+    /* Minimal order item list */
+    .order-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      gap: 0.75rem;
+    }
+
+    .order-item-row:last-child {
+      border-bottom: none;
+    }
+
+    .order-item-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .order-item-name {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .order-item-name-ar {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.35);
+      margin-top: 1px;
+    }
+
+    .order-item-price {
+      font-size: 0.8rem;
+      color: var(--sushi-gold);
+      white-space: nowrap;
+      min-width: 70px;
+      text-align: right;
+    }
+
+    .order-item-add {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      border-radius: 3px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .order-item-add:hover {
+      background: var(--sushi-primary);
+      border-color: var(--sushi-primary);
+      color: #fff;
+    }
+
+    .order-category-title {
+      font-family: 'Noto Serif', serif;
+      font-size: 0.9rem;
+      color: var(--sushi-gold);
+      margin: 1.25rem 0 0.5rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(179, 144, 78, 0.15);
+    }
+
+    .order-category-title:first-child {
+      margin-top: 0;
+    }
+
+    .order-menu-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      border: none;
+      color: #fff;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+      letter-spacing: 0.02em;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe57;
+      transform: translateY(-1px);
+    }
+
+    .whatsapp-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
   </style>
 </head>
 
@@ -198,6 +308,11 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+            <span class="lang-btn-text">ع</span>
+          </button>
+        </div>
         <button class="nav-btn nav-btn-sushi" onclick="toggleCart()" style="position:relative;">
           <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
           Cart
@@ -238,22 +353,22 @@
       <div class="step-indicator">
         <div class="step-dot active" id="step-dot-1" onclick="goToStep(1)">
           <span class="step-num">1</span>
-          Select Branch
+          <span data-i18n="order_select_branch">Select Branch</span>
         </div>
         <div class="step-dot" id="step-dot-2" onclick="goToStep(2)">
           <span class="step-num">2</span>
-          Add Items
+          <span data-i18n="order_add_items">Add Items</span>
         </div>
         <div class="step-dot" id="step-dot-3" onclick="goToStep(3)">
           <span class="step-num">3</span>
-          Checkout
+          <span data-i18n="order_checkout">Checkout</span>
         </div>
       </div>
 
       <!-- Step 1: Select Branch -->
       <div class="order-step active" id="step-1">
-        <h2 class="section-title font-display" style="text-align:center;margin-bottom:2rem;font-size:1.5rem;">Choose
-          Your Branch</h2>
+        <h2 class="section-title font-display" style="text-align:center;margin-bottom:2rem;font-size:1.5rem;"
+          data-i18n="order_choose_branch">Choose Your Branch</h2>
         <div class="branch-select">
           <div class="branch-option" onclick="selectBranch(this, 'Main Branch')">
             <span class="material-symbols-outlined"
@@ -272,7 +387,7 @@
         </div>
         <div style="text-align:center;margin-top:2rem;">
           <button class="btn-primary" id="step1-next" onclick="goToStep(2)" disabled style="opacity:0.5;">
-            <span>Continue to Menu</span>
+            <span data-i18n="order_continue_menu">Continue to Menu</span>
             <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
           </button>
         </div>
@@ -281,41 +396,35 @@
       <!-- Step 2: Add Items -->
       <div class="order-step" id="step-2">
         <div class="order-menu-switch">
-          <button class="menu-switch-btn cafe-active" id="switch-cafe" onclick="showOrderMenu('cafe')">
-            <span class="material-symbols-outlined"
-              style="font-size:1rem;vertical-align:middle;margin-right:0.5rem;">local_cafe</span>
-            Café Supreme
-          </button>
-          <button class="menu-switch-btn" id="switch-sushi" onclick="showOrderMenu('sushi')">
+          <button class="menu-switch-btn active" id="switch-sushi" onclick="showOrderMenu('sushi')">
             <span class="material-symbols-outlined"
               style="font-size:1rem;vertical-align:middle;margin-right:0.5rem;">set_meal</span>
-            Sushi Bay
+            <span data-i18n="sushi_name">Sushi Bay</span>
           </button>
-        </div>
-
-        <!-- Cafe Menu -->
-        <div id="order-cafe-section" class="cafe-menu">
-          <div class="menu-tabs cafe-tabs"></div>
-          <div class="menu-grid" id="order-cafe-grid">
-            <div class="cart-empty" style="grid-column:1/-1;">Loading café menu...</div>
-          </div>
+          <button class="menu-switch-btn" id="switch-cafe" onclick="showOrderMenu('cafe')">
+            <span class="material-symbols-outlined"
+              style="font-size:1rem;vertical-align:middle;margin-right:0.5rem;">local_cafe</span>
+            <span data-i18n="cafe_name">Café Supreme</span>
+          </button>
         </div>
 
         <!-- Sushi Menu -->
-        <div id="order-sushi-section" style="display:none;">
-          <div class="menu-tabs"></div>
-          <div class="menu-grid" id="order-sushi-grid">
-            <div class="cart-empty" style="grid-column:1/-1;">Loading sushi menu...</div>
-          </div>
+        <div id="order-sushi-section" class="order-menu-container">
+          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">Loading sushi menu...</div>
+        </div>
+
+        <!-- Cafe Menu -->
+        <div id="order-cafe-section" class="order-menu-container" style="display:none;">
+          <div style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">Loading café menu...</div>
         </div>
 
         <div style="text-align:center;margin-top:3rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <button class="btn-outline" onclick="goToStep(1)">
             <span class="material-symbols-outlined" style="font-size:1rem;">arrow_back</span>
-            <span>Back</span>
+            <span data-i18n="order_back">Back</span>
           </button>
           <button class="btn-primary" onclick="goToStep(3)">
-            <span>Proceed to Checkout</span>
+            <span data-i18n="order_proceed_checkout">Proceed to Checkout</span>
             <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
           </button>
         </div>
@@ -324,8 +433,8 @@
       <!-- Step 3: Checkout -->
       <div class="order-step" id="step-3">
         <div class="checkout-summary">
-          <h2 class="section-title font-display" style="text-align:center;margin-bottom:0.5rem;font-size:1.5rem;">Order
-            Summary</h2>
+          <h2 class="section-title font-display" style="text-align:center;margin-bottom:0.5rem;font-size:1.5rem;"
+            data-i18n="order_summary">Order Summary</h2>
           <p style="text-align:center;color:rgba(255,255,255,0.4);font-size:0.85rem;margin-bottom:2rem;"
             id="checkout-branch">Branch: —</p>
           <div id="checkout-items"></div>
@@ -337,23 +446,26 @@
           </div>
 
           <div style="margin-top:2rem;">
-            <h3 class="font-display" style="font-size:1rem;margin-bottom:1rem;">Delivery Details</h3>
+            <h3 class="font-display" style="font-size:1rem;margin-bottom:1rem;" data-i18n="order_delivery_details">
+              Delivery Details</h3>
             <div class="form-grid" style="grid-template-columns:1fr 1fr;">
               <div class="form-group">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-input" placeholder="Full name">
+                <label class="form-label" data-i18n="order_name">Name</label>
+                <input type="text" class="form-input" id="order-name" placeholder="Full name">
               </div>
               <div class="form-group">
-                <label class="form-label">Phone</label>
-                <input type="tel" class="form-input" placeholder="+20 xxx xxx xxxx">
+                <label class="form-label" data-i18n="order_phone">Phone *</label>
+                <input type="tel" class="form-input" id="order-phone" placeholder="+20 xxx xxx xxxx" required
+                  onfocus="this.style.borderColor=''">
               </div>
               <div class="form-group full-width">
-                <label class="form-label">Address</label>
-                <textarea class="form-textarea" style="min-height:80px;" placeholder="Delivery address..."></textarea>
+                <label class="form-label" data-i18n="order_address">Address *</label>
+                <textarea class="form-textarea" id="order-address" style="min-height:80px;"
+                  placeholder="Delivery address..." required onfocus="this.style.borderColor=''"></textarea>
               </div>
               <div class="form-group full-width">
-                <label class="form-label">Notes</label>
-                <input type="text" class="form-input" placeholder="Any special requests?">
+                <label class="form-label" data-i18n="order_notes">Notes</label>
+                <input type="text" class="form-input" id="order-notes" placeholder="Any special requests?">
               </div>
             </div>
           </div>
@@ -361,12 +473,15 @@
           <div style="text-align:center;margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
             <button class="btn-outline" onclick="goToStep(2)">
               <span class="material-symbols-outlined" style="font-size:1rem;">arrow_back</span>
-              <span>Add More Items</span>
+              <span data-i18n="order_add_more">Add More Items</span>
             </button>
-            <button class="btn-primary" style="flex:1;max-width:300px;justify-content:center;"
-              onclick="alert('Order placed! Thank you. You will receive a confirmation call shortly.')">
-              <span>Place Order</span>
-              <span class="material-symbols-outlined" style="font-size:1rem;">check_circle</span>
+            <button class="whatsapp-btn" style="flex:1;max-width:320px;justify-content:center;"
+              onclick="sendWhatsAppOrder()">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span data-i18n="order_send_whatsapp">Send Order via WhatsApp</span>
             </button>
           </div>
         </div>
@@ -414,8 +529,10 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>
     let selectedBranch = '';
+    const WHATSAPP_NUMBER = '201280886177'; // +20 128 088 6177
 
     function selectBranch(el, name) {
       document.querySelectorAll('.branch-option').forEach(b => b.classList.remove('selected'));
@@ -446,42 +563,173 @@
       const btnCafe = document.getElementById('switch-cafe');
       const btnSushi = document.getElementById('switch-sushi');
 
-      if (type === 'cafe') {
-        cafe.style.display = '';
+      if (type === 'sushi') {
+        sushi.style.display = '';
+        cafe.style.display = 'none';
+        btnSushi.classList.add('active');
+        btnCafe.classList.remove('active', 'cafe-active');
+      } else {
         sushi.style.display = 'none';
+        cafe.style.display = '';
         btnCafe.classList.add('cafe-active');
         btnSushi.classList.remove('active');
-      } else {
-        cafe.style.display = 'none';
-        sushi.style.display = '';
-        btnCafe.classList.remove('cafe-active');
-        btnSushi.classList.add('active');
+      }
+    }
+
+    // Parse price string to number (handles "250.00 LE", "90 L.E", etc.)
+    function parsePrice(priceStr) {
+      return parseFloat(priceStr.replace(/[^0-9.]/g, '')) || 0;
+    }
+
+    // Load order menu (minimal list with add-to-cart buttons)
+    async function loadOrderMenu(jsonFile, containerId, brand) {
+      try {
+        const resp = await fetch(jsonFile);
+        const data = await resp.json();
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        let html = '';
+        data.menu.forEach(cat => {
+          html += `<div class="order-category-title">${cat.category}</div>`;
+          cat.items.forEach(item => {
+            const price = parsePrice(item.price);
+            const id = (brand + '-' + item.name_en).replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+            html += `
+              <div class="order-item-row">
+                <div class="order-item-info">
+                  <div class="order-item-name">${item.name_en}</div>
+                  <div class="order-item-name-ar">${item.name_ar}</div>
+                </div>
+                <div class="order-item-price">${item.price}</div>
+                <button class="order-item-add" onclick="Cart.add({id:'${id}',name:'${item.name_en.replace(/'/g, "\\'")}',name_ar:'${item.name_ar.replace(/'/g, "\\'")}',price:${price},brand:'${brand}'})">
+                  + <span data-i18n="order_add">Add</span>
+                </button>
+              </div>`;
+          });
+        });
+        container.innerHTML = html;
+        // Re-apply translations if Arabic
+        if (typeof currentLang !== 'undefined' && currentLang === 'ar') {
+          applyTranslations('ar');
+        }
+      } catch (err) {
+        console.error('Failed to load order menu:', err);
       }
     }
 
     function updateCheckout() {
-      document.getElementById('checkout-branch').textContent = 'Branch: ' + (selectedBranch || '—');
+      document.getElementById('checkout-branch').textContent =
+        (currentLang === 'ar' ? 'الفرع: ' : 'Branch: ') + (selectedBranch || '—');
       const items = Cart.items;
       const container = document.getElementById('checkout-items');
       if (items.length === 0) {
-        container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;">No items in cart. Go back and add some items!</p>';
+        container.innerHTML = '<p style="text-align:center;color:rgba(255,255,255,0.3);padding:2rem 0;" data-i18n="order_cart_empty">No items in cart. Go back and add some items!</p>';
       } else {
         container.innerHTML = items.map(item => `
-                    <div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
-                        <div>
-                            <div style="font-size:0.9rem;">${item.name} <span style="color:rgba(255,255,255,0.3);">×${item.qty}</span></div>
-                            <div style="font-size:0.7rem;color:rgba(255,255,255,0.3);">${item.brand}</div>
-                        </div>
-                        <div style="color:var(--sushi-gold);font-family:'Noto Serif',serif;">${item.price * item.qty} L.E</div>
-                    </div>
-                `).join('');
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+            <div>
+              <div style="font-size:0.9rem;">${item.name} <span style="color:rgba(255,255,255,0.3);">×${item.qty}</span></div>
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.3);">${item.brand}</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;">
+              <div style="color:var(--sushi-gold);font-family:'Noto Serif',serif;">${(item.price * item.qty).toLocaleString()} L.E</div>
+              <button onclick="Cart.remove('${item.id}');updateCheckout();" style="background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.4);border-radius:3px;padding:0.15rem 0.4rem;font-size:0.7rem;cursor:pointer;" title="Remove">✕</button>
+            </div>
+          </div>
+        `).join('');
       }
       document.getElementById('checkout-total').textContent = Cart.getTotal().toLocaleString() + ' L.E';
     }
 
+    // ===== WhatsApp Order Builder =====
+    function sendWhatsAppOrder() {
+      const items = Cart.items;
+      if (items.length === 0) {
+        alert(currentLang === 'ar' ? 'السلة فارغة! أضف بعض العناصر أولاً.' : 'Cart is empty! Add some items first.');
+        return;
+      }
+
+      const name = document.getElementById('order-name')?.value?.trim() || '';
+      const phone = document.getElementById('order-phone')?.value?.trim() || '';
+      const address = document.getElementById('order-address')?.value?.trim() || '';
+      const notes = document.getElementById('order-notes')?.value?.trim() || '';
+
+      // Validate mandatory fields
+      if (!phone) {
+        const phoneInput = document.getElementById('order-phone');
+        phoneInput.style.borderColor = '#e74c3c';
+        phoneInput.focus();
+        alert(currentLang === 'ar' ? 'يرجى إدخال رقم الهاتف' : 'Please enter your phone number');
+        return;
+      }
+      if (!address) {
+        const addressInput = document.getElementById('order-address');
+        addressInput.style.borderColor = '#e74c3c';
+        addressInput.focus();
+        alert(currentLang === 'ar' ? 'يرجى إدخال عنوان التوصيل' : 'Please enter your delivery address');
+        return;
+      }
+
+      let msg = '';
+
+      if (currentLang === 'ar') {
+        // Arabic message
+        msg += '*طلب جديد — سوشي باي & كافيه سوبريم*\n';
+        msg += '\n';
+        msg += `*الفرع:* ${selectedBranch || '—'}\n`;
+        if (name) msg += `*الاسم:* ${name}\n`;
+        msg += `*الهاتف:* ${phone}\n`;
+        msg += `*العنوان:* ${address}\n`;
+        msg += '\n';
+        msg += '*الطلب:*\n';
+        msg += '\n';
+
+        items.forEach((item, i) => {
+          const itemName = item.name_ar || item.name;
+          msg += `${i + 1}. ${itemName}  x${item.qty}`;
+          msg += `  —  ${(item.price * item.qty).toLocaleString()} جنيه\n`;
+        });
+
+        msg += '\n';
+        msg += `*الإجمالي:* ${Cart.getTotal().toLocaleString()} جنيه\n`;
+        if (notes) {
+          msg += `\n*ملاحظات:* ${notes}\n`;
+        }
+        msg += '\nشكراً لكم';
+      } else {
+        // English message
+        msg += '*New Order — Sushi Bay & Cafe Supreme*\n';
+        msg += '\n';
+        msg += `*Branch:* ${selectedBranch || '—'}\n`;
+        if (name) msg += `*Name:* ${name}\n`;
+        msg += `*Phone:* ${phone}\n`;
+        msg += `*Address:* ${address}\n`;
+        msg += '\n';
+        msg += '*Order Details:*\n';
+        msg += '\n';
+
+        items.forEach((item, i) => {
+          msg += `${i + 1}. ${item.name}  x${item.qty}`;
+          msg += `  —  ${(item.price * item.qty).toLocaleString()} L.E\n`;
+        });
+
+        msg += '\n';
+        msg += `*Total:* ${Cart.getTotal().toLocaleString()} L.E\n`;
+        if (notes) {
+          msg += `\n*Notes:* ${notes}\n`;
+        }
+        msg += '\nThank you';
+      }
+
+      const encoded = encodeURIComponent(msg);
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+      window.open(url, '_blank');
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
-      loadMenu('cafe.json', 'order-cafe-grid', 'Café Supreme', true);
-      loadMenu('sushi.json', 'order-sushi-grid', 'Sushi Bay', false);
+      loadOrderMenu('sushi.json', 'order-sushi-section', 'Sushi Bay');
+      loadOrderMenu('cafe.json', 'order-cafe-section', 'Café Supreme');
     });
   </script>
 </body>

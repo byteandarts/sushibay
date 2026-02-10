@@ -11,7 +11,14 @@ const Cart = {
     }
     this.save();
     this.render();
-    this.showNotification(`${item.name} added to cart`);
+    const lang = localStorage.getItem('lang') || 'en';
+    const displayName =
+      lang === 'ar' && item.name_ar ? item.name_ar : item.name;
+    this.showNotification(
+      lang === 'ar'
+        ? `${displayName} أُضيف للسلة`
+        : `${displayName} added to cart`,
+    );
   },
 
   remove(id) {
@@ -151,6 +158,11 @@ function filterMenu(category, containerId) {
   }
 }
 
+// ===== Parse price helper =====
+function parsePrice(priceStr) {
+  return parseFloat(priceStr.replace(/[^0-9.]/g, '')) || 0;
+}
+
 // ===== Load Menu from JSON =====
 async function loadMenu(jsonFile, containerId, brand, isCafe = false) {
   try {
@@ -182,6 +194,12 @@ async function loadMenu(jsonFile, containerId, brand, isCafe = false) {
       cat.items.forEach((item) => {
         const isFirst = cat.category === firstCategory;
         const hideStyle = isFirst ? '' : ' style="display:none;"';
+        const price = parsePrice(item.price);
+        const itemId = (brand + '-' + item.name_en)
+          .replace(/[^a-zA-Z0-9]/g, '-')
+          .toLowerCase();
+        const escapedNameEn = item.name_en.replace(/'/g, "\\'");
+        const escapedNameAr = item.name_ar.replace(/'/g, "\\'");
         listHTML += `
           <div class="menu-list-item" data-category="${cat.category}"${hideStyle}>
             <div class="menu-item-info">
@@ -190,6 +208,7 @@ async function loadMenu(jsonFile, containerId, brand, isCafe = false) {
               <div class="menu-item-name-ar">${item.name_ar}</div>
             </div>
             <div class="menu-item-price">${item.price}</div>
+            <button class="menu-item-card-add" onclick="event.stopPropagation();Cart.add({id:'${itemId}',name:'${escapedNameEn}',name_ar:'${escapedNameAr}',price:${price},brand:'${brand}'})">+</button>
           </div>
         `;
       });
@@ -247,6 +266,13 @@ async function loadMenuPage(
         const imgSrc = item.image
           ? `images/menu/${folderName}/${item.image}`
           : placeholderSvg;
+        const brandName = isCafe ? 'Café Supreme' : 'Sushi Bay';
+        const price = parsePrice(item.price);
+        const itemId = (brandName + '-' + item.name_en)
+          .replace(/[^a-zA-Z0-9]/g, '-')
+          .toLowerCase();
+        const escapedNameEn = item.name_en.replace(/'/g, "\\'");
+        const escapedNameAr = item.name_ar.replace(/'/g, "\\'");
 
         contentHTML += `
           <div class="menu-item-card">
@@ -259,6 +285,10 @@ async function loadMenuPage(
               <div class="menu-item-card-name-ar">${item.name_ar}</div>
               <div class="menu-item-card-footer">
                 <span class="menu-item-card-price">${item.price}</span>
+                <button class="menu-item-card-add" onclick="Cart.add({id:'${itemId}',name:'${escapedNameEn}',name_ar:'${escapedNameAr}',price:${price},brand:'${brandName}'})">
+                  <span class="material-symbols-outlined" style="font-size:0.85rem;">add_shopping_cart</span>
+                  Add
+                </button>
               </div>
             </div>
           </div>

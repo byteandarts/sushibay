@@ -47,9 +47,10 @@
             <span class="lang-btn-text">ع</span>
           </button>
         </div>
-        <button class="nav-btn nav-btn-cafe btn-disabled" data-coming-soon="Coming Soon" style="position:relative;">
+        <button class="nav-btn nav-btn-cafe" onclick="toggleCart()" style="position:relative;">
           <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;">shopping_cart</span>
-          <span data-i18n="nav_order">Order</span>
+          <span data-i18n="nav_cart">Cart</span>
+          <span class="cart-badge cart-count" style="display:none;">0</span>
         </button>
         <button class="mobile-menu-btn" onclick="toggleMobileNav()">
           <span class="material-symbols-outlined">menu</span>
@@ -139,6 +140,28 @@
       <div class="footer-copy" data-i18n="footer_copyright">© 2026 Café Supreme & Sushi Bay.</div>
     </div>
   </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3 class="cart-title font-display" data-i18n="your_order">Your Order</h3>
+      <button class="cart-close" onclick="toggleCart()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label" data-i18n="total">Total</span>
+        <span class="cart-total-value" id="cart-total">0 L.E</span>
+      </div>
+      <button class="cart-checkout-btn" style="background:var(--cafe-primary);"
+        onclick="window.location.href='order.html'" data-i18n="proceed_checkout">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>

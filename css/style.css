@@ -2130,6 +2130,35 @@ html[dir="rtl"] .footer-links {
   color: var(--cafe-warm);
 }
 
+/* Add to Cart button on menu cards */
+.menu-item-card-add {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.menu-item-card-add:hover {
+  background: var(--sushi-primary);
+  border-color: var(--sushi-primary);
+  color: #fff;
+}
+
+.cafe-menu .menu-item-card-add:hover {
+  background: var(--cafe-primary);
+  border-color: var(--cafe-primary);
+}
+
 /* ===== Our Story Page ===== */
 .story-hero-section {
   text-align: center;

@@ -13,6 +13,7 @@ const translations = {
     nav_contact: 'Contact',
     nav_order: 'Order',
     nav_order_now: 'Order Now',
+    nav_cart: 'Cart',
 
     // Hero - Café
     hero_cafe_tag: 'The Good Living',
@@ -260,6 +261,25 @@ const translations = {
     sushi_link: 'Sushi',
     home_link: 'Home',
 
+    // Order page
+    order_add: 'Add',
+    order_back: 'Back',
+    order_proceed_checkout: 'Proceed to Checkout',
+    order_add_more: 'Add More Items',
+    order_send_whatsapp: 'Send Order via WhatsApp',
+    order_delivery_details: 'Delivery Details',
+    order_name: 'Name',
+    order_phone: 'Phone',
+    order_address: 'Address',
+    order_notes: 'Notes',
+    order_cart_empty: 'No items in cart. Go back and add some items!',
+    order_select_branch: 'Select Branch',
+    order_add_items: 'Add Items',
+    order_checkout: 'Checkout',
+    order_choose_branch: 'Choose Your Branch',
+    order_continue_menu: 'Continue to Menu',
+    order_summary: 'Order Summary',
+
     // Locations specific
     loc_find_us_tag: 'Find Us',
   },
@@ -276,6 +296,7 @@ const translations = {
     nav_contact: 'تواصل معنا',
     nav_order: 'اطلب',
     nav_order_now: 'اطلب الآن',
+    nav_cart: 'السلة',
 
     // Hero - Café
     hero_cafe_tag: 'الحياة الجميلة',
@@ -519,6 +540,25 @@ const translations = {
     cafe_link: 'كافيه',
     sushi_link: 'سوشي',
     home_link: 'الرئيسية',
+
+    // Order page
+    order_add: 'أضف',
+    order_back: 'رجوع',
+    order_proceed_checkout: 'متابعة الدفع',
+    order_add_more: 'أضف المزيد',
+    order_send_whatsapp: 'أرسل الطلب عبر واتساب',
+    order_delivery_details: 'تفاصيل التوصيل',
+    order_name: 'الاسم',
+    order_phone: 'الهاتف',
+    order_address: 'العنوان',
+    order_notes: 'ملاحظات',
+    order_cart_empty: 'السلة فارغة. ارجع وأضف بعض العناصر!',
+    order_select_branch: 'اختر الفرع',
+    order_add_items: 'أضف عناصر',
+    order_checkout: 'الدفع',
+    order_choose_branch: 'اختر فرعك',
+    order_continue_menu: 'متابعة للقائمة',
+    order_summary: 'ملخص الطلب',
 
     // Locations specific
     loc_find_us_tag: 'جِدنا',
