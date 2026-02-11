@@ -75,7 +75,6 @@ const Cart = {
 
     // Update cart sidebar
     const cartItems = document.getElementById('cart-items');
-    const cartTotalElement = document.getElementById('cart-total');
     if (!cartItems) return;
 
     if (this.items.length === 0) {
@@ -107,34 +106,34 @@ const Cart = {
     }
 
     // Update cart total with VAT breakdown
-    if (cartTotalElement) {
-      const cartTotalContainer = cartTotalElement.closest('.cart-total');
-      if (cartTotalContainer) {
-        const lang = localStorage.getItem('lang') || 'en';
-        const subtotal = this.getTotal();
-        const vat = this.getVAT();
-        const total = this.getTotalWithVAT();
+    const cartTotalContainer = document.querySelector(
+      '.cart-footer .cart-total',
+    );
+    if (cartTotalContainer) {
+      const lang = localStorage.getItem('lang') || 'en';
+      const subtotal = this.getTotal();
+      const vat = this.getVAT();
+      const total = this.getTotalWithVAT();
 
-        const subtotalLabel = lang === 'ar' ? 'المجموع الفرعي' : 'Subtotal';
-        const vatLabel =
-          lang === 'ar' ? 'ضريبة القيمة المضافة (14%)' : 'VAT (14%)';
-        const totalLabel = lang === 'ar' ? 'الإجمالي' : 'Total';
+      const subtotalLabel = lang === 'ar' ? 'المجموع الفرعي' : 'Subtotal';
+      const vatLabel =
+        lang === 'ar' ? 'ضريبة القيمة المضافة (14%)' : 'VAT (14%)';
+      const totalLabel = lang === 'ar' ? 'الإجمالي' : 'Total';
 
-        cartTotalContainer.innerHTML = `
-          <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:0.35rem;gap:1rem;">
-            <span style="white-space:nowrap;">${subtotalLabel}</span>
-            <span style="white-space:nowrap;text-align:right;">${subtotal.toLocaleString()} L.E</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:0.75rem;gap:1rem;">
-            <span style="white-space:nowrap;">${vatLabel}</span>
-            <span style="white-space:nowrap;text-align:right;">${vat.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:0.5rem;border-top:1px solid rgba(255,255,255,0.1);">
-            <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);white-space:nowrap;">${totalLabel}</span>
-            <span style="font-family:'Noto Serif',serif;font-size:1.25rem;font-weight:700;color:var(--sushi-gold);white-space:nowrap;">${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
-          </div>
-        `;
-      }
+      cartTotalContainer.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:0.35rem;gap:1rem;">
+          <span style="white-space:nowrap;">${subtotalLabel}</span>
+          <span style="white-space:nowrap;text-align:right;">${subtotal.toLocaleString()} L.E</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:0.75rem;gap:1rem;">
+          <span style="white-space:nowrap;">${vatLabel}</span>
+          <span style="white-space:nowrap;text-align:right;">${vat.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:0.5rem;border-top:1px solid rgba(255,255,255,0.1);">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);white-space:nowrap;">${totalLabel}</span>
+          <span style="font-family:'Noto Serif',serif;font-size:1.25rem;font-weight:700;color:var(--sushi-gold);white-space:nowrap;">${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} L.E</span>
+        </div>
+      `;
     }
   },
 
