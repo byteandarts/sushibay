@@ -1117,6 +1117,47 @@
       ]
     },
     {
+      "category": "Fizzy Drinks",
+      "items": [
+        {
+          "name_en": "Passion Fruit",
+          "name_ar": "باشون فروت ",
+          "price": "120 L.E",
+          "type": "Fizzy",
+          "image": "passion_fruit.webp",
+          "desc_en": "Passion fruit is a tropical fruit with a juicy pulp.",
+          "desc_ar": "فاكهة الباشن فروت هي فاكهة استوائية تحتوي على لب غني بالعصارة."
+        },
+        {
+          "name_en": "Blueberry",
+          "name_ar": "بلو بيري ",
+          "price": "120 L.E",
+          "type": "Fizzy",
+          "image": "blueberry.webp",
+          "desc_en": "Experience the burst of sweetness and antioxidants with our plump and juicy blueberries. Whether enjoyed on their own or added to your favorite recipes, they're a delightful treat for your taste buds.",
+          "desc_ar": "استمتع بانفجار الحلاوة ومضادات الأكسدة مع التوت الأزرق الممتلئ والعصيري. سواء استمتعت به بمفرده أو أضفته إلى وصفاتك المفضلة، فهو علاج لذيذ لبراعم التذوق لديك."
+        },
+        {
+          "name_en": "Ginger Blue",
+          "name_ar": "جنجربلو",
+          "price": "120 L.E",
+          "type": "Fizzy",
+          "image": "ginger_blue.webp",
+          "desc_en": "A refreshing fizzy drink with a distinctive ginger flavor and vibrant blue color perfect for quenching your thirst on hot days",
+          "desc_ar": "مشروب غازي منعش بنكهة الزنجبيل المميزة ولون أزرق نابض بالحياة مثالي لإرواء عطشك في الأيام الحارة"
+        },
+        {
+          "name_en": "Mojito",
+          "name_ar": "موهيتو ",
+          "price": "120 L.E",
+          "type": "Fizzy",
+          "image": "mojito.webp",
+          "desc_en": "Made with lime, mint and splash soda water",
+          "desc_ar": "مصنوعة من حامض ونعناع ورذاذ ماء صودا"
+        }
+      ]
+    },
+    {
       "category": "Beverages",
       "items": [
         {
