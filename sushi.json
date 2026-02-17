@@ -9,8 +9,8 @@
           "price": "250.00 LE",
           "type": "Soup",
           "image": "sea_food_cream_soup.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Rich and creamy soup loaded with a variety of fresh seafood.",
+          "desc_ar": "شوربة غنية وكريمية مليئة بمجموعة متنوعة من فواكه البحر الطازجة."
         },
         {
           "name_en": "Coconut Soup",
@@ -18,8 +18,8 @@
           "price": "255.00 LE",
           "type": "Soup",
           "image": "coconut_soup.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Creamy coconut milk soup infused with aromatic asian spices.",
+          "desc_ar": "شوربة حليب جوز الهند الكريمية مع توابل آسيوية عطرية."
         },
         {
           "name_en": "Miso Soup",
@@ -27,8 +27,8 @@
           "price": "135.00 LE",
           "type": "Soup",
           "image": "miso_soup.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Traditional Japanese soup with tofu and seaweed.",
+          "desc_ar": "شوربة يابانية تقليدية مع التوفو وأعشاب البحر."
         },
         {
           "name_en": "Spicy Seafood Soup",
@@ -36,8 +36,8 @@
           "price": "225.00 LE",
           "type": "Soup",
           "image": "spicy_seafood_soup.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Zesty and spicy clear soup brimming with mixed seafood.",
+          "desc_ar": "شوربة صافية حارة ومليئة بفواكه البحر المشكلة."
         }
       ]
     },
@@ -50,8 +50,8 @@
           "price": "250.00 LE",
           "type": "Salad",
           "image": "spicy_tuna_salad.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fresh salad with a Spicy kick.",
+          "desc_ar": "سلطة طازجة مع لمسة حارة."
         },
         {
           "name_en": "Crab Salad",
@@ -59,8 +59,8 @@
           "price": "195.00 LE",
           "type": "Salad",
           "image": "crab_salad.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crisp and refreshing salad with Japanese dressing.",
+          "desc_ar": "سلطة مقرمشة ومنعشة مع تتبيلة يابانية."
         },
         {
           "name_en": "Healthy Salad",
@@ -68,8 +68,8 @@
           "price": "195.00 LE",
           "type": "Salad",
           "image": "healthy_salad.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crisp and refreshing salad with Japanese dressing.",
+          "desc_ar": "سلطة مقرمشة ومنعشة مع تتبيلة يابانية."
         },
         {
           "name_en": "Salmon Salad",
@@ -77,8 +77,8 @@
           "price": "265.00 LE",
           "type": "Salad",
           "image": "salmon_salad.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fresh greens topped with premium slices of fresh fish.",
+          "desc_ar": "خضروات طازجة مغطاة بشرائح فاخرة من السمك الطازج."
         }
       ]
     },
@@ -91,8 +91,8 @@
           "price": "185.00 LE",
           "type": "Appetizer",
           "image": "ebi_tempura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicious starter to stimulate your appetite.",
+          "desc_ar": "مقبلات لذيذة لتحفيز شهيتك."
         },
         {
           "name_en": "Wrapped Finger Shrimps",
@@ -100,8 +100,8 @@
           "price": "265.00 LE",
           "type": "Appetizer",
           "image": "wrapped_finger_shrimps.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicious starter to stimulate your appetite.",
+          "desc_ar": "مقبلات لذيذة لتحفيز شهيتك."
         },
         {
           "name_en": "Spring Rolls",
@@ -109,8 +109,8 @@
           "price": "95.00 LE",
           "type": "Appetizer",
           "image": "spring_rolls.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicious starter to stimulate your appetite.",
+          "desc_ar": "مقبلات لذيذة لتحفيز شهيتك."
         }
       ]
     },
@@ -123,8 +123,8 @@
           "price": "310.00 LE",
           "type": "Noodles",
           "image": "spicy_shrimp_rice_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Beef Rice Noodles",
@@ -132,8 +132,8 @@
           "price": "290.00 LE",
           "type": "Noodles",
           "image": "beef_rice_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Chicken Rice Noodles",
@@ -141,8 +141,8 @@
           "price": "240.00 LE",
           "type": "Noodles",
           "image": "chicken_rice_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Spicy Shrimp Noodles",
@@ -150,8 +150,8 @@
           "price": "290.00 LE",
           "type": "Noodles",
           "image": "spicy_shrimp_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Beef Noodles",
@@ -159,8 +159,8 @@
           "price": "270.00 LE",
           "type": "Noodles",
           "image": "beef_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Chicken Noodles",
@@ -168,8 +168,8 @@
           "price": "220.00 LE",
           "type": "Noodles",
           "image": "chicken_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Veggie Noodles",
@@ -177,8 +177,8 @@
           "price": "140.00 LE",
           "type": "Noodles",
           "image": "veggie_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Spicy Shrimp Glass Noodles",
@@ -186,8 +186,8 @@
           "price": "310.00 LE",
           "type": "Noodles",
           "image": "spicy_shrimp_glass_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Beef Glass Noodles",
@@ -195,8 +195,8 @@
           "price": "290.00 LE",
           "type": "Noodles",
           "image": "beef_glass_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         },
         {
           "name_en": "Chicken Glass Noodles",
@@ -204,8 +204,8 @@
           "price": "240.00 LE",
           "type": "Noodles",
           "image": "chicken_glass_noodles.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Stir-fried noodles with vegetables and your choice of protein.",
+          "desc_ar": "نودلز مقلية مع خضروات واختيارك من البروتين."
         }
       ]
     },
@@ -218,8 +218,8 @@
           "price": "295.00 LE",
           "type": "Main Course",
           "image": "sweet_and_sour_chicken.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crispy chicken pieces tossed in a classic sweet and sour sauce with bell peppers and pineapple.",
+          "desc_ar": "قطع دجاج مقرمشة مغطاة بصوص حلو وحامض كلاسيكي مع فلفل وأناناس."
         },
         {
           "name_en": "Sweet & Sour Shrimp",
@@ -227,8 +227,8 @@
           "price": "370.00 LE",
           "type": "Main Course",
           "image": "sweet_and_sour_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Succulent shrimp glazed in a tangy sweet and sour sauce with fresh vegetables.",
+          "desc_ar": "جمبري عصاري مغطى بصوص حلو وحامض لاذع مع خضروات طازجة."
         }
       ]
     },
@@ -241,8 +241,8 @@
           "price": "305.00 LE",
           "type": "Seafood",
           "image": "mussels_bucket_no_1_dijon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Mussels Bucket No 1 (Dijon) prepared with fresh ingredients.",
+          "desc_ar": "دلو بلح البحر رقم 1 (ديجون) محضر بمكونات طازجة."
         },
         {
           "name_en": "Mussels Bucket No 2 (Basil Tomato)",
@@ -250,8 +250,8 @@
           "price": "305.00 LE",
           "type": "Seafood",
           "image": "mussels_bucket_no_2_basil_tomato.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Mussels Bucket No 2 (Basil Tomato) prepared with fresh ingredients.",
+          "desc_ar": "دلو بلح البحر رقم 2 (ريحان وطماطم) محضر بمكونات طازجة."
         },
         {
           "name_en": "Mussels Bucket No 3 (Seafood)",
@@ -259,8 +259,8 @@
           "price": "375.00 LE",
           "type": "Seafood",
           "image": "mussels_bucket_no_3_seafood.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Mussels Bucket No 3 (Seafood) prepared with fresh ingredients.",
+          "desc_ar": "دلو بلح البحر رقم 3 (فواكه بحر) محضر بمكونات طازجة."
         }
       ]
     },
@@ -273,8 +273,8 @@
           "price": "46.00 LE",
           "type": "Nigiri",
           "image": "shrimp_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hand-pressed sushi rice topped with a slice of fresh shrimp nigiri.",
+          "desc_ar": "أرز سوشي مضغوط يدوياً يعلوه شريحة من جمبري."
         },
         {
           "name_en": "Crab Nigiri",
@@ -282,8 +282,8 @@
           "price": "41.00 LE",
           "type": "Nigiri",
           "image": "crab_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hand-pressed sushi rice topped with a slice of fresh crab nigiri.",
+          "desc_ar": "أرز سوشي مضغوط يدوياً يعلوه شريحة من كابوريا."
         },
         {
           "name_en": "Squid Nigiri",
@@ -291,8 +291,8 @@
           "price": "41.00 LE",
           "type": "Nigiri",
           "image": "squid_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hand-pressed sushi rice topped with a slice of fresh squid nigiri.",
+          "desc_ar": "أرز سوشي مضغوط يدوياً يعلوه شريحة من كاليماري."
         },
         {
           "name_en": "Salmon Nigiri",
@@ -300,8 +300,8 @@
           "price": "46.00 LE",
           "type": "Nigiri",
           "image": "salmon_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hand-pressed sushi rice topped with a slice of fresh salmon nigiri.",
+          "desc_ar": "أرز سوشي مضغوط يدوياً يعلوه شريحة من سلمون."
         },
         {
           "name_en": "Tuna Nigiri",
@@ -309,8 +309,8 @@
           "price": "51.00 LE",
           "type": "Nigiri",
           "image": "tuna_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hand-pressed sushi rice topped with a slice of fresh tuna nigiri.",
+          "desc_ar": "أرز سوشي مضغوط يدوياً يعلوه شريحة من تونة."
         }
       ]
     },
@@ -323,8 +323,8 @@
           "price": "320.00 LE",
           "type": "Sashimi",
           "image": "salmon_sashimi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicate slices of fresh, premium salmon sashimi.",
+          "desc_ar": "شرائح رقيقة من سلمون الطازج والفاخر."
         },
         {
           "name_en": "Tuna Sashimi",
@@ -332,8 +332,8 @@
           "price": "320.00 LE",
           "type": "Sashimi",
           "image": "tuna_sashimi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicate slices of fresh, premium tuna sashimi.",
+          "desc_ar": "شرائح رقيقة من تونة الطازج والفاخر."
         },
         {
           "name_en": "Squid Sashimi",
@@ -341,8 +341,8 @@
           "price": "230.00 LE",
           "type": "Sashimi",
           "image": "squid_sashimi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicate slices of fresh, premium squid sashimi.",
+          "desc_ar": "شرائح رقيقة من كاليماري الطازج والفاخر."
         },
         {
           "name_en": "Seared Salmon With Edamame Beans",
@@ -350,8 +350,8 @@
           "price": "275.00 LE",
           "type": "Sashimi",
           "image": "seared_salmon_with_edamame_beans.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicate slices of fresh, premium seared salmon with edamame beans.",
+          "desc_ar": "شرائح رقيقة من سلمون مشوح مع ادامامي الطازج والفاخر."
         },
         {
           "name_en": "Seared Tuna With Asparagus",
@@ -359,8 +359,8 @@
           "price": "275.00 LE",
           "type": "Sashimi",
           "image": "seared_tuna_with_asparagus.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Delicate slices of fresh, premium seared tuna with asparagus.",
+          "desc_ar": "شرائح رقيقة من تونة مشوحة مع الهليون الطازج والفاخر."
         }
       ]
     },
@@ -373,8 +373,8 @@
           "price": "125.00 LE",
           "type": "Sushi Roll",
           "image": "shake_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Tekka (Tuna)",
@@ -382,8 +382,8 @@
           "price": "125.00 LE",
           "type": "Sushi Roll",
           "image": "tekka_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Ebi (Shrimp)",
@@ -391,8 +391,8 @@
           "price": "135.00 LE",
           "type": "Sushi Roll",
           "image": "ebi_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Ebi Tempura",
@@ -400,8 +400,8 @@
           "price": "135.00 LE",
           "type": "Sushi Roll",
           "image": "ebi_tempura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Caviar Hosso Maki",
@@ -409,8 +409,8 @@
           "price": "165.00 LE",
           "type": "Sushi Roll",
           "image": "caviar_hosso_maki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Kani Kama",
@@ -418,8 +418,8 @@
           "price": "105.00 LE",
           "type": "Sushi Roll",
           "image": "kani_kama.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Kappa",
@@ -427,8 +427,8 @@
           "price": "85.00 LE",
           "type": "Sushi Roll",
           "image": "kappa.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Avocado Hosso Maki",
@@ -436,8 +436,8 @@
           "price": "110.00 LE",
           "type": "Sushi Roll",
           "image": "avocado_hosso_maki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         }
       ]
     },
@@ -450,8 +450,8 @@
           "price": "485.00 LE",
           "type": "Platter",
           "image": "assorted_sashimi_and_nigiri.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         },
         {
           "name_en": "Chirashi Sushi",
@@ -459,8 +459,8 @@
           "price": "420.00 LE",
           "type": "Sushi Bowl",
           "image": "chirashi_sushi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         }
       ]
     },
@@ -473,8 +473,8 @@
           "price": "215.00 LE",
           "type": "Sushi Roll",
           "image": "dynamite_zone.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "California Roll",
@@ -482,8 +482,8 @@
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "california_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Philadelphia Roll",
@@ -491,8 +491,8 @@
           "price": "280.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "philadelphia_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Crispy Ura Maki",
@@ -500,8 +500,8 @@
           "price": "210.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "crispy_ura_maki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Ura Shake",
@@ -509,8 +509,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "ura_shake.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Salmon Yuki",
@@ -518,8 +518,8 @@
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "salmon_yuki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Futo Maki",
@@ -527,8 +527,8 @@
           "price": "175.00 LE",
           "type": "Sushi Roll",
           "image": "futo_maki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Tuna Yuki",
@@ -536,8 +536,8 @@
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "tuna_yuki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Fishing Cucumber",
@@ -545,8 +545,8 @@
           "price": "185.00 LE",
           "type": "Sushi Roll",
           "image": "fishing_cucumber.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Veggie Roll",
@@ -554,8 +554,8 @@
           "price": "160.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "veggie_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Crab Paste Roll",
@@ -563,8 +563,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "crab_paste_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Ura Tekka",
@@ -572,8 +572,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "ura_tekka.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Ura Ebi Tempura",
@@ -581,8 +581,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "ura_ebi_tempura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Transparent Roll",
@@ -590,8 +590,8 @@
           "price": "140.00 LE",
           "type": "Sushi Roll",
           "image": "transparent_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Dragon Roll",
@@ -599,8 +599,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "dragon_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "See Through Roll",
@@ -608,8 +608,8 @@
           "price": "295.00 LE",
           "type": "Sushi Roll",
           "image": "see_through_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Porto Canyon",
@@ -617,8 +617,8 @@
           "price": "250.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "porto_canyon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Euro Flakes",
@@ -626,8 +626,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "euro_flakes.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Snow Flakes",
@@ -635,8 +635,8 @@
           "price": "295.00 LE",
           "type": "Sushi Roll",
           "image": "snow_flakes.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Jalapeno Roll",
@@ -644,8 +644,8 @@
           "price": "175.00 LE",
           "type": "Sushi Roll",
           "image": "jalapeno_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Green Splash",
@@ -653,8 +653,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "green_splash.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Green Spikes",
@@ -662,8 +662,8 @@
           "price": "160.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "green_spikes.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Chicken Caesar Roll",
@@ -671,8 +671,8 @@
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "chicken_caesar_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Salmon Mango",
@@ -680,8 +680,8 @@
           "price": "240.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "salmon_mango.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Buddha Paste",
@@ -689,8 +689,8 @@
           "price": "225.00 LE",
           "type": "Sushi Roll",
           "image": "buddha_paste.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Tuna Lava",
@@ -698,8 +698,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "tuna_lava.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Spicy Salmon Roll",
@@ -707,8 +707,8 @@
           "price": "195.00 LE",
           "type": "Sushi Roll",
           "image": "spicy_salmon_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Flavorful roll with a touch of spice.",
+          "desc_ar": "رول لذيذ مع لمسة من التوابل."
         },
         {
           "name_en": "Philly Crispy",
@@ -716,8 +716,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "philly_crispy.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Sky Fall",
@@ -725,8 +725,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "sky_fall.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Fire Fly",
@@ -734,8 +734,8 @@
           "price": "195.00 LE",
           "type": "Sushi Roll",
           "image": "fire_fly.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Onion Fortissimo",
@@ -743,8 +743,8 @@
           "price": "150.00 LE",
           "type": "Sushi Roll",
           "image": "onion_fortissimo.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Spoiled Shrimp",
@@ -752,8 +752,8 @@
           "price": "290.00 LE",
           "type": "Sushi Roll",
           "image": "spoiled_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Tuna Mango",
@@ -761,8 +761,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "tuna_mango.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Oshi Salmon",
@@ -770,8 +770,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "oshi_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Sombrero Calamari",
@@ -779,8 +779,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "sombrero_calamari.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Oshi Tempura",
@@ -788,8 +788,8 @@
           "price": "190.00 LE (8pcs)",
           "type": "Sushi Roll",
           "image": "oshi_tempura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         }
       ]
     },
@@ -802,8 +802,8 @@
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "crispy_tempura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Rainbow Roll",
@@ -811,8 +811,8 @@
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "rainbow_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Queen Shrimp",
@@ -820,8 +820,8 @@
           "price": "275.00 LE",
           "type": "Signature Roll",
           "image": "queen_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Volcano",
@@ -829,8 +829,8 @@
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "volcano.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Hot Dynamite",
@@ -838,8 +838,8 @@
           "price": "220.00 LE",
           "type": "Signature Roll",
           "image": "hot_dynamite.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Dynamite Oshi",
@@ -847,8 +847,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "dynamite_oshi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Golden Black",
@@ -856,8 +856,8 @@
           "price": "195.00 LE",
           "type": "Signature Roll",
           "image": "golden_black.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Crispy Tempura Tuna",
@@ -865,8 +865,8 @@
           "price": "250.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "crispy_tempura_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Golden Amazing",
@@ -874,8 +874,8 @@
           "price": "235.00 LE",
           "type": "Signature Roll",
           "image": "golden_amazing.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Angry Volcano",
@@ -883,8 +883,8 @@
           "price": "280.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "angry_volcano.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Golden Oshi",
@@ -892,8 +892,8 @@
           "price": "310.00 LE",
           "type": "Signature Roll",
           "image": "golden_oshi.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Crunchy Amazing",
@@ -901,8 +901,8 @@
           "price": "220.00 LE",
           "type": "Signature Roll",
           "image": "crunchy_amazing.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Yoshi Spicy Tuna",
@@ -910,8 +910,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "yoshi_spicy_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Flavorful roll with a touch of spice.",
+          "desc_ar": "رول لذيذ مع لمسة من التوابل."
         },
         {
           "name_en": "Crispy Amazing",
@@ -919,8 +919,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Signature Roll",
           "image": "crispy_amazing.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         }
       ]
     },
@@ -933,8 +933,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "crazy_fried_rolls.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Tempura-fried roll filled with salmon, crab, and cheese.",
+          "desc_ar": "رول مقلي بالتمبورا محشو بالسلمون، الكابوريا، والجبنة."
         },
         {
           "name_en": "Hot Dynamite Crazy",
@@ -942,8 +942,8 @@
           "price": "165.00 LE",
           "type": "Fried Roll",
           "image": "hot_dynamite_crazy.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Spicy fried roll topped with our signature dynamite sauce.",
+          "desc_ar": "رول مقلي حار مغطى بصوص الديناميت المميز لدينا."
         },
         {
           "name_en": "Hot Mono Fried Tuna",
@@ -951,8 +951,8 @@
           "price": "195.00 LE",
           "type": "Fried Roll",
           "image": "hot_mono_fried_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried roll featuring spicy tuna cream cheese.",
+          "desc_ar": "رول مقلي يحتوي على تونة حارة وجبنة كريمية."
         },
         {
           "name_en": "Hot Mono Fried Crab",
@@ -960,8 +960,8 @@
           "price": "130.00 LE",
           "type": "Fried Roll",
           "image": "hot_mono_fried_crab.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crispy fried roll filled with sweet crab meat.",
+          "desc_ar": "رول مقلي مقرمش محشو بلحم الكابوريا الحلو."
         },
         {
           "name_en": "Lava Cheese",
@@ -969,8 +969,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "lava_cheese.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried roll topped with melted mozzarella and cheddar cheese.",
+          "desc_ar": "رول مقلي مغطى بالموتزاريلا الذائبة وجبنة الشيدر."
         },
         {
           "name_en": "Katsu Roll",
@@ -978,8 +978,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "katsu_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Panko-breaded fried roll stuffed with chicken katsu and fresh veggies.",
+          "desc_ar": "رول مقلي بفتات الخبز محشو بدجاج كاتسو وخضروات طازجة."
         },
         {
           "name_en": "Hot Dynamite Tuna",
@@ -987,8 +987,8 @@
           "price": "195.00 LE",
           "type": "Fried Roll",
           "image": "hot_dynamite_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried tuna roll drizzled with spicy dynamite sauce.",
+          "desc_ar": "رول تونة مقلي مغطى بصوص الديناميت الحار."
         },
         {
           "name_en": "Hosso Fried Shrimp",
@@ -996,8 +996,8 @@
           "price": "165.00 LE",
           "type": "Fried Roll",
           "image": "hosso_fried_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Small, crispy fried roll filled with tender shrimp.",
+          "desc_ar": "رول مقلي صغير ومقرمش محشو بالجمبري الطري."
         },
         {
           "name_en": "Hosso Fried Salmon",
@@ -1005,8 +1005,8 @@
           "price": "175.00 LE",
           "type": "Fried Roll",
           "image": "hosso_fried_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Small, crispy fried roll filled with fresh salmon.",
+          "desc_ar": "رول مقلي صغير ومقرمش محشو بالسلمون الطازج."
         },
         {
           "name_en": "Hot Dynamite Crab",
@@ -1014,8 +1014,8 @@
           "price": "155.00 LE",
           "type": "Fried Roll",
           "image": "hot_dynamite_crab.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried crab roll topped with spicy dynamite sauce.",
+          "desc_ar": "رول كابوريا مقلي مغطى بصوص الديناميت الحار."
         },
         {
           "name_en": "New Fried Roll",
@@ -1023,8 +1023,8 @@
           "price": "230.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "new_fried_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Golden fried roll with a unique blend of seafood fillings.",
+          "desc_ar": "رول مقلي ذهبي مع مزيج فريد من حشوات فواكه البحر."
         },
         {
           "name_en": "New Style Katsu",
@@ -1032,8 +1032,8 @@
           "price": "320.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "new_style_katsu.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Modern twist on the katsu roll with special chef's sauce.",
+          "desc_ar": "لمسة عصرية على كاتسو رول مع صوص الشيف الخاص."
         },
         {
           "name_en": "Golden Crab",
@@ -1041,8 +1041,8 @@
           "price": "140.00 LE",
           "type": "Fried Roll",
           "image": "golden_crab.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried roll topped with shredded crab and golden tempura flakes.",
+          "desc_ar": "رول مقلي مغطى بالكابوريا المبشورة ورقائق التمبورا الذهبية."
         },
         {
           "name_en": "Spicy Lemon",
@@ -1050,8 +1050,8 @@
           "price": "235.00 LE",
           "type": "Fried Roll",
           "image": "spicy_lemon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried roll with a zesty lemon kick and spicy sauce.",
+          "desc_ar": "رول مقلي مع لمسة ليمون منعشة وصوص حار."
         },
         {
           "name_en": "Super Crunchy Lava",
@@ -1059,8 +1059,8 @@
           "price": "165.00 LE",
           "type": "Fried Roll",
           "image": "super_crunchy_lava.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Extra crunchy fried roll topped with molten spicy lava sauce.",
+          "desc_ar": "رول مقلي مقرمش للغاية مغطى بصوص اللافا الحار."
         },
         {
           "name_en": "Crunchy Lemon",
@@ -1068,8 +1068,8 @@
           "price": "215.00 LE",
           "type": "Fried Roll",
           "image": "crunchy_lemon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crunchy fried roll infused with refreshing lemon zest.",
+          "desc_ar": "رول مقلي مقرمش ممزوج بقشر الليمون المنعش."
         },
         {
           "name_en": "Hot Mono Fried Salmon",
@@ -1077,8 +1077,8 @@
           "price": "210.00 LE",
           "type": "Fried Roll",
           "image": "hot_mono_fried_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried salmon roll with cream cheese and scallions.",
+          "desc_ar": "رول سلمون مقلي مع جبنة كريمية وبصل أخضر."
         },
         {
           "name_en": "Hot Dynamite Shrimp",
@@ -1086,8 +1086,8 @@
           "price": "195.00 LE",
           "type": "Fried Roll",
           "image": "hot_dynamite_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried shrimp roll topped with spicy dynamite sauce.",
+          "desc_ar": "رول جمبري مقلي مغطى بصوص الديناميت الحار."
         },
         {
           "name_en": "Hot Dynamite Salmon",
@@ -1095,8 +1095,8 @@
           "price": "225.00 LE",
           "type": "Fried Roll",
           "image": "hot_dynamite_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried salmon roll topped with spicy dynamite sauce.",
+          "desc_ar": "رول سلمون مقلي مغطى بصوص الديناميت الحار."
         },
         {
           "name_en": "Bonzo Roll",
@@ -1104,8 +1104,8 @@
           "price": "300.00 LE (8pcs)",
           "type": "Fried Roll",
           "image": "bonzo_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Special fried roll with a mix of cooked seafood and cheese.",
+          "desc_ar": "رول مقلي خاص مع مزيج من فواكه البحر المطهية والجبنة."
         }
       ]
     },
@@ -1118,8 +1118,8 @@
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "new_spicy_tuna_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Flavorful roll with a touch of spice.",
+          "desc_ar": "رول لذيذ مع لمسة من التوابل."
         },
         {
           "name_en": "Creamy Crab",
@@ -1127,8 +1127,8 @@
           "price": "345.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "creamy_crab.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Spicy Gisha Roll",
@@ -1136,8 +1136,8 @@
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "spicy_gisha_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Flavorful roll with a touch of spice.",
+          "desc_ar": "رول لذيذ مع لمسة من التوابل."
         },
         {
           "name_en": "Crazy Dragon",
@@ -1145,8 +1145,8 @@
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "crazy_dragon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Classic Roll",
@@ -1154,8 +1154,8 @@
           "price": "330.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "classic_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Spicy Shrimp Roll",
@@ -1163,8 +1163,8 @@
           "price": "320.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "spicy_shrimp_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Flavorful roll with a touch of spice.",
+          "desc_ar": "رول لذيذ مع لمسة من التوابل."
         },
         {
           "name_en": "New Style Crispy Roll",
@@ -1172,8 +1172,8 @@
           "price": "295.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "new_style_crispy_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Picasso Roll",
@@ -1181,8 +1181,8 @@
           "price": "220.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "picasso_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Special One",
@@ -1190,8 +1190,8 @@
           "price": "290.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "special_one.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Mega Roll",
@@ -1199,8 +1199,8 @@
           "price": "340.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "mega_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "New Style Philadelphia",
@@ -1208,8 +1208,8 @@
           "price": "340.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "new_style_philadelphia.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         },
         {
           "name_en": "Togarashi Roll",
@@ -1217,8 +1217,8 @@
           "price": "330.00 LE (8pcs)",
           "type": "Premium Roll",
           "image": "togarashi_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Chef's special roll crafted with unique ingredients.",
+          "desc_ar": "رول الشيف الخاص المحضر بمكونات فريدة."
         }
       ]
     },
@@ -1231,8 +1231,8 @@
           "price": "225.00 LE",
           "type": "Dynamite Roll",
           "image": "dynamite_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Dynamite Shrimp Fried",
@@ -1240,8 +1240,8 @@
           "price": "195.00 LE",
           "type": "Dynamite Roll",
           "image": "dynamite_shrimp_fried.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crispy fried roll with a savory filling.",
+          "desc_ar": "رول مقلي مقرمش مع حشوة لذيذة."
         },
         {
           "name_en": "Dynamite Tuna",
@@ -1249,8 +1249,8 @@
           "price": "195.00 LE",
           "type": "Dynamite Roll",
           "image": "dynamite_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Fire Cracker",
@@ -1258,8 +1258,8 @@
           "price": "260.00 LE (8pcs)",
           "type": "Dynamite Roll",
           "image": "fire_cracker.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "King Roll",
@@ -1267,8 +1267,8 @@
           "price": "290.00 LE (8pcs)",
           "type": "Dynamite Roll",
           "image": "king_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         },
         {
           "name_en": "Bold Roll",
@@ -1276,8 +1276,8 @@
           "price": "300.00 LE (8pcs)",
           "type": "Dynamite Roll",
           "image": "bold_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Classic sushi roll with fresh ingredients and rice.",
+          "desc_ar": "رول سوشي كلاسيكي بمكونات طازجة وأرز."
         }
       ]
     },
@@ -1290,8 +1290,8 @@
           "price": "295.00 LE",
           "type": "Special Roll",
           "image": "fried_and_raw_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried and Raw Tuna prepared with fresh ingredients.",
+          "desc_ar": "تونة مقلية ونيئة محضر بمكونات طازجة."
         },
         {
           "name_en": "Dynamite New Style",
@@ -1299,8 +1299,8 @@
           "price": "310.00 LE",
           "type": "Special Roll",
           "image": "dynamite_new_style.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Dynamite New Style prepared with fresh ingredients.",
+          "desc_ar": "ديناميت نيو ستايل محضر بمكونات طازجة."
         },
         {
           "name_en": "Fried and Raw Salmon",
@@ -1308,8 +1308,8 @@
           "price": "295.00 LE",
           "type": "Special Roll",
           "image": "fried_and_raw_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Fried and Raw Salmon prepared with fresh ingredients.",
+          "desc_ar": "سلمون مقلي ونيء محضر بمكونات طازجة."
         },
         {
           "name_en": "Hot Sexy Roll",
@@ -1317,8 +1317,8 @@
           "price": "295.00 LE",
           "type": "Special Roll",
           "image": "hot_sexy_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Hot Sexy Roll prepared with fresh ingredients.",
+          "desc_ar": "هوت سكسي رول محضر بمكونات طازجة."
         },
         {
           "name_en": "Golden Bermuda",
@@ -1326,8 +1326,8 @@
           "price": "275.00 LE",
           "type": "Special Roll",
           "image": "golden_bermuda.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Golden Bermuda prepared with fresh ingredients.",
+          "desc_ar": "جولدن برمودا محضر بمكونات طازجة."
         },
         {
           "name_en": "Smoked Bermuda",
@@ -1335,8 +1335,8 @@
           "price": "280.00 LE",
           "type": "Special Roll",
           "image": "smoked_bermuda.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Smoked Bermuda prepared with fresh ingredients.",
+          "desc_ar": "سموكة برمودا محضر بمكونات طازجة."
         },
         {
           "name_en": "Sushi Sandwich Tuna",
@@ -1344,8 +1344,8 @@
           "price": "195.00 LE",
           "type": "Sushi Sandwich",
           "image": "sushi_sandwich_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Sushi Sandwich Tuna prepared with fresh ingredients.",
+          "desc_ar": "سوشي ساندوتش تونة محضر بمكونات طازجة."
         },
         {
           "name_en": "Sushi Sandwich Shrimp",
@@ -1353,8 +1353,8 @@
           "price": "195.00 LE",
           "type": "Sushi Sandwich",
           "image": "sushi_sandwich_shrimp.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Sushi Sandwich Shrimp prepared with fresh ingredients.",
+          "desc_ar": "سوشي ساندوتش جمبري محضر بمكونات طازجة."
         },
         {
           "name_en": "Sushi Sandwich Salmon",
@@ -1362,8 +1362,8 @@
           "price": "260.00 LE",
           "type": "Sushi Sandwich",
           "image": "sushi_sandwich_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Sushi Sandwich Salmon prepared with fresh ingredients.",
+          "desc_ar": "سوشي ساندوتش سلمون محضر بمكونات طازجة."
         },
         {
           "name_en": "Sushi Sandwich Crazy Mix",
@@ -1371,8 +1371,8 @@
           "price": "145.00 LE",
           "type": "Sushi Sandwich",
           "image": "sushi_sandwich_crazy_mix.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Sushi Sandwich Crazy Mix prepared with fresh ingredients.",
+          "desc_ar": "سوشي ساندوتش كريزي ميكس محضر بمكونات طازجة."
         },
         {
           "name_en": "Crazy Burger",
@@ -1380,8 +1380,8 @@
           "price": "165.00 LE",
           "type": "Sushi Burger",
           "image": "crazy_burger.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crazy Burger prepared with fresh ingredients.",
+          "desc_ar": "كريزي برجر محضر بمكونات طازجة."
         },
         {
           "name_en": "Salmon Burger",
@@ -1389,8 +1389,8 @@
           "price": "280.00 LE",
           "type": "Sushi Burger",
           "image": "salmon_burger.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Salmon Burger prepared with fresh ingredients.",
+          "desc_ar": "سلمون برجر محضر بمكونات طازجة."
         },
         {
           "name_en": "Shrimp Burger",
@@ -1398,8 +1398,8 @@
           "price": "295.00 LE",
           "type": "Sushi Burger",
           "image": "shrimp_burger.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Shrimp Burger prepared with fresh ingredients.",
+          "desc_ar": "جمبري برجر محضر بمكونات طازجة."
         },
         {
           "name_en": "Caviar Roll",
@@ -1407,8 +1407,8 @@
           "price": "520.00 LE (8pcs)",
           "type": "Special Roll",
           "image": "caviar_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Caviar Roll prepared with fresh ingredients.",
+          "desc_ar": "كافيار رول محضر بمكونات طازجة."
         },
         {
           "name_en": "Tsunami Roll",
@@ -1416,8 +1416,8 @@
           "price": "540.00 LE (8pcs)",
           "type": "Special Roll",
           "image": "tsunami_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Tsunami Roll prepared with fresh ingredients.",
+          "desc_ar": "تسونامي رول محضر بمكونات طازجة."
         },
         {
           "name_en": "Wrapped Tuna",
@@ -1425,8 +1425,8 @@
           "price": "440.00 LE (8pcs)",
           "type": "Special Roll",
           "image": "wrapped_tuna.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Wrapped Tuna prepared with fresh ingredients.",
+          "desc_ar": "رول تونة ملفوف محضر بمكونات طازجة."
         },
         {
           "name_en": "Wrapped Salmon",
@@ -1434,8 +1434,8 @@
           "price": "440.00 LE (8pcs)",
           "type": "Special Roll",
           "image": "wrapped_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Wrapped Salmon prepared with fresh ingredients.",
+          "desc_ar": "رول سلمون ملفوف محضر بمكونات طازجة."
         },
         {
           "name_en": "Crazy Squid Roll",
@@ -1443,8 +1443,8 @@
           "price": "420.00 LE (8pcs)",
           "type": "Special Roll",
           "image": "crazy_squid_roll.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Crazy Squid Roll prepared with fresh ingredients.",
+          "desc_ar": "كريزي سكويد رول محضر بمكونات طازجة."
         }
       ]
     },
@@ -1457,8 +1457,8 @@
           "price": "335.00 LE",
           "type": "Gunkan",
           "image": "caviar_marche.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan Ikura",
@@ -1466,8 +1466,8 @@
           "price": "120.00 LE",
           "type": "Gunkan",
           "image": "gunkan_ikura.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan Crab",
@@ -1475,8 +1475,8 @@
           "price": "70.00 LE",
           "type": "Gunkan",
           "image": "gunkan_crab.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan California",
@@ -1484,8 +1484,8 @@
           "price": "65.00 LE",
           "type": "Gunkan",
           "image": "gunkan_california.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan Caterpillar",
@@ -1493,8 +1493,8 @@
           "price": "85.00 LE",
           "type": "Gunkan",
           "image": "gunkan_caterpillar.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan Caviar",
@@ -1502,8 +1502,8 @@
           "price": "95.00 LE",
           "type": "Gunkan",
           "image": "gunkan_caviar.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Gunkan Salmon",
@@ -1511,8 +1511,8 @@
           "price": "95.00 LE",
           "type": "Gunkan",
           "image": "gunkan_salmon.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Fortune Paste Temaki",
@@ -1520,8 +1520,8 @@
           "price": "145.00 LE",
           "type": "Temaki",
           "image": "fortune_paste_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Ikura Temaki",
@@ -1529,8 +1529,8 @@
           "price": "195.00 LE",
           "type": "Temaki",
           "image": "ikura_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Salmon Temaki",
@@ -1538,8 +1538,8 @@
           "price": "125.00 LE",
           "type": "Temaki",
           "image": "salmon_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Tuna Temaki",
@@ -1547,8 +1547,8 @@
           "price": "115.00 LE",
           "type": "Temaki",
           "image": "tuna_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Crispy Shrimp Temaki",
@@ -1556,8 +1556,8 @@
           "price": "125.00 LE",
           "type": "Temaki",
           "image": "crispy_shrimp_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         },
         {
           "name_en": "Spicy Salmon Temaki",
@@ -1565,8 +1565,8 @@
           "price": "140.00 LE",
           "type": "Temaki",
           "image": "spicy_salmon_temaki.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "Oval-shaped sushi rice wrapped in nori topped with fresh ingredients.",
+          "desc_ar": "أرز سوشي بيضاوي الشكل ملفوف بالنوري ويعلوه مكونات طازجة."
         }
       ]
     },
@@ -1579,8 +1579,8 @@
           "price": "390.00 LE",
           "type": "Combo Platter",
           "image": "combo_12_pcs.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         },
         {
           "name_en": "Combo 24 Pcs",
@@ -1588,8 +1588,8 @@
           "price": "720.00 LE",
           "type": "Combo Platter",
           "image": "combo_24_pcs.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         },
         {
           "name_en": "Combo 36 Pcs",
@@ -1597,8 +1597,8 @@
           "price": "935.00 LE",
           "type": "Combo Platter",
           "image": "combo_36_pcs.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         },
         {
           "name_en": "Combo 48 Pcs",
@@ -1606,8 +1606,8 @@
           "price": "1175.00 LE",
           "type": "Combo Platter",
           "image": "combo_48_pcs.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         },
         {
           "name_en": "Combo 60 Pcs",
@@ -1615,8 +1615,8 @@
           "price": "1420.00 LE",
           "type": "Combo Platter",
           "image": "combo_60_pcs.webp",
-          "desc_en": "",
-          "desc_ar": ""
+          "desc_en": "An assortment of our finest sushi selections.",
+          "desc_ar": "تشكيلة من أفضل اختياراتنا من السوشي."
         }
       ]
     }
