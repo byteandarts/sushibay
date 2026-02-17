@@ -349,6 +349,9 @@ async function loadMenuPage(
     // Highlight active tab on scroll
     initCategoryScrollSpy(categories);
 
+    // Init scroll fade indicators
+    initCategoryScrollFade();
+
     // Handle hash navigation
     if (window.location.hash) {
       const target = document.querySelector(window.location.hash);
@@ -370,6 +373,31 @@ function slugify(text) {
     .replace(/[&]/g, 'and')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
+}
+
+// ===== Category Scroll Fade Indicators =====
+function initCategoryScrollFade() {
+  const nav = document.getElementById('menu-category-nav');
+  const inner = document.querySelector('.menu-category-nav-inner');
+  if (!nav || !inner) return;
+
+  function updateFade() {
+    const scrollLeft = inner.scrollLeft;
+    const maxScroll = inner.scrollWidth - inner.clientWidth;
+
+    nav.classList.toggle('can-scroll-left', scrollLeft > 4);
+    nav.classList.toggle('can-scroll-right', scrollLeft < maxScroll - 4);
+  }
+
+  inner.addEventListener('scroll', updateFade, { passive: true });
+  window.addEventListener('resize', updateFade, { passive: true });
+
+  // Initial check after content is rendered
+  requestAnimationFrame(() => {
+    updateFade();
+    // Recheck after a brief delay for dynamic content
+    setTimeout(updateFade, 500);
+  });
 }
 
 // ===== Category ScrollSpy =====
