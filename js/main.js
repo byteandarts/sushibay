@@ -320,9 +320,12 @@ async function loadMenuPage(
         const escapedNameEn = item.name_en.replace(/'/g, "\\'");
         const escapedNameAr = item.name_ar.replace(/'/g, "\\'");
 
+        const escapedDescEn = (item.desc_en || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const escapedDescAr = (item.desc_ar || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+
         contentHTML += `
           <div class="menu-item-card">
-            <div class="menu-item-card-img">
+            <div class="menu-item-card-img" onclick="openImageModal('${imgSrc}', '${escapedNameEn}', '${escapedNameAr}', '${escapedDescEn}', '${escapedDescAr}', ${isCafe})">
               <img src="${imgSrc}" alt="${item.name_en}" loading="lazy">
             </div>
             <div class="menu-item-card-body">
@@ -485,10 +488,105 @@ function initScrollAnimations() {
 document.addEventListener('DOMContentLoaded', () => {
   Cart.render();
   initScrollAnimations();
+  injectImageModal();
 });
+
+
+// ===== Image Modal =====
+function injectImageModal() {
+  if (document.getElementById('image-modal')) return;
+
+  const modalHTML = `
+    <div class="image-modal-overlay" id="image-modal" onclick="closeImageModal(event)">
+      <div class="image-modal-content" onclick="event.stopPropagation()">
+        <button class="image-modal-close" onclick="closeImageModal()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="image-modal-img-container">
+          <img src="" alt="" class="image-modal-img" id="image-modal-img">
+        </div>
+        <div class="image-modal-body">
+          <h3 class="image-modal-title font-display" id="image-modal-title"></h3>
+          <h4 class="image-modal-title-ar" id="image-modal-title-ar"></h4>
+          <p class="image-modal-desc" id="image-modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+}
+
+function openImageModal(imgSrc, nameEn, nameAr, descEn, descAr, isCafe) {
+  const modal = document.getElementById('image-modal');
+  if (!modal) return;
+
+  const content = modal.querySelector('.image-modal-content');
+  content.classList.remove('cafe-theme', 'sushi-theme');
+  content.classList.add(isCafe ? 'cafe-theme' : 'sushi-theme');
+
+  document.getElementById('image-modal-img').src = imgSrc;
+
+  const titleEnEl = document.getElementById('image-modal-title');
+  const titleArEl = document.getElementById('image-modal-title-ar');
+  const descEl = document.getElementById('image-modal-desc');
+
+  const lang = localStorage.getItem('lang') || 'en';
+
+  // Decide which title to show
+  if (lang === 'ar') {
+    titleEnEl.style.display = 'none';
+    titleArEl.style.display = 'block';
+
+    // Fallback if AR name is empty but EN exists (though unlikely)
+    if (!nameAr && nameEn) {
+      titleArEl.textContent = nameEn;
+      titleArEl.style.direction = 'ltr';
+      titleArEl.style.textAlign = 'left';
+    } else {
+      titleArEl.textContent = nameAr;
+      titleArEl.style.direction = 'rtl';
+      titleArEl.style.textAlign = 'right';
+    }
+  } else {
+    titleArEl.style.display = 'none';
+    titleEnEl.style.display = 'block';
+    titleEnEl.textContent = nameEn;
+    titleEnEl.style.direction = 'ltr';
+    titleEnEl.style.textAlign = 'left';
+  }
+
+  // Logic: Show description in current language. Fallback if empty.
+  let descText = lang === 'ar' ? descAr : descEn;
+  // If preferred desc is missing, try fallback
+  if (!descText && lang === 'ar') descText = descEn;
+  if (!descText && lang === 'en') descText = descAr;
+
+  descEl.textContent = descText || '';
+
+  // Determine text direction relative to the content actually being shown
+  const isArText = (descText === descAr && descAr) || (lang === 'ar' && !descEn);
+  descEl.style.direction = isArText ? 'rtl' : 'ltr';
+  descEl.style.textAlign = isArText ? 'right' : 'left';
+
+  // Force reflow and show
+  modal.offsetHeight;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeImageModal(e) {
+  if (e && e.target !== e.currentTarget) return;
+
+  const modal = document.getElementById('image-modal');
+  if (modal) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
 
 // Slide-up animation CSS
 const style = document.createElement('style');
 style.textContent =
   '@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }';
 document.head.appendChild(style);
+
