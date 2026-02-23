@@ -1192,40 +1192,13 @@
           "desc_ar": "مزيج منعش من الفواكه والنكهات."
         },
         {
-          "name_en": "Supremo Cocktail",
-          "name_ar": "كوكتيل سوبريمو",
-          "price": "160 L.E",
+          "name_en": "Lemon with Mint Cocktail",
+          "name_ar": "كوكتيل ليمون بالنعناع",
+          "price": "95 L.E",
           "type": "Cocktail",
-          "image": "supremo_cocktail.webp",
+          "image": "lemon_mint_cocktail.webp",
           "desc_en": "Refreshing blend of fruits and flavors.",
           "desc_ar": "مزيج منعش من الفواكه والنكهات."
-        },
-        {
-          "name_en": "Frappe Espresso",
-          "name_ar": "فرابتشينو إسبريسو",
-          "price": "125 L.E",
-          "type": "Frappe",
-          "image": "frappe_espresso.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Frappe Espresso Caramel",
-          "name_ar": "فرابتشينو إسبريسو كراميل",
-          "price": "130 L.E",
-          "type": "Frappe",
-          "image": "frappe_espresso_caramel.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Mocha Frappe",
-          "name_ar": "موكا فرابتشينو",
-          "price": "125 L.E",
-          "type": "Frappe",
-          "image": "mocha_frappe.webp",
-          "desc_en": "Refreshing beverage to quench your thirst.",
-          "desc_ar": "مشروب منعش لروي عطشك."
         },
         {
           "name_en": "Strawberry Milkshake",
@@ -1238,7 +1211,7 @@
         },
         {
           "name_en": "Mango Milkshake",
-          "name_ar": "ميلك شيك فراولة",
+          "name_ar": "ميلك شيك مانجو",
           "price": "115 L.E",
           "type": "Milkshake",
           "image": "mango_milkshake.webp",
@@ -1247,7 +1220,7 @@
         },
         {
           "name_en": "Vanilla Milkshake",
-          "name_ar": "ميلك شيك فراولة",
+          "name_ar": "ميلك شيك فانيلا",
           "price": "115 L.E",
           "type": "Milkshake",
           "image": "vanilla_milkshake.webp",
@@ -1291,58 +1264,22 @@
           "desc_ar": "عصير معصور طازج غني بالفيتامينات."
         },
         {
-          "name_en": "Espresso",
-          "name_ar": "إسبريسو",
-          "price": "69 L.E",
-          "type": "Hot Coffee",
-          "image": "espresso.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Turkish Coffee",
-          "name_ar": "قهوة تركي",
-          "price": "69 L.E",
-          "type": "Hot Coffee",
-          "image": "turkish_coffee.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Cappuccino",
-          "name_ar": "كابتشينو",
-          "price": "99 L.E",
-          "type": "Hot Coffee",
-          "image": "cappuccino.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Latte",
-          "name_ar": "لاتيه",
-          "price": "99 L.E",
-          "type": "Hot Coffee",
-          "image": "latte.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
-        },
-        {
-          "name_en": "Hot Chocolate",
-          "name_ar": "هوت شوكليت",
+          "name_en": "Fresh Guava Juice",
+          "name_ar": "عصير جوافه طازج",
           "price": "85 L.E",
-          "type": "Hot Drink",
-          "image": "hot_chocolate.webp",
-          "desc_en": "Refreshing beverage to quench your thirst.",
-          "desc_ar": "مشروب منعش لروي عطشك."
+          "type": "Fresh Juice",
+          "image": "fresh_mango_juice.webp",
+          "desc_en": "Freshly squeezed juice rich in vitamins.",
+          "desc_ar": "عصير معصور طازج غني بالفيتامينات."
         },
-        {
-          "name_en": "Ice Latte",
-          "name_ar": "آيس لاتيه",
-          "price": "120 L.E",
-          "type": "Iced Coffee",
-          "image": "ice_latte.webp",
-          "desc_en": "Rich and aromatic coffee brewed from premium beans.",
-          "desc_ar": "قهوة غنية وعطرية محضرة من حبوب فاخرة."
+       {
+          "name_en": "Fresh Strawberry Juice",
+          "name_ar": "عصير فراولة طازج",
+          "price": "85 L.E",
+          "type": "Fresh Juice",
+          "image": "fresh_mango_juice.webp",
+          "desc_en": "Freshly squeezed juice rich in vitamins.",
+          "desc_ar": "عصير معصور طازج غني بالفيتامينات."
         }
       ]
     }
