@@ -1237,6 +1237,24 @@
           "desc_ar": "ميلك شيك كريمي وكثيف مصنوع من آيس كريم حقيقي."
         },
         {
+          "name_en": "Mango Milkshake",
+          "name_ar": "ميلك شيك فراولة",
+          "price": "115 L.E",
+          "type": "Milkshake",
+          "image": "mango_milkshake.webp",
+          "desc_en": "Creamy and thick milkshake made with real ice cream.",
+          "desc_ar": "ميلك شيك كريمي وكثيف مصنوع من آيس كريم حقيقي."
+        },
+        {
+          "name_en": "Vanilla Milkshake",
+          "name_ar": "ميلك شيك فراولة",
+          "price": "115 L.E",
+          "type": "Milkshake",
+          "image": "vanilla_milkshake.webp",
+          "desc_en": "Creamy and thick milkshake made with real ice cream.",
+          "desc_ar": "ميلك شيك كريمي وكثيف مصنوع من آيس كريم حقيقي."
+        },
+        {
           "name_en": "Chocolate Milkshake",
           "name_ar": "ميلك شيك شوكولاتة",
           "price": "115 L.E",
