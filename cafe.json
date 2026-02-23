@@ -1268,7 +1268,7 @@
           "name_ar": "عصير جوافه طازج",
           "price": "85 L.E",
           "type": "Fresh Juice",
-          "image": "fresh_mango_juice.webp",
+          "image": "fresh_guava_juice.webp",
           "desc_en": "Freshly squeezed juice rich in vitamins.",
           "desc_ar": "عصير معصور طازج غني بالفيتامينات."
         },
@@ -1277,7 +1277,7 @@
           "name_ar": "عصير فراولة طازج",
           "price": "85 L.E",
           "type": "Fresh Juice",
-          "image": "fresh_mango_juice.webp",
+          "image": "fresh_strawberry_juice.webp",
           "desc_en": "Freshly squeezed juice rich in vitamins.",
           "desc_ar": "عصير معصور طازج غني بالفيتامينات."
         }
